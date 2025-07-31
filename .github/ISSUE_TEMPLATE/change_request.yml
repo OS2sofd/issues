@@ -5,10 +5,14 @@ labels: [triage, change-request]
 assignees: []
 
 body:
+  - type: markdown
+    attributes:
+      value: "### Kontaktperson"
+
   - type: input
     id: kontaktperson_navn
     attributes:
-      label: Kontaktperson - Navn
+      label: Navn
       placeholder: Indtast navn
     validations:
       required: true
@@ -16,15 +20,15 @@ body:
   - type: input
     id: kontaktperson_mail
     attributes:
-      label: Kontaktperson - Mail
+      label: Mail
       placeholder: Indtast mailadresse
     validations:
       required: true
 
   - type: input
-    id: kontaktperson_kommune
+    id: kommune
     attributes:
-      label: Kontaktperson - Kommune
+      label: Kommune
       placeholder: Indtast kommune
     validations:
       required: true
