@@ -1,8 +1,6 @@
 name: Ændringsønske
 description: Foreslå ny funktionalitet eller forbedring
 title: "Overskrift"
-labels: [triage, change-request]
-assignees: []
 
 body:
   - type: markdown
@@ -63,4 +61,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "<span style='color:red'>**VIGTIGT! Oplys ikke følsomme persondata i denne formular.**</span>"
+      value: "### :warning: VIGTIGT!\n**Oplys ikke følsomme persondata i denne formular.**"
