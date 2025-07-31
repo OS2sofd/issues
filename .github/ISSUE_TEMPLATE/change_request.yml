@@ -13,6 +13,22 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: forretningsbehov
+    attributes:
+      label: Forretningsbehov
+      description: Beskriv hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel. VIGTIGT! Oplys ikke følsomme persondata.
+    validations:
+      required: true
+
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Beskrivelse
+      description: Hvad ønskes ændret eller tilføjet?
+    validations:
+      required: true
+
   - type: dropdown
     id: prioritet
     attributes:
@@ -22,19 +38,5 @@ body:
         - Normal
         - Høj
         - Kritisk
-    validations:
-      required: true
-
-  - type: textarea
-    id: forretningsbehov
-    attributes:
-      label: Forretningsbehov
-      description: Beskriv hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel. VIGTIGT! Oplys ikke følsomme persondata.  
-
-  - type: textarea
-    id: beskrivelse
-    attributes:
-      label: Beskrivelse
-      description: Hvad ønskes ændret eller tilføjet?
     validations:
       required: true
