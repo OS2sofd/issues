@@ -32,6 +32,7 @@ body:
     attributes:
       label: Kommune
       options:
+        - Ikke kommune
         - Albertslund
         - Allerød
         - Assens
