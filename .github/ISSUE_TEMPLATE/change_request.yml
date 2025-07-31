@@ -61,4 +61,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "### :warning: VIGTIGT!\n**Oplys ikke følsomme persondata i denne formular.**"
+      value: "---\n### :warning: VIGTIGT!\n**Oplys ikke følsomme persondata i denne formular.**"
