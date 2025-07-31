@@ -37,7 +37,7 @@ body:
     id: forretningsbehov
     attributes:
       label: Forretningsbehov
-      description: Start med at beskrive hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel. VIGTIGT! Oplys ikke følsomme persondata.
+      description: Start med at beskrive hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel.
     validations:
       required: true
 
@@ -60,3 +60,7 @@ body:
         - Kritisk
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: "<span style='color:red'>**VIGTIGT! Oplys ikke følsomme persondata i denne formular.**</span>"
