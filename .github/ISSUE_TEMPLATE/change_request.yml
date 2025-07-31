@@ -1,8 +1,12 @@
-name: Ændringsønske
+name: Ændringsønske 
 description: Foreslå ny funktionalitet eller forbedring
 title: "Overskrift"
 
 body:
+  - type: markdown
+    attributes:
+      value: "### :pencil2: Husk at udfylde feltet øverst med en kort og præcis overskrift til dit ændringsønske."
+
   - type: markdown
     attributes:
       value: "### Kontaktperson"
