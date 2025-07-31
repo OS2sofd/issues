@@ -1,15 +1,31 @@
 name: Ændringsønske
 description: Foreslå ny funktionalitet eller forbedring
-title: "[FEATURE] "
+title: "Overskrift"
 labels: [triage, change-request]
 assignees: []
 
 body:
   - type: input
-    id: kontaktperson
+    id: kontaktperson_navn
     attributes:
-      label: Kontaktperson
-      placeholder: Navn eller mail
+      label: Kontaktperson - Navn
+      placeholder: Indtast navn
+    validations:
+      required: true
+
+  - type: input
+    id: kontaktperson_mail
+    attributes:
+      label: Kontaktperson - Mail
+      placeholder: Indtast mailadresse
+    validations:
+      required: true
+
+  - type: input
+    id: kontaktperson_kommune
+    attributes:
+      label: Kontaktperson - Kommune
+      placeholder: Indtast kommune
     validations:
       required: true
 
@@ -17,7 +33,7 @@ body:
     id: forretningsbehov
     attributes:
       label: Forretningsbehov
-      description: Beskriv hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel. VIGTIGT! Oplys ikke følsomme persondata.
+      description: Start med at beskrive hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel. VIGTIGT! Oplys ikke følsomme persondata.
     validations:
       required: true
 
@@ -25,7 +41,7 @@ body:
     id: beskrivelse
     attributes:
       label: Beskrivelse
-      description: Hvad ønskes ændret eller tilføjet?
+      description: Beskriv dernæst hvad der ønskes ændret eller tilføjet.
     validations:
       required: true
 
