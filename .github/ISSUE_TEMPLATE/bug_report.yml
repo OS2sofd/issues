@@ -1,0 +1,13 @@
+name: Fejlrapport
+description: Rapportér en fejl i applikationen
+title: "[BUG] "
+labels: [triage, bug]
+assignees: []
+
+body:
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Beskriv fejlen
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+name: Dokumentationsønske
+description: Anmod om ny eller forbedret dokumentation
+title: "[DOC] "
+labels: [triage, documentation]
+assignees: []
+
+body:
+  - type: textarea
+    id: dokumentation
+    attributes:
+      label: Hvad mangler?
