@@ -27,7 +27,7 @@ body:
     validations:
       required: true
 
-    - type: dropdown
+  - type: dropdown
     id: kommune
     attributes:
       label: Kommune
