@@ -1,0 +1,11 @@
+name: Testanmodning
+description: Anmod om test eller testdækning
+title: "[TEST] "
+labels: [triage, test]
+assignees: []
+
+body:
+  - type: textarea
+    id: test
+    attributes:
+      label: Hvad ønskes testet?
