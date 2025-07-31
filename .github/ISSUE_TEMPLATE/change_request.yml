@@ -92,3 +92,90 @@ body:
         - Mariagerfjord
         - Middelfart
         - Morsø
+        - Norddjurs
+        - Nordfyns
+        - Næstved
+        - Odder
+        - Odense
+        - Odsherred
+        - Randers
+        - Rebild
+        - Ringkøbing-Skjern
+        - Ringsted
+        - Roskilde
+        - Rudersdal
+        - Rødovre
+        - Samsø
+        - Silkeborg
+        - Skanderborg
+        - Skive
+        - Slagelse
+        - Solrød
+        - Sorø
+        - Stevns
+        - Struer
+        - Svendborg
+        - Syddjurs
+        - Sønderborg
+        - Thisted
+        - Tønder
+        - Tårnby
+        - Vallensbæk
+        - Varde
+        - Vejen
+        - Vejle
+        - Vesthimmerlands
+        - Viborg
+        - Vordingborg
+        - Ærø
+        - Aabenraa
+    validations:
+      required: true
+
+  - type: input
+    id: anden_org
+    attributes:
+      label: Leverandør eller anden organisation
+      description: Udfyld kun hvis "Ikke kommune" er valgt.
+      placeholder: Navn på organisation
+    if:
+      field: kommune
+      equals: Ikke kommune
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "### Ændringsønske"
+
+  - type: textarea
+    id: forretningsbehov
+    attributes:
+      label: Forretningsbehov
+      description: Start med at beskrive hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel.
+    validations:
+      required: true
+
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Beskrivelse
+      description: Beskriv dernæst hvad der ønskes ændret eller tilføjet.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioritet
+    attributes:
+      label: Oplevet prioritet
+      options:
+        - Lav
+        - Normal
+        - Høj
+        - Kritisk
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "---\n### :warning: VIGTIGT!\n**Oplys ikke følsomme persondata i denne formular.**"
