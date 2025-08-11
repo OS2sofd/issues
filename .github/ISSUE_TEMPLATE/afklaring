@@ -1,0 +1,23 @@
+name: Afklaring
+description: Bruges til at oprette sager, hvor der er behov for yderligere afklaring.
+title: "Afklaring: "
+labels: [afklaring]
+assignees: []
+
+body:
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Beskrivelse
+      description: Beskriv hvad der skal afklares.
+      placeholder: Indtast beskrivelse her
+    validations:
+      required: true
+
+  - type: textarea
+    id: baggrund
+    attributes:
+      label: Baggrund
+      description: Giv en kort baggrund for afklaringsbehovet.
+    validations:
+      required: false
