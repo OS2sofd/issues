@@ -39,7 +39,6 @@ body:
       label: Kommune
       description: Vælg kommune. Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
       options:
-        - Ikke kommune
         - Albertslund
         - Allerød
         - Assens
@@ -136,6 +135,7 @@ body:
         - Vordingborg
         - Ærø
         - Aabenraa
+        - Ikke kommune
     validations:
       required: true
 
