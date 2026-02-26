@@ -190,7 +190,7 @@ body:
     attributes:
       label: Begrundelse (påkrævet ved Høj eller Kritisk)
       description: |
-        Skal udfyldes hvis prioritet er Høj eller Kritisk.
+        Skal begrundes hvis prioritet er høj eller kritisk. Ved lav eller mellem kan du notere: Ikke relevant.
 
         Beskriv:
         • Hvad stopper eller risikerer at stoppe?
