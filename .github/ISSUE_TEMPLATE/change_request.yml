@@ -165,14 +165,15 @@ body:
       description: |
         ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
 
-        Besvar gerne:
-        • Hvilket konkret problem opleves i dag?
-        • Hvem er berørt (roller, medarbejdere)?
-        • Hvor ofte opstår problemet?
-        • Hvad er konsekvensen, hvis vi ikke ændrer noget?
-        • Er der tal, data eller eksempler der understøtter behovet?
+        ### Besvar gerne:
 
-        Vær så konkret og målbar som muligt.
+      - Hvilket konkret problem opleves i dag?
+      - Hvem er berørt (roller, medarbejdere)?
+      - Hvor ofte opstår problemet?
+      - Hvad er konsekvensen, hvis vi ikke ændrer noget?
+      - Er der tal, data eller eksempler der understøtter behovet?
+
+        ### Vær så konkret og målbar som muligt.
       placeholder: |
         Eksempel:
         Sagsbehandlere bruger i gennemsnit 15 min ekstra pr. sag pga. manuel håndtering...
