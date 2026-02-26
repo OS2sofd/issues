@@ -1,11 +1,20 @@
 name: Ændringsønske 
 description: Foreslå ny funktionalitet eller forbedring
-title: "Overskrift"
+title: "[ÆNDRING]: "
+labels: ["ændringsønske"]
 
 body:
   - type: markdown
     attributes:
-      value: "### :pencil2: Husk at udfylde feltet øverst med en kort og præcis overskrift til dit ændringsønske."
+      value: |
+        ## Husk
+        Giv en kort og præcis overskrift øverst.
+        Beskriv ændringsønsket så konkret som muligt.
+        ⚠️ Oplys ikke følsomme persondata i denne formular.
+
+  # -------------------------
+  # Kontaktoplysninger
+  # -------------------------
 
   - type: markdown
     attributes:
@@ -145,19 +154,55 @@ body:
     attributes:
       value: "---\n### Ændringsønske"
 
+  # -------------------------
+  # Forretningsbehov
+  # -------------------------
+
   - type: textarea
     id: forretningsbehov
     attributes:
       label: Forretningsbehov
-      description: Start med at beskrive hvilket forretningsbehov der ligger bagved dette ændringsønske. Gerne så konkret som muligt og med eksempel.
+      description: |
+        Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
+
+        Besvar gerne:
+        • Hvilket konkret problem opleves i dag?
+        • Hvem er berørt (roller, medarbejdere)?
+        • Hvor ofte opstår problemet?
+        • Hvad er konsekvensen, hvis vi ikke ændrer noget?
+        • Er der tal, data eller eksempler der understøtter behovet?
+
+        Vær så konkret og målbar som muligt.
+      placeholder: |
+        Eksempel:
+        Sagsbehandlere bruger i gennemsnit 15 min ekstra pr. sag pga. manuel håndtering...
+        Dette påvirker ca. 120 sager pr. måned...
     validations:
       required: true
+
+ # -------------------------
+  # Beskrivelse af ændring
+  # -------------------------
 
   - type: textarea
     id: beskrivelse
     attributes:
-      label: Beskrivelse
-      description: Beskriv dernæst hvad der ønskes ændret eller tilføjet.
+      label: Beskrivelse af ønsket ændring
+      description: |
+        Beskriv hvad der konkret ønskes ændret eller tilføjet.
+
+        Besvar gerne:
+        • Hvordan fungerer det i dag?
+        • Hvad ønskes ændret?
+        • Hvad skal systemet kunne?
+        • Hvornår vil løsningen være godkendt (acceptkriterier)?
+        • Er der kendte afgrænsninger?
+
+        Undgå at gentage forretningsbehovet – fokusér på løsningen.
+      placeholder: |
+        Eksempel:
+        Der ønskes en automatisk validering som...
+        Løsningen er godkendt når...
     validations:
       required: true
 
