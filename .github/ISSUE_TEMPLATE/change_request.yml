@@ -169,7 +169,10 @@ body:
     id: prioritet
     attributes:
       label: Oplevet prioritet
-      description: Vælg den prioritet du vurderer ændringsønsket har
+      description: |
+        Vælg den prioritet du vurderer ændringsønsket har.
+
+        ⚠ Hvis du vælger Høj eller Kritisk, skal feltet nedenfor udfyldes.
       options:
         - Lav
         - Mellem
@@ -179,26 +182,22 @@ body:
       required: true
 
   # -------------------------
-  # Begrundelse (kun ved høj/kritisk)
+  # Begrundelse
   # -------------------------
 
   - type: textarea
     id: prioritet_begrundelse
     attributes:
-      label: Begrundelse for høj/kritisk prioritet
+      label: Begrundelse (påkrævet ved Høj eller Kritisk)
       description: |
-        Dette felt skal udfyldes hvis du vælger Høj eller Kritisk.
+        Skal udfyldes hvis prioritet er Høj eller Kritisk.
 
         Beskriv:
         • Hvad stopper eller risikerer at stoppe?
         • Er der lovkrav, deadlines eller økonomiske konsekvenser?
-        • Er borgere direkte påvirket?
       placeholder: Beskriv hvorfor ændringen haster
     validations:
-      required: false
-    if: |
-      github.event.issue.body.prioritet == 'Høj' ||
-      github.event.issue.body.prioritet == 'Kritisk'
+      required: true
 
   - type: markdown
     attributes:
