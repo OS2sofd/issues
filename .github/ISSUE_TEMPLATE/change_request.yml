@@ -1,4 +1,4 @@
-name: Ændringsønske 
+name: Ændringsønske
 description: Foreslå ny funktionalitet eller forbedring
 title: "[ÆNDRING]: "
 labels: ["ændringsønske"]
@@ -12,13 +12,10 @@ body:
         Beskriv ændringsønsket så konkret som muligt.
         ⚠️ Oplys ikke følsomme persondata i denne formular.
 
-  # -------------------------
-  # Kontaktoplysninger
-  # -------------------------
-
   - type: markdown
     attributes:
-      value: "### Kontaktperson"
+      value: |
+        ### Kontaktperson
 
   - type: input
     id: kontaktperson_navn
@@ -40,6 +37,7 @@ body:
     id: kommune
     attributes:
       label: Kommune
+      description: Vælg kommune. Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
       options:
         - Ikke kommune
         - Albertslund
@@ -145,30 +143,29 @@ body:
     id: anden_org
     attributes:
       label: Anden organisation / leverandør
-      description: Udfyld dette felt, hvis afsender ikke er en kommune.
+      description: Udfyld dette felt, hvis afsender ikke er en kommune (dvs. hvis du har valgt "Ikke kommune" ovenfor).
       placeholder: Navn på organisation eller leverandør
     validations:
       required: false
 
   - type: markdown
     attributes:
-      value: "---\n### Ændringsønske"
+      value: |
+        ---
 
-  # -------------------------
-  # Forretningsbehov
-  # -------------------------
+        ### Ændringsønske
 
-   - type: textarea
+  - type: textarea
     id: forretningsbehov
     attributes:
       label: Forretningsbehov
       description: |
-        ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
+        ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen
 
         ### Besvar gerne:
 
         - Hvilket konkret problem opleves i dag?
-        - Hvem er berørt (roller, medarbejdere)?
+        - Hvem er berørt (roller, medarbejdere, borgere)?
         - Hvor ofte opstår problemet?
         - Hvad er konsekvensen, hvis vi ikke ændrer noget?
         - Er der tal, data eller eksempler der understøtter behovet?
@@ -181,23 +178,20 @@ body:
     validations:
       required: true
 
-  # -------------------------
-  # Beskrivelse af ændring
-  # -------------------------
-
   - type: textarea
     id: beskrivelse
     attributes:
       label: Beskrivelse af ønsket ændring
       description: |
-        Beskriv hvad der konkret ønskes ændret eller tilføjet.
+        ### Beskriv den ønskede ændring så konkret som muligt
 
-        Besvar gerne:
-        • Hvordan fungerer det i dag?
-        • Hvad ønskes ændret?
-        • Hvad skal systemet kunne?
-        • Hvornår vil løsningen være godkendt (acceptkriterier)?
-        • Er der kendte afgrænsninger?
+        ### Besvar gerne:
+
+        - Hvordan fungerer det i dag?
+        - Hvad ønskes ændret eller tilføjet?
+        - Hvad skal systemet kunne (gerne konkrete punkter)?
+        - Hvornår vil løsningen være godkendt (acceptkriterier)?
+        - Er der kendte afgrænsninger?
 
         Undgå at gentage forretningsbehovet – fokusér på løsningen.
       placeholder: |
@@ -207,10 +201,6 @@ body:
     validations:
       required: true
 
-  # -------------------------
-  # Prioritet
-  # -------------------------
-
   - type: dropdown
     id: prioritet
     attributes:
@@ -218,7 +208,7 @@ body:
       description: |
         Vælg den prioritet du vurderer ændringsønsket har.
 
-        ⚠ Hvis du vælger Høj eller Kritisk, skal feltet nedenfor udfyldes.
+        ⚠ Hvis du vælger Høj eller Kritisk, skal feltet "Begrundelse" udfyldes (ellers skriv "Ikke relevant").
       options:
         - Lav
         - Mellem
@@ -227,24 +217,27 @@ body:
     validations:
       required: true
 
-  # -------------------------
-  # Begrundelse
-  # -------------------------
-
   - type: textarea
     id: prioritet_begrundelse
     attributes:
       label: Begrundelse (påkrævet ved Høj eller Kritisk)
       description: |
-        Skal begrundes hvis prioritet er høj eller kritisk. Ved lav eller mellem kan du notere: Ikke relevant.
+        Skal begrundes hvis prioritet er Høj eller Kritisk.
+        Ved Lav eller Mellem kan du skrive: "Ikke relevant".
 
-        Beskriv:
-        • Hvad stopper eller risikerer at stoppe?
-        • Er der lovkrav, deadlines eller økonomiske konsekvenser?
+        ### Beskriv gerne:
+
+        - Hvad stopper eller risikerer at stoppe?
+        - Er der lovkrav, deadlines eller økonomiske konsekvenser?
+        - Er borgere eller drift direkte påvirket?
       placeholder: Beskriv hvorfor ændringen haster
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "---\n### :warning: VIGTIGT!\n**Oplys ikke følsomme persondata i denne formular.**"
+      value: |
+        ---
+
+        ### ⚠ VIGTIGT!
+        **Oplys ikke følsomme persondata i denne formular.**
