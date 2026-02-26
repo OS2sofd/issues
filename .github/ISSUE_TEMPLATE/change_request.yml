@@ -158,28 +158,28 @@ body:
   # Forretningsbehov
   # -------------------------
 
- - type: textarea
-  id: forretningsbehov
-  attributes:
-    label: Forretningsbehov
-    description: |
-      ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
+   - type: textarea
+    id: forretningsbehov
+    attributes:
+      label: Forretningsbehov
+      description: |
+        ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
 
-      ### Besvar gerne:
+        ### Besvar gerne:
 
-      - Hvilket konkret problem opleves i dag?
-      - Hvem er berørt (roller, medarbejdere)?
-      - Hvor ofte opstår problemet?
-      - Hvad er konsekvensen, hvis vi ikke ændrer noget?
-      - Er der tal, data eller eksempler der understøtter behovet?
+        - Hvilket konkret problem opleves i dag?
+        - Hvem er berørt (roller, medarbejdere)?
+        - Hvor ofte opstår problemet?
+        - Hvad er konsekvensen, hvis vi ikke ændrer noget?
+        - Er der tal, data eller eksempler der understøtter behovet?
 
-      Vær så konkret og målbar som muligt.
-    placeholder: |
-      Eksempel:
-      Sagsbehandlere bruger i gennemsnit 15 min ekstra pr. sag pga. manuel håndtering.
-      Dette påvirker ca. 120 sager pr. måned.
-  validations:
-    required: true
+        Vær så konkret og målbar som muligt.
+      placeholder: |
+        Eksempel:
+        Sagsbehandlere bruger i gennemsnit 15 min ekstra pr. sag pga. manuel håndtering.
+        Dette påvirker ca. 120 sager pr. måned.
+    validations:
+      required: true
 
  # -------------------------
   # Beskrivelse af ændring
