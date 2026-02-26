@@ -163,9 +163,9 @@ body:
     attributes:
       label: Forretningsbehov
       description: |
-        ## Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
+        ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
 
-        Besvar gerne:
+       ### Besvar gerne:
         • Hvilket konkret problem opleves i dag?
         • Hvem er berørt (roller, medarbejdere)?
         • Hvor ofte opstår problemet?
