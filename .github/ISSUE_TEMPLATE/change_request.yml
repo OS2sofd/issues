@@ -11,6 +11,23 @@ body:
         Giv en kort og præcis overskrift øverst.
         Beskriv ændringsønsket så konkret som muligt.
         ⚠️ Oplys ikke følsomme persondata i denne formular.
+        
+  - type: checkboxes
+  id: request_quality_check
+  attributes:
+    label: Før du opretter ændringsønsket
+    description: Bekræft venligst følgende før du indsender ændringsønsket.
+    options:
+      - label: Jeg har beskrevet hvilket problem eller behov vi oplever i dag.
+        required: true
+      - label: Jeg har forklaret hvilken ændring eller forbedring jeg foreslår.
+        required: true
+      - label: Jeg har beskrevet hvilken værdi ændringen forventes at skabe (fx bedre arbejdsgange, øget sikkerhed eller mindre manuelt arbejde).
+        required: true
+      - label: Jeg har tilføjet relevant kontekst, fx eksempler, berørte integrationer eller arbejdsgange.
+        required: true
+      - label: Jeg har undersøgt, om et lignende ændringsønske allerede findes.
+        required: false       
 
   - type: markdown
     attributes:
