@@ -12,6 +12,11 @@ body:
         Beskriv ændringsønsket så konkret som muligt.
         ⚠️ Oplys ikke følsomme persondata i denne formular.
         
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
   - type: checkboxes
     id: request_quality_check
     attributes:
@@ -32,6 +37,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
+      
         ### Kontaktperson
 
   - type: input
