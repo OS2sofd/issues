@@ -11,17 +11,18 @@ body:
         Giv ændringsønsket en kort og præcis titel.
         Beskriv ændringsønsket så konkret som muligt.
         ⚠️ Oplys ikke følsomme persondata i denne formular.
-        
+
   - type: markdown
     attributes:
       value: |
         ---
-        
+
   - type: checkboxes
     id: request_quality_check
     attributes:
       label: Før du opretter ændringsønsket
-      description: Bekræft venligst følgende før du indsender ændringsønsket.
+      description: |
+        Bekræft venligst følgende før du indsender ændringsønsket.
       options:
         - label: Jeg har beskrevet, hvilket problem eller behov vi oplever i dag.
           required: true
@@ -38,7 +39,7 @@ body:
     attributes:
       value: |
         ---
-      
+
         ### Kontaktperson (hvis der opstår spørgsmål)
 
   - type: input
@@ -61,7 +62,10 @@ body:
     id: kommune
     attributes:
       label: Kommune
-      description:Vælg den kommune ændringsønsket kommer fra. Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
+      description: |
+        Vælg den kommune ændringsønsket kommer fra.
+        Hvis afsender ikke er en kommune, vælg "Ikke kommune"
+        og udfyld feltet "Anden organisation / leverandør".
       options:
         - Albertslund
         - Allerød
@@ -109,8 +113,8 @@ body:
         - Kalundborg
         - Kerteminde
         - Kolding
-        - København
         - Køge
+        - København
         - Langeland
         - Lejre
         - Lemvig
@@ -165,7 +169,9 @@ body:
     id: anden_org
     attributes:
       label: Anden organisation / leverandør
-      description: Udfyld dette felt, hvis afsender ikke er en kommune (dvs. hvis du har valgt "Ikke kommune" ovenfor).
+      description: |
+        Udfyld dette felt, hvis afsender ikke er en kommune
+        (dvs. hvis du har valgt "Ikke kommune" ovenfor).
       placeholder: Navn på organisation eller leverandør
     validations:
       required: false
@@ -182,10 +188,9 @@ body:
     attributes:
       label: Forretningsbehov
       description: |
-        ### Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen
+        Beskriv det bagvedliggende forretningsmæssige behov – ikke løsningen.
 
-        ### Besvar gerne:
-
+        Besvar gerne:
         - Hvilket konkret problem opleves i dag?
         - Hvem er berørt (roller, medarbejdere, borgere)?
         - Hvor ofte opstår problemet?
@@ -205,10 +210,9 @@ body:
     attributes:
       label: Beskrivelse af ønsket ændring
       description: |
-        ### Beskriv den ønskede ændring så konkret som muligt
+        Beskriv den ønskede ændring så konkret som muligt.
 
-        ### Besvar gerne:
-
+        Besvar gerne:
         - Hvordan fungerer det i dag?
         - Hvad ønskes ændret eller tilføjet?
         - Hvad skal systemet kunne (gerne konkrete punkter)?
@@ -226,11 +230,13 @@ body:
   - type: dropdown
     id: prioritet
     attributes:
-      label: Oplevet prioritet (din vurdering)
+      label: Oplevet prioritet
       description: |
         Vælg den prioritet du vurderer ændringsønsket har.
 
-        ⚠ Hvis du vælger Høj eller Kritisk prioritet, skal feltet "Begrundelse" udfyldes (ellers skriv "Ikke relevant").
+        ⚠ Hvis du vælger Høj eller Kritisk prioritet,
+        skal feltet "Begrundelse" udfyldes
+        (ellers skriv "Ikke relevant").
       options:
         - Lav
         - Mellem
@@ -247,8 +253,7 @@ body:
         Skal begrundes hvis prioritet er Høj eller Kritisk.
         Ved Lav eller Mellem kan du skrive: "Ikke relevant".
 
-        ### Beskriv gerne:
-
+        Beskriv gerne:
         - Hvad stopper eller risikerer at stoppe?
         - Er der lovkrav, deadlines eller økonomiske konsekvenser?
         - Er borgere eller drift direkte påvirket?
