@@ -1,6 +1,6 @@
 name: Ændringsønske
 description: Foreslå ny funktionalitet eller forbedring
-title: "[ÆNDRING]: "
+title: "[ÆNDRINGSØNSKE]: "
 labels: ["ændringsønske"]
 
 body:
@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         ## Husk
-        Giv en kort og præcis overskrift øverst.
+        Giv ændringsønsket en kort og præcis titel.
         Beskriv ændringsønsket så konkret som muligt.
         ⚠️ Oplys ikke følsomme persondata i denne formular.
         
@@ -23,11 +23,11 @@ body:
       label: Før du opretter ændringsønsket
       description: Bekræft venligst følgende før du indsender ændringsønsket.
       options:
-        - label: Jeg har beskrevet hvilket problem eller behov vi oplever i dag.
+        - label: Jeg har beskrevet, hvilket problem eller behov vi oplever i dag.
           required: true
-        - label: Jeg har forklaret hvilken ændring eller forbedring jeg foreslår.
+        - label: Jeg har forklaret, hvilken ændring eller forbedring jeg foreslår.
           required: true
-        - label: Jeg har beskrevet hvilken værdi ændringen forventes at skabe (fx bedre arbejdsgange, øget sikkerhed eller mindre manuelt arbejde).
+        - label: Jeg har beskrevet, hvilken værdi ændringen forventes at skabe (fx bedre arbejdsgange, øget sikkerhed eller mindre manuelt arbejde).
           required: true
         - label: Jeg har tilføjet relevant kontekst, fx eksempler, berørte integrationer eller arbejdsgange.
           required: true
@@ -39,7 +39,7 @@ body:
       value: |
         ---
       
-        ### Kontaktperson
+        ### Kontaktperson (hvis der opstår spørgsmål)
 
   - type: input
     id: kontaktperson_navn
@@ -61,7 +61,8 @@ body:
     id: kommune
     attributes:
       label: Kommune
-      description: Vælg kommune. Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
+      description:Vælg den kommune ændringsønsket kommer fra.
+      Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
       options:
         - Albertslund
         - Allerød
@@ -108,10 +109,8 @@ body:
         - Jammerbugt
         - Kalundborg
         - Kerteminde
-        - Kjellerup
         - Kolding
-        - Korsør
-        - Københavns
+        - København
         - Køge
         - Langeland
         - Lejre
@@ -154,7 +153,7 @@ body:
         - Varde
         - Vejen
         - Vejle
-        - Vesthimmerlands
+        - Vesthimmerland
         - Viborg
         - Vordingborg
         - Ærø
@@ -228,11 +227,11 @@ body:
   - type: dropdown
     id: prioritet
     attributes:
-      label: Oplevet prioritet
+      label: Oplevet prioritet (din vurdering)
       description: |
         Vælg den prioritet du vurderer ændringsønsket har.
 
-        ⚠ Hvis du vælger Høj eller Kritisk, skal feltet "Begrundelse" udfyldes (ellers skriv "Ikke relevant").
+        ⚠ Hvis du vælger Høj eller Kritisk prioritet, skal feltet "Begrundelse" udfyldes (ellers skriv "Ikke relevant").
       options:
         - Lav
         - Mellem
