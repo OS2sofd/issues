@@ -61,8 +61,7 @@ body:
     id: kommune
     attributes:
       label: Kommune
-      description:Vælg den kommune ændringsønsket kommer fra.
-      Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
+      description:Vælg den kommune ændringsønsket kommer fra. Hvis afsender ikke er en kommune, vælg "Ikke kommune" og udfyld feltet "Anden organisation / leverandør".
       options:
         - Albertslund
         - Allerød
