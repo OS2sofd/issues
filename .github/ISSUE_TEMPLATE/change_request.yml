@@ -59,14 +59,14 @@ body:
       required: true
 
   - type: dropdown
-  id: jira_overfoert
-  attributes:
-    label: Er ændringsønsket overført fra JIRA-backlog?
-    options:
-      - Nej
-      - Ja
-  validations:
-    required: true
+    id: jira_overfoert
+    attributes:
+      label: Er ændringsønsket overført fra JIRA-backlog?
+      options:
+        - Nej
+        - Ja
+    validations:
+      required: true
 
   - type: input
     id: jira_id
@@ -77,7 +77,7 @@ body:
         Ellers kan feltet efterlades tomt.
       placeholder: fx SOFD-123
     validations:
-      required: false    
+      required: false 
 
   - type: dropdown
     id: kommune
