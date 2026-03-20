@@ -40,24 +40,6 @@ body:
       value: |
         ---
 
-        ### Kontaktperson (hvis der opstår spørgsmål)
-
-  - type: input
-    id: kontaktperson_navn
-    attributes:
-      label: Navn
-      placeholder: Indtast navn
-    validations:
-      required: true
-
-  - type: input
-    id: kontaktperson_mail
-    attributes:
-      label: Mail
-      placeholder: Indtast mailadresse
-    validations:
-      required: true
-
   - type: dropdown
     id: jira_overfoert
     attributes:
@@ -78,6 +60,29 @@ body:
       placeholder: fx SOFD-123
     validations:
       required: false 
+
+  - type: markdown
+   attributes:
+     value: |
+       ---
+
+        ### Kontaktperson (hvis der opstår spørgsmål)
+
+  - type: input
+    id: kontaktperson_navn
+    attributes:
+      label: Navn
+      placeholder: Indtast navn
+    validations:
+      required: true
+
+  - type: input
+    id: kontaktperson_mail
+    attributes:
+      label: Mail
+      placeholder: Indtast mailadresse
+    validations:
+      required: true
 
   - type: dropdown
     id: kommune
