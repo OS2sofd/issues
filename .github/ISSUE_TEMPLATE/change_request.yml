@@ -58,15 +58,15 @@ body:
     validations:
       required: true
 
-    - type: dropdown
-    id: jira_overfoert
-    attributes:
-      label: Er ændringsønsket overført fra JIRA-backlog?
-      options:
-        - Nej
-        - Ja
-    validations:
-      required: true
+  - type: dropdown
+  id: jira_overfoert
+  attributes:
+    label: Er ændringsønsket overført fra JIRA-backlog?
+    options:
+      - Nej
+      - Ja
+  validations:
+    required: true
 
   - type: input
     id: jira_id
