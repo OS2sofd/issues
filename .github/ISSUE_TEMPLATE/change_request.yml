@@ -58,6 +58,27 @@ body:
     validations:
       required: true
 
+    - type: dropdown
+    id: jira_overfoert
+    attributes:
+      label: Er ændringsønsket overført fra JIRA-backlog?
+      options:
+        - Nej
+        - Ja
+    validations:
+      required: true
+
+  - type: input
+    id: jira_id
+    attributes:
+      label: JIRA ID (hvis relevant)
+      description: |
+        Hvis ændringsønsket er overført fra JIRA, angiv ID i formatet SOFD-xxx.
+        Ellers kan feltet efterlades tomt.
+      placeholder: fx SOFD-123
+    validations:
+      required: false    
+
   - type: dropdown
     id: kommune
     attributes:
