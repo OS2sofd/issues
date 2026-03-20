@@ -62,9 +62,9 @@ body:
       required: false 
 
   - type: markdown
-   attributes:
-     value: |
-       ---
+    attributes:
+      value: |
+        ---
 
         ### Kontaktperson (hvis der opstår spørgsmål)
 
