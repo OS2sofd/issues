@@ -244,7 +244,11 @@ body:
         - Hvad skal systemet kunne (gerne konkrete punkter)?
         - Hvornår vil løsningen være godkendt (acceptkriterier)?
         - Er der kendte afgrænsninger?
-
+        
+        Acceptkriterier:
+        Beskriv hvornår løsningen er god nok til at blive godkendt.
+        Acceptkriterier er ikke nye krav, men en præcisering af hvornår de beskrevne funktioner anses som opfyldt.
+        
         Undgå at gentage forretningsbehovet – fokusér på løsningen.
       placeholder: |
         Eksempel:
