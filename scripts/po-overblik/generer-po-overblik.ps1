@@ -6,6 +6,9 @@ param(
     # Første testversion skriver lokalt. I GitHub Actions ændres dette senere til docs/po-overblik.md.
     [string]$OutputPath = (Join-Path $env:USERPROFILE "Downloads\po-overblik.md"),
 
+    # Historikfil. I GitHub Actions angives denne som data/po-overblik-history.json.
+    [string]$HistoryPath = (Join-Path $env:USERPROFILE "Downloads\po-overblik-history.json"),
+
     # Kan fx angives som "Q3 2026". Hvis tom, udledes aktuelt kvartal automatisk.
     [string]$CurrentRelease = "",
 
@@ -29,7 +32,7 @@ $ErrorActionPreference = "Stop"
 function Run-GhJson {
     param([string[]]$GhArgs)
 
-    $errFile = Join-Path ([System.IO.Path]::GetTempPath()) ("os2sofd-gh-err-" + [guid]::NewGuid().ToString() + ".txt")
+    $errFile = Join-Path $env:TEMP ("os2sofd-gh-err-" + [guid]::NewGuid().ToString() + ".txt")
     try {
         $output = & gh @GhArgs 2> $errFile
         $exitCode = $LASTEXITCODE
@@ -254,6 +257,101 @@ function Get-CurrentReleaseName {
     return "$quarter. kvartal $($now.Year)"
 }
 
+
+function Get-IssueHistoryEntry {
+    param(
+        [object]$History,
+        [int]$Number
+    )
+
+    if ($null -eq $History.issues) { return $null }
+
+    $prop = $History.issues.PSObject.Properties |
+        Where-Object { $_.Name -eq [string]$Number } |
+        Select-Object -First 1
+
+    if ($null -eq $prop) { return $null }
+    return $prop.Value
+}
+
+function Set-IssueHistoryEntry {
+    param(
+        [object]$History,
+        [int]$Number,
+        [object]$Entry
+    )
+
+    $name = [string]$Number
+    $prop = $History.issues.PSObject.Properties |
+        Where-Object { $_.Name -eq $name } |
+        Select-Object -First 1
+
+    if ($null -eq $prop) {
+        $History.issues | Add-Member -NotePropertyName $name -NotePropertyValue $Entry
+    }
+    else {
+        $prop.Value = $Entry
+    }
+}
+
+function Load-History {
+    param([string]$Path)
+
+    if (Test-Path $Path) {
+        try {
+            $loaded = Get-Content $Path -Raw | ConvertFrom-Json
+
+            if ($null -eq $loaded.issues) {
+                $loaded | Add-Member -NotePropertyName issues -NotePropertyValue ([PSCustomObject]@{})
+            }
+
+            return $loaded
+        }
+        catch {
+            throw "Historikfilen kunne ikke læses: $Path`n$($_.Exception.Message)"
+        }
+    }
+
+    return [PSCustomObject]@{
+        schemaVersion = 1
+        startedAt     = (Get-Date).ToString("o")
+        updatedAt     = (Get-Date).ToString("o")
+        issues        = [PSCustomObject]@{}
+    }
+}
+
+function Save-History {
+    param(
+        [object]$History,
+        [string]$Path
+    )
+
+    $History.updatedAt = (Get-Date).ToString("o")
+
+    $parent = Split-Path -Parent $Path
+    if (-not [string]::IsNullOrWhiteSpace($parent) -and -not (Test-Path $parent)) {
+        New-Item -ItemType Directory -Path $parent -Force | Out-Null
+    }
+
+    $json = $History | ConvertTo-Json -Depth 20
+    [System.IO.File]::WriteAllText($Path, $json, $Utf8NoBom)
+}
+
+function Format-StatusAge {
+    param(
+        [int]$Days,
+        [bool]$IsBaseline
+    )
+
+    $value = Age-Text $Days
+
+    if ($IsBaseline) {
+        return "≥ $value"
+    }
+
+    return $value
+}
+
 # ---------------------------
 # Forudsætninger
 # ---------------------------
@@ -271,7 +369,7 @@ $generatedAt = Get-Date
 $currentReleaseName = Get-CurrentReleaseName
 
 Write-Host ""
-Write-Host "OS2sofd PO-overblik – produktion" -ForegroundColor Cyan
+Write-Host "OS2sofd PO-overblik – produktion + historik" -ForegroundColor Cyan
 Write-Host "Projekt: $ProjectOwner / Project #$ProjectNumber"
 Write-Host "Aktuel release: $currentReleaseName"
 Write-Host ""
@@ -436,6 +534,81 @@ foreach ($item in $projectItems) {
 }
 
 Write-Progress -Activity "Henter GitHub-data" -Completed
+
+# ---------------------------
+# Status-historik
+# ---------------------------
+
+Write-Host "Opdaterer status-historik..." -ForegroundColor Cyan
+
+$history = Load-History $HistoryPath
+
+foreach ($r in $rows) {
+    $nowIso = $generatedAt.ToString("o")
+    $entry = Get-IssueHistoryEntry $history $r.Number
+
+    if ($null -eq $entry) {
+        # Første observation er baseline. Vi ved ikke, hvornår den eksisterende status reelt begyndte.
+        $entry = [PSCustomObject]@{
+            number                  = $r.Number
+            title                   = $r.Title
+            url                     = $r.Url
+            firstObservedAt         = $nowIso
+            lastObservedAt          = $nowIso
+            currentStatus           = $r.Status
+            currentStatusSince      = $nowIso
+            currentStatusIsBaseline = $true
+            transitions             = @(
+                [PSCustomObject]@{
+                    status     = $r.Status
+                    observedAt = $nowIso
+                    kind       = "baseline"
+                }
+            )
+        }
+
+        Set-IssueHistoryEntry $history $r.Number $entry
+    }
+    else {
+        $entry.title = $r.Title
+        $entry.url = $r.Url
+        $entry.lastObservedAt = $nowIso
+
+        if ([string]$entry.currentStatus -ne [string]$r.Status) {
+            $transitions = @($entry.transitions)
+            $transitions += [PSCustomObject]@{
+                status     = $r.Status
+                observedAt = $nowIso
+                kind       = "status-change"
+            }
+
+            $entry.transitions = $transitions
+            $entry.currentStatus = $r.Status
+            $entry.currentStatusSince = $nowIso
+            $entry.currentStatusIsBaseline = $false
+        }
+
+        Set-IssueHistoryEntry $history $r.Number $entry
+    }
+
+    try {
+        $statusSince = [DateTimeOffset]::Parse([string]$entry.currentStatusSince).LocalDateTime
+    }
+    catch {
+        $statusSince = $generatedAt
+    }
+
+    $statusAgeDays = [math]::Max(
+        0,
+        [math]::Floor(($generatedAt - $statusSince).TotalDays)
+    )
+
+    $r | Add-Member -NotePropertyName StatusSince -NotePropertyValue $statusSince -Force
+    $r | Add-Member -NotePropertyName StatusAgeDays -NotePropertyValue ([int]$statusAgeDays) -Force
+    $r | Add-Member -NotePropertyName StatusAgeIsBaseline -NotePropertyValue ([bool]$entry.currentStatusIsBaseline) -Force
+}
+
+Save-History $history $HistoryPath
 
 # ---------------------------
 # Analyse
@@ -675,6 +848,11 @@ foreach ($status in $statusOrder) {
     $ages = @($stageRows | ForEach-Object { [double]$_.AgeDays })
     $medianStageAge = [math]::Round((Median $ages),0)
     $oldestStageAge = ($stageRows | Measure-Object AgeDays -Maximum).Maximum
+
+    $statusAges = @($stageRows | ForEach-Object { [double]$_.StatusAgeDays })
+    $medianStatusAge = [math]::Round((Median $statusAges),0)
+    $oldestStatusAge = ($stageRows | Measure-Object StatusAgeDays -Maximum).Maximum
+
     $near6Stage = @($stageRows | Where-Object { $_.AgeDays -ge 137 -and $_.AgeDays -le 183 }).Count
     $over6Stage = @($stageRows | Where-Object { $_.AgeDays -gt 183 }).Count
 
@@ -689,6 +867,8 @@ foreach ($status in $statusOrder) {
         Share = $share
         MedianAge = [int]$medianStageAge
         OldestAge = [int]$oldestStageAge
+        MedianStatusAge = [int]$medianStatusAge
+        OldestStatusAge = [int]$oldestStatusAge
         Near6 = $near6Stage
         Over6 = $over6Stage
     }
@@ -714,6 +894,8 @@ $md.Add("Mål for omløbstid: **maks. 6 måneder fra idé til færdig løsning**
 $md.Add("Aktuel release: **$(Escape-Md $currentReleaseName)**")
 $md.Add("")
 $md.Add("> **Om alder:** Alder beregnes fra GitHub-issuets oprettelsesdato. For ønsker, der er migreret fra JIRA eller andre tidligere kilder, kan den reelle alder fra idé til færdig løsning derfor være højere.")
+$md.Add("")
+$md.Add("> **Om tid i status:** Statushistorikken registreres fra den dag denne automatisering tages i brug. `≥` betyder, at issuet allerede stod i status ved første observation, så den reelle tid i status kan være længere.")
 $md.Add("")
 $md.Add("---")
 $md.Add("")
@@ -947,12 +1129,15 @@ if ($null -ne $bottleneck) {
     $md.Add("")
 }
 
-$md.Add("| Status | Antal | Andel af aktive | Median alder | Ældste | 4,5–6 mdr. | >6 mdr. |")
-$md.Add("| --- | ---: | ---: | ---: | ---: | ---: | ---: |")
+$md.Add("| Status | Antal | Andel af aktive | Median GitHub-alder | Median observeret tid i status | Ældste observerede tid i status | 4,5–6 mdr. GitHub-alder | >6 mdr. GitHub-alder |")
+$md.Add("| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |")
 
 foreach ($s in $activeStatusRows) {
-    $md.Add("| $(Escape-Md $s.Status) | $($s.Count) | $($s.Share) % | $(Age-Text $s.MedianAge) | $(Age-Text $s.OldestAge) | $($s.Near6) | $($s.Over6) |")
+    $md.Add("| $(Escape-Md $s.Status) | $($s.Count) | $($s.Share) % | $(Age-Text $s.MedianAge) | $(Age-Text $s.MedianStatusAge) | $(Age-Text $s.OldestStatusAge) | $($s.Near6) | $($s.Over6) |")
 }
+
+$md.Add("")
+$md.Add("_Observeret tid i status tælles fra første registrering i historikfilen. For baseline-issues kan den reelle tid i status være længere._")
 
 $md.Add("")
 
@@ -970,11 +1155,11 @@ if ($ready.Count -eq 0) {
     $md.Add("Ingen issues er aktuelt klar til prioritering.")
 }
 else {
-    $md.Add("| Prioritet | Issue | Alder | Labels | Kommune | Estimat | Størrelse | Release |")
-    $md.Add("| --- | --- | ---: | --- | --- | ---: | --- | --- |")
+    $md.Add("| Prioritet | Issue | Alder | Tid i status | Labels | Kommune | Estimat | Størrelse | Release |")
+    $md.Add("| --- | --- | ---: | ---: | --- | --- | ---: | --- | --- |")
 
     foreach ($r in $ready) {
-        $md.Add("| $(Escape-Md $r.Priority) | $(Issue-Link $r.Number $r.Title $r.Url) | $(Age-Text $r.AgeDays) | $(Escape-Md $r.Labels) | $(Escape-Md $r.Municipality) | $(Escape-Md $r.Estimate) | $(Escape-Md $r.Size) | $(Escape-Md $r.Release) |")
+        $md.Add("| $(Escape-Md $r.Priority) | $(Issue-Link $r.Number $r.Title $r.Url) | $(Age-Text $r.AgeDays) | $(Format-StatusAge $r.StatusAgeDays $r.StatusAgeIsBaseline) | $(Escape-Md $r.Labels) | $(Escape-Md $r.Municipality) | $(Escape-Md $r.Estimate) | $(Escape-Md $r.Size) | $(Escape-Md $r.Release) |")
     }
 }
 
@@ -1288,7 +1473,7 @@ else {
 $md.Add("")
 $md.Add("---")
 $md.Add("")
-$md.Add("_Denne fil er automatisk genereret fra GitHub Project **Fra idé til færdig løsning**. GitHub Project er den autoritative datakilde; rapporten er et PO-styringsblik. Kommunikationssignaler er indikatorer og skal vurderes af PO._")
+$md.Add("_Denne fil er automatisk genereret fra GitHub Project **Fra idé til færdig løsning**. GitHub Project er den autoritative datakilde; `data/po-overblik-history.json` bruges alene til afledt status-historik. Kommunikationssignaler er indikatorer og skal vurderes af PO._")
 
 # ---------------------------
 # Gem
@@ -1304,6 +1489,7 @@ if (-not [string]::IsNullOrWhiteSpace($parent) -and -not (Test-Path $parent)) {
 Write-Host ""
 Write-Host "PO-overblik genereret." -ForegroundColor Green
 Write-Host "Fil: $OutputPath"
+Write-Host "Historik: $HistoryPath"
 Write-Host "Aktive issues: $($active.Count)"
 Write-Host "PO-signaler: $($attentionRows.Count)"
 Write-Host "Over 6 måneder: $over6"
