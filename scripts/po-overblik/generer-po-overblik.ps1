@@ -267,7 +267,7 @@ function Get-IssueHistoryEntry {
     if ($null -eq $History.issues) { return $null }
 
     $prop = $History.issues.PSObject.Properties |
-        Where-Object { $_.Name -eq [string]$Number } |
+        Where-Object { $_.Name -eq ("issue-" + [string]$Number) } |
         Select-Object -First 1
 
     if ($null -eq $prop) { return $null }
@@ -281,7 +281,7 @@ function Set-IssueHistoryEntry {
         [object]$Entry
     )
 
-    $name = [string]$Number
+    $name = "issue-" + [string]$Number
     $prop = $History.issues.PSObject.Properties |
         Where-Object { $_.Name -eq $name } |
         Select-Object -First 1
