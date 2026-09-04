@@ -29,7 +29,7 @@ $ErrorActionPreference = "Stop"
 function Run-GhJson {
     param([string[]]$GhArgs)
 
-    $errFile = Join-Path $env:TEMP ("os2sofd-gh-err-" + [guid]::NewGuid().ToString() + ".txt")
+    $errFile = Join-Path ([System.IO.Path]::GetTempPath()) ("os2sofd-gh-err-" + [guid]::NewGuid().ToString() + ".txt")
     try {
         $output = & gh @GhArgs 2> $errFile
         $exitCode = $LASTEXITCODE
