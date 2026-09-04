@@ -1,0 +1,1826 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-09-04T11:46:40.7698178+00:00",
+  "updatedAt": "2026-09-04T11:46:40.9220745+00:00",
+  "issues": {
+    "issue-105": {
+      "number": 105,
+      "title": "OS2ILM: Flytning af ILM-oprettede konsulenter",
+      "url": "https://github.com/OS2sofd/issues/issues/105",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Klar til prioritering",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Klar til prioritering",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-58": {
+      "number": 58,
+      "title": "OS2sofd - ilm - udfyld UPN ved oprettelse af konsulentkonto",
+      "url": "https://github.com/OS2sofd/issues/issues/58",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Klar til prioritering",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Klar til prioritering",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-94": {
+      "number": 94,
+      "title": "Understøttelse af Pre-hire-brugere i snitfladen mellem SOFD og Rollekatalog",
+      "url": "https://github.com/OS2sofd/issues/issues/94",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-56": {
+      "number": 56,
+      "title": "Bestilling af mail-adresser via ILM modulet",
+      "url": "https://github.com/OS2sofd/issues/issues/56",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afsluttede løsninger",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afsluttede løsninger",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-57": {
+      "number": 57,
+      "title": "Tilføjelse i OS2sofd - ILM af e-mailinvitation til konsulent så chancen for selv-registrering øges",
+      "url": "https://github.com/OS2sofd/issues/issues/57",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afsluttede løsninger",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afsluttede løsninger",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-63": {
+      "number": 63,
+      "title": "Opdatering af OS2sofd STIL integration til WS17-V7",
+      "url": "https://github.com/OS2sofd/issues/issues/63",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-47": {
+      "number": 47,
+      "title": "IDM: Dokumentation af alle IDM-flows",
+      "url": "https://github.com/OS2sofd/issues/issues/47",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-39": {
+      "number": 39,
+      "title": "IDM: Opret nye AD-konti i disabled tilstand indtil ansættelsesstart",
+      "url": "https://github.com/OS2sofd/issues/issues/39",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-38": {
+      "number": 38,
+      "title": "IDM: Ny ordretype REACTIVATE i IDM-flow",
+      "url": "https://github.com/OS2sofd/issues/issues/38",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-40": {
+      "number": 40,
+      "title": "IDM: Undgå utilsigtet genbrug af gamle konti",
+      "url": "https://github.com/OS2sofd/issues/issues/40",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-41": {
+      "number": 41,
+      "title": "IDM: Nyt Cleanup-trin i IDM-livscyklus",
+      "url": "https://github.com/OS2sofd/issues/issues/41",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-44": {
+      "number": 44,
+      "title": "IDM: Per-afdeling konfiguration af dage for kontooprettelse",
+      "url": "https://github.com/OS2sofd/issues/issues/44",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-45": {
+      "number": 45,
+      "title": "IDM: OPUS-konto brugernavn præfiks-validering",
+      "url": "https://github.com/OS2sofd/issues/issues/45",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-42": {
+      "number": 42,
+      "title": "IDM: Opret konto-ordre straks ved kendskab til ansættelse",
+      "url": "https://github.com/OS2sofd/issues/issues/42",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-46": {
+      "number": 46,
+      "title": "IDM: Bedre håndtering af personinaktivering",
+      "url": "https://github.com/OS2sofd/issues/issues/46",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-8": {
+      "number": 8,
+      "title": "OS2sofd Lederside - fixes + ønsker til forbedringer",
+      "url": "https://github.com/OS2sofd/issues/issues/8",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-20": {
+      "number": 20,
+      "title": "SOFD Replikator: Undtage eksterne fra gruppe sync",
+      "url": "https://github.com/OS2sofd/issues/issues/20",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-43": {
+      "number": 43,
+      "title": "IDM: Understøt AD-kontooprettelse fra flere tilhørsforholdskilder end for andre kontotyper",
+      "url": "https://github.com/OS2sofd/issues/issues/43",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Løsninger i review",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Løsninger i review",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-33": {
+      "number": 33,
+      "title": "Foretræk kendte spærrede konti fremfor at danne et nyt brugernavn",
+      "url": "https://github.com/OS2sofd/issues/issues/33",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Won't fix",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Won't fix",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-14": {
+      "number": 14,
+      "title": "Nye hændelse til IDM proces: Reaktivering - Oprydning",
+      "url": "https://github.com/OS2sofd/issues/issues/14",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Won't fix",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Won't fix",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-7": {
+      "number": 7,
+      "title": "Mulighed for at overskrive medarbejders stillingsbetegnelse fra lønsystemet",
+      "url": "https://github.com/OS2sofd/issues/issues/7",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-6": {
+      "number": 6,
+      "title": "Visning af mailadresse i listevisning/SOFD",
+      "url": "https://github.com/OS2sofd/issues/issues/6",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Won't fix",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Won't fix",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-9": {
+      "number": 9,
+      "title": "Person tilhørsforhold - Tilføj markering af primært tilhørsforhold",
+      "url": "https://github.com/OS2sofd/issues/issues/9",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-10": {
+      "number": 10,
+      "title": "Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er",
+      "url": "https://github.com/OS2sofd/issues/issues/10",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-11": {
+      "number": 11,
+      "title": "Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner",
+      "url": "https://github.com/OS2sofd/issues/issues/11",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-12": {
+      "number": 12,
+      "title": "Forstå forskel på Ansatte, Eksterne, Byrøddet, Konsulenter, Vikarer, m.m. typer af AD konti",
+      "url": "https://github.com/OS2sofd/issues/issues/12",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-13": {
+      "number": 13,
+      "title": "SofdCoreADReplicator - Handlinger ved grupper",
+      "url": "https://github.com/OS2sofd/issues/issues/13",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-15": {
+      "number": 15,
+      "title": "Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti",
+      "url": "https://github.com/OS2sofd/issues/issues/15",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-16": {
+      "number": 16,
+      "title": "Navne- og adressebeskyttelse:",
+      "url": "https://github.com/OS2sofd/issues/issues/16",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Screening",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Screening",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-17": {
+      "number": 17,
+      "title": "SOFD GUI: Udvidet overblik over tilhørsforhold og typer",
+      "url": "https://github.com/OS2sofd/issues/issues/17",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-18": {
+      "number": 18,
+      "title": "Brugertjek: Uddybelse af Entra licenser",
+      "url": "https://github.com/OS2sofd/issues/issues/18",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-19": {
+      "number": 19,
+      "title": "SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen \"Medarbejder\" når man kører med sync fra et lønsystem",
+      "url": "https://github.com/OS2sofd/issues/issues/19",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-21": {
+      "number": 21,
+      "title": "SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre",
+      "url": "https://github.com/OS2sofd/issues/issues/21",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-22": {
+      "number": 22,
+      "title": "Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed",
+      "url": "https://github.com/OS2sofd/issues/issues/22",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-23": {
+      "number": 23,
+      "title": "Samlet overblik over diverse opmærkninger/fravalg af enheder",
+      "url": "https://github.com/OS2sofd/issues/issues/23",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-24": {
+      "number": 24,
+      "title": "Prefix i AD Event Dispatcher",
+      "url": "https://github.com/OS2sofd/issues/issues/24",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-25": {
+      "number": 25,
+      "title": "Brugertjek: Udvidelse af informationer i tilhørforholdstabellen",
+      "url": "https://github.com/OS2sofd/issues/issues/25",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-26": {
+      "number": 26,
+      "title": "Brugertjek: Robot-flag for robotter",
+      "url": "https://github.com/OS2sofd/issues/issues/26",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-27": {
+      "number": 27,
+      "title": "Oprettelse af KSP/CICS konti på baggrund af rolletildelinger",
+      "url": "https://github.com/OS2sofd/issues/issues/27",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-28": {
+      "number": 28,
+      "title": "Brugertjek: Kontrol af lønsystem konto",
+      "url": "https://github.com/OS2sofd/issues/issues/28",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-29": {
+      "number": 29,
+      "title": "Brugertjek: Mulighed for genveje og dybe links",
+      "url": "https://github.com/OS2sofd/issues/issues/29",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-30": {
+      "number": 30,
+      "title": "OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale",
+      "url": "https://github.com/OS2sofd/issues/issues/30",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-32": {
+      "number": 32,
+      "title": "Import af SOFD enheder til OS2Vikar modulet",
+      "url": "https://github.com/OS2sofd/issues/issues/32",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-34": {
+      "number": 34,
+      "title": "ÆndringsønskeMulighed for at sende sms fra Vikarmodulet",
+      "url": "https://github.com/OS2sofd/issues/issues/34",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-35": {
+      "number": 35,
+      "title": "Forslag til rettelser i OS2SOFD Ledermodul",
+      "url": "https://github.com/OS2sofd/issues/issues/35",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-36": {
+      "number": 36,
+      "title": "Auto-opdatere enheder i FK Organisation ved nye KLE emner",
+      "url": "https://github.com/OS2sofd/issues/issues/36",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-37": {
+      "number": 37,
+      "title": "Tilknytning af stillinger til enheder i Vikar modulet",
+      "url": "https://github.com/OS2sofd/issues/issues/37",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-101": {
+      "number": 101,
+      "title": "OS2ILM: Tildeling af leder via Virksomhed",
+      "url": "https://github.com/OS2sofd/issues/issues/101",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-48": {
+      "number": 48,
+      "title": "Stoppet medarbejder slettes i Lederportalen/Tillidserhverv",
+      "url": "https://github.com/OS2sofd/issues/issues/48",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-49": {
+      "number": 49,
+      "title": "Ændring af synkronisering af data ind i Nexus",
+      "url": "https://github.com/OS2sofd/issues/issues/49",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-50": {
+      "number": 50,
+      "title": "Mulighed for at opsætte grænser for varigheden af OS2sofd tilhørsforhold",
+      "url": "https://github.com/OS2sofd/issues/issues/50",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-51": {
+      "number": 51,
+      "title": "Migrér CVR-integration fra Datafordeler REST til GraphQL",
+      "url": "https://github.com/OS2sofd/issues/issues/51",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-52": {
+      "number": 52,
+      "title": "Automatisk dannede flow-diagrammer til OS2sofd",
+      "url": "https://github.com/OS2sofd/issues/issues/52",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-53": {
+      "number": 53,
+      "title": "OS2sofd Lederside - Auditlogning af ændringer skal følge SOFD Core praksis",
+      "url": "https://github.com/OS2sofd/issues/issues/53",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-54": {
+      "number": 54,
+      "title": "Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)",
+      "url": "https://github.com/OS2sofd/issues/issues/54",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-55": {
+      "number": 55,
+      "title": "Lederside - Forbedring af GUI for Pausemarkering ift. endusers",
+      "url": "https://github.com/OS2sofd/issues/issues/55",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-59": {
+      "number": 59,
+      "title": "OS2sofd - ilm: udfyld displayName ved oprettelse af konsulent",
+      "url": "https://github.com/OS2sofd/issues/issues/59",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Klar til prioritering",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Klar til prioritering",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-60": {
+      "number": 60,
+      "title": "SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker",
+      "url": "https://github.com/OS2sofd/issues/issues/60",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-61": {
+      "number": 61,
+      "title": "Vil gerne selv kunne styre username, og navngivningen generelt i ILM",
+      "url": "https://github.com/OS2sofd/issues/issues/61",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Bestilt hos leverandør",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Bestilt hos leverandør",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-62": {
+      "number": 62,
+      "title": "Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper",
+      "url": "https://github.com/OS2sofd/issues/issues/62",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-64": {
+      "number": 64,
+      "title": "Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen",
+      "url": "https://github.com/OS2sofd/issues/issues/64",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-65": {
+      "number": 65,
+      "title": "NexusSync - automatisk luk af konti udenfor \"nexus organisationen\"",
+      "url": "https://github.com/OS2sofd/issues/issues/65",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-66": {
+      "number": 66,
+      "title": "Mulighed for at redigere allerede oprettet arbejdssted",
+      "url": "https://github.com/OS2sofd/issues/issues/66",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-67": {
+      "number": 67,
+      "title": "Kommunikationsmodul - Udviklingsønsker til email og log",
+      "url": "https://github.com/OS2sofd/issues/issues/67",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-68": {
+      "number": 68,
+      "title": "API-udvidelse til undtagelse/pausemarkering",
+      "url": "https://github.com/OS2sofd/issues/issues/68",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-69": {
+      "number": 69,
+      "title": "Mulighed for at fravælge advis ved kontooprettelse",
+      "url": "https://github.com/OS2sofd/issues/issues/69",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-70": {
+      "number": 70,
+      "title": "Mulighed for at redigere og flytte kolonner i oversigtsbillederne",
+      "url": "https://github.com/OS2sofd/issues/issues/70",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-71": {
+      "number": 71,
+      "title": "Videreudvikling af SMS modul",
+      "url": "https://github.com/OS2sofd/issues/issues/71",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-72": {
+      "number": 72,
+      "title": "Ekstra data på skoleelever",
+      "url": "https://github.com/OS2sofd/issues/issues/72",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-73": {
+      "number": 73,
+      "title": "OS2sofd Kommunikationsmodul - Ønsker til forbedringer",
+      "url": "https://github.com/OS2sofd/issues/issues/73",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-74": {
+      "number": 74,
+      "title": "funktionelle forbedringer",
+      "url": "https://github.com/OS2sofd/issues/issues/74",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Screening",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Screening",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-75": {
+      "number": 75,
+      "title": "Kommunikationsmodul i OS2sofd SMS/Email",
+      "url": "https://github.com/OS2sofd/issues/issues/75",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-76": {
+      "number": 76,
+      "title": "Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”",
+      "url": "https://github.com/OS2sofd/issues/issues/76",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-77": {
+      "number": 77,
+      "title": "Ændring af dannede kodeord i forbindelse med kontooprettelser i Sofd Account Agent",
+      "url": "https://github.com/OS2sofd/issues/issues/77",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-78": {
+      "number": 78,
+      "title": "Bjælke for oven og i venstre side, skal fryses fast",
+      "url": "https://github.com/OS2sofd/issues/issues/78",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-79": {
+      "number": 79,
+      "title": "Flere steps i godkendelsesflow i OS2Rollekatalog Anmod/Godkend",
+      "url": "https://github.com/OS2sofd/issues/issues/79",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-80": {
+      "number": 80,
+      "title": "ÆndringsønskeUdvidet information ved anmodning om rolle i OS2Rolekatalog Anmod/Godkend",
+      "url": "https://github.com/OS2sofd/issues/issues/80",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-81": {
+      "number": 81,
+      "title": "At kunne ændre afsendernavn på mails fra Rollekatalog",
+      "url": "https://github.com/OS2sofd/issues/issues/81",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-82": {
+      "number": 82,
+      "title": "ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar",
+      "url": "https://github.com/OS2sofd/issues/issues/82",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-83": {
+      "number": 83,
+      "title": "At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar",
+      "url": "https://github.com/OS2sofd/issues/issues/83",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-84": {
+      "number": 84,
+      "title": "At kunne skrive data attribut værdier fra OS2Vikar oprettelse til Data attribut i Active Directory",
+      "url": "https://github.com/OS2sofd/issues/issues/84",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Screening",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Screening",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-85": {
+      "number": 85,
+      "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
+      "url": "https://github.com/OS2sofd/issues/issues/85",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-86": {
+      "number": 86,
+      "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
+      "url": "https://github.com/OS2sofd/issues/issues/86",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-87": {
+      "number": 87,
+      "title": "Begrænse en systemansvarlig's view af it-systemer i OS2Rollekatalog",
+      "url": "https://github.com/OS2sofd/issues/issues/87",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-88": {
+      "number": 88,
+      "title": "Ny kolonne i rapporten 'Historiske rolleanmodninger', så man kan se hvilket IT-System de forskellige roller er tilknyttet",
+      "url": "https://github.com/OS2sofd/issues/issues/88",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-89": {
+      "number": 89,
+      "title": "Udvide 'Status' typer for tildeling af rettigheder med 'Tildelt ved godkendt anmodning'.",
+      "url": "https://github.com/OS2sofd/issues/issues/89",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-90": {
+      "number": 90,
+      "title": "At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek",
+      "url": "https://github.com/OS2sofd/issues/issues/90",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-91": {
+      "number": 91,
+      "title": "Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv",
+      "url": "https://github.com/OS2sofd/issues/issues/91",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-92": {
+      "number": 92,
+      "title": "Konfigurationsindstilling: Jobfunktionsroller og Rollebuketter listes samlet",
+      "url": "https://github.com/OS2sofd/issues/issues/92",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-93": {
+      "number": 93,
+      "title": "Berigelse af titelfelt for skoleelever med klassetrin",
+      "url": "https://github.com/OS2sofd/issues/issues/93",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-95": {
+      "number": 95,
+      "title": "Mulighed for at deaktivere en konto med udskudt dato",
+      "url": "https://github.com/OS2sofd/issues/issues/95",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-96": {
+      "number": 96,
+      "title": "Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer",
+      "url": "https://github.com/OS2sofd/issues/issues/96",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-97": {
+      "number": 97,
+      "title": "Vedligehold/rettidige opdateringer af Autorisationskoder",
+      "url": "https://github.com/OS2sofd/issues/issues/97",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-98": {
+      "number": 98,
+      "title": "OS2sofd Telefoni-modul - Ønsker til forbedringer",
+      "url": "https://github.com/OS2sofd/issues/issues/98",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-99": {
+      "number": 99,
+      "title": "Understøtte ny Skole/SFO opmærkning til KOMBIT",
+      "url": "https://github.com/OS2sofd/issues/issues/99",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-100": {
+      "number": 100,
+      "title": "Brugerkontotyper - tilføjelse til skabelonbaseret navnekonvention",
+      "url": "https://github.com/OS2sofd/issues/issues/100",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-102": {
+      "number": 102,
+      "title": "OS2ILM: Mere specifik log",
+      "url": "https://github.com/OS2sofd/issues/issues/102",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-103": {
+      "number": 103,
+      "title": "OS2ILM: Visning af firma og navn",
+      "url": "https://github.com/OS2sofd/issues/issues/103",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-104": {
+      "number": 104,
+      "title": "OS2ILM: Placering af medarbejdere i OU",
+      "url": "https://github.com/OS2sofd/issues/issues/104",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-106": {
+      "number": 106,
+      "title": "OS2ILM: Det skal være muligt for en administrator at slette en konsulent helt.",
+      "url": "https://github.com/OS2sofd/issues/issues/106",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Bestilt hos leverandør",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Bestilt hos leverandør",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-107": {
+      "number": 107,
+      "title": "OS2ILM: Manglende e-mailnotifikationer ved konsulentgodkendelse",
+      "url": "https://github.com/OS2sofd/issues/issues/107",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Bestilt hos leverandør",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Bestilt hos leverandør",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-108": {
+      "number": 108,
+      "title": "Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.",
+      "url": "https://github.com/OS2sofd/issues/issues/108",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-109": {
+      "number": 109,
+      "title": "Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske",
+      "url": "https://github.com/OS2sofd/issues/issues/109",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-110": {
+      "number": 110,
+      "title": "Frigørelse af kobling mellem it-brugerkonto og tilhørsforhold fra løndata. Tilhørsforhold skal afspejle den administrative organisation i OS2sofd.Ændringsønske",
+      "url": "https://github.com/OS2sofd/issues/issues/110",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-111": {
+      "number": 111,
+      "title": "UI forbedringer til stillingskatalog",
+      "url": "https://github.com/OS2sofd/issues/issues/111",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-112": {
+      "number": 112,
+      "title": "Migrering til Datafordeleren til CPR opslag",
+      "url": "https://github.com/OS2sofd/issues/issues/112",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    },
+    "issue-113": {
+      "number": 113,
+      "title": "Indlæsning af Mit Erhverv status til OS2Sofd",
+      "url": "https://github.com/OS2sofd/issues/issues/113",
+      "firstObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "lastObservedAt": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatus": "Afventer løsningsbeskrivelse",
+      "currentStatusSince": "2026-09-04T11:45:50.9590617+00:00",
+      "currentStatusIsBaseline": true,
+      "transitions": [
+        {
+          "status": "Afventer løsningsbeskrivelse",
+          "observedAt": "2026-09-04T11:45:50.9590617+00:00",
+          "kind": "baseline"
+        }
+      ]
+    }
+  }
+}
