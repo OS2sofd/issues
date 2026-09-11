@@ -2,7 +2,7 @@ param(
     [string]$Repo = "OS2sofd/issues",
     [string]$ProjectOwner = "OS2sofd",
     [int]$ProjectNumber = 1,
-    [string]$TargetStatus = "Klar til bestilling",
+    [string]$TargetStatus = "Klar til prioritering",
     [string]$TeamMention = "@OS2sofd/koordinationsgruppe",
     [string]$StatePath = "data/notifikation-klar-til-bestilling.json"
 )
