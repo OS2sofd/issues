@@ -1,4 +1,4 @@
-name: Notificer Klar til bestilling
+name: Notificer Klar til prioritering
 
 on:
   workflow_dispatch:
