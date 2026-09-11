@@ -164,6 +164,7 @@ if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
 
 $state = Load-State $StatePath
 $isFirstRun = -not [bool]$state.initialized
+$stateChanged = $isFirstRun
 
 Write-Host ""
 Write-Host "OS2sofd - notifikation ved '$TargetStatus'" -ForegroundColor Cyan
@@ -234,15 +235,20 @@ _Automatisk notifikation._
         $notifications++
     }
 
-    $entry = [PSCustomObject]@{
-        number       = $number
-        title        = $title
-        url          = $url
-        status       = $status
-        lastObserved = $nowIso
-    }
+    # Gem kun state, når et issue er nyt eller status faktisk har ændret sig.
+    # Dermed undgår vi et Git-commit hver time uden reelle ændringer.
+    if ($null -eq $previous -or $previousStatus -ne $status) {
+        $entry = [PSCustomObject]@{
+            number       = $number
+            title        = $title
+            url          = $url
+            status       = $status
+            lastObserved = $nowIso
+        }
 
-    Set-StateEntry $state $number $entry
+        Set-StateEntry $state $number $entry
+        $stateChanged = $true
+    }
 }
 
 if ($isFirstRun) {
@@ -250,8 +256,14 @@ if ($isFirstRun) {
 }
 
 $state.initialized = $true
-Save-State $state $StatePath
+
+if ($stateChanged) {
+    Save-State $state $StatePath
+    Write-Host "State er opdateret: $StatePath" -ForegroundColor Cyan
+}
+else {
+    Write-Host "Ingen statusændringer. State-filen ændres ikke." -ForegroundColor DarkGray
+}
 
 Write-Host ""
 Write-Host "Færdig. Sendte notifikationer: $notifications" -ForegroundColor Green
-Write-Host "State: $StatePath"
