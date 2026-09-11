@@ -230,7 +230,7 @@ _Automatisk notifikation._
 <!-- os2sofd-klar-til-bestilling -->
 "@
 
-        Write-Host "Notificerer på issue #$number: $title" -ForegroundColor Yellow
+        Write-Host "Notificerer på issue #${number}: $title" -ForegroundColor Yellow
         Add-IssueComment -Number $number -Body $comment
         $notifications++
     }
