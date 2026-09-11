@@ -3,9 +3,8 @@ name: Opdater PO-overblik
 on:
   workflow_dispatch:
   schedule:
-    # Kører hver morgen. Cron er UTC:
-    # 06:15 UTC = 08:15 dansk sommertid / 07:15 dansk vintertid.
-    - cron: "15 6 * * *"
+    - cron: "5 0 * * *"
+      timezone: "Europe/Copenhagen"
 
 permissions:
   contents: write
