@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-11T09:49:31.0090119+00:00",
+  "updatedAt": "2026-09-11T09:54:05.2514194+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -756,8 +756,8 @@
       "number": 118,
       "title": "TEST - Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/118",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:49:30.8405376+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-11T09:54:04.9791401+00:00"
     }
   }
 }
