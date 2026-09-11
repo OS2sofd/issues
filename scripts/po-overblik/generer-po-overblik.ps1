@@ -365,7 +365,8 @@ if ($LASTEXITCODE -ne 0) {
     throw "GitHub CLI er ikke logget ind. Kør: gh auth login"
 }
 
-$generatedAt = Get-Date
+$tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("Europe/Copenhagen")
+$generatedAt = [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
 $currentReleaseName = Get-CurrentReleaseName
 
 Write-Host ""
