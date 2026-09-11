@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-11T09:41:26.8381671+00:00",
+  "updatedAt": "2026-09-11T09:49:31.0090119+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -751,6 +751,13 @@
       "url": "https://github.com/OS2sofd/issues/issues/113",
       "status": "Afventer løsningsbeskrivelse",
       "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+    },
+    "issue-118": {
+      "number": 118,
+      "title": "TEST - Ændringsønske",
+      "url": "https://github.com/OS2sofd/issues/issues/118",
+      "status": "Bestilt hos leverandør",
+      "lastObserved": "2026-09-11T09:49:30.8405376+00:00"
     }
   }
 }
