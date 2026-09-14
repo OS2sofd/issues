@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-14T12:35:26.5645701+00:00",
+  "updatedAt": "2026-09-14T12:42:58.6267877+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -364,8 +364,8 @@
       "number": 36,
       "title": "Auto-opdatere enheder i FK Organisation ved nye KLE emner",
       "url": "https://github.com/OS2sofd/issues/issues/36",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T12:42:57.6501305+00:00"
     },
     "issue-37": {
       "number": 37,
