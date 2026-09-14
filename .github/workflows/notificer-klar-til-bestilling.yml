@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     # Højeste understøttede frekvens i GitHub Actions er i praksis minutbaseret,
-    # men vi bruger én gang i timen som passende kontrol for denne proces.
-    - cron: "5 * * * *"
+    # men vi bruger to gange i timen som passende kontrol for denne proces. Natlig kørsel undtaget.
+    - cron: "17,47 8-20 * * *"
+      timezone: "Europe/Copenhagen"
 
 permissions:
   contents: write
