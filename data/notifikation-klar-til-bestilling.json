@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-14T13:07:34.4264257+00:00",
+  "updatedAt": "2026-09-14T18:11:49.1923707+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -392,8 +392,8 @@
       "number": 49,
       "title": "Ændring af synkronisering af data ind i Nexus",
       "url": "https://github.com/OS2sofd/issues/issues/49",
-      "status": "Screening",
-      "lastObserved": "2026-09-14T13:07:33.0514491+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "lastObserved": "2026-09-14T18:11:48.0951804+00:00"
     },
     "issue-52": {
       "number": 52,
@@ -665,8 +665,8 @@
       "number": 97,
       "title": "Vedligehold/rettidige opdateringer af Autorisationskoder",
       "url": "https://github.com/OS2sofd/issues/issues/97",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T18:11:48.0951804+00:00"
     },
     "issue-98": {
       "number": 98,
