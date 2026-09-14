@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-14T12:42:58.6267877+00:00",
+  "updatedAt": "2026-09-14T13:07:34.4264257+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -392,8 +392,8 @@
       "number": 49,
       "title": "Ændring af synkronisering af data ind i Nexus",
       "url": "https://github.com/OS2sofd/issues/issues/49",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-14T13:07:33.0514491+00:00"
     },
     "issue-52": {
       "number": 52,
@@ -574,8 +574,8 @@
       "number": 83,
       "title": "At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/83",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T13:07:33.0514491+00:00"
     },
     "issue-84": {
       "number": 84,
