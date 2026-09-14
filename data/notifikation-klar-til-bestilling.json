@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-11T14:16:08.6770125+00:00",
+  "updatedAt": "2026-09-14T12:35:26.5645701+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -203,8 +203,8 @@
       "number": 9,
       "title": "Person tilhørsforhold - Tilføj markering af primært tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/9",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
     },
     "issue-10": {
       "number": 10,
@@ -301,8 +301,8 @@
       "number": 25,
       "title": "Brugertjek: Udvidelse af informationer i tilhørforholdstabellen",
       "url": "https://github.com/OS2sofd/issues/issues/25",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
     },
     "issue-26": {
       "number": 26,
@@ -315,8 +315,8 @@
       "number": 27,
       "title": "Oprettelse af KSP/CICS konti på baggrund af rolletildelinger",
       "url": "https://github.com/OS2sofd/issues/issues/27",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
     },
     "issue-28": {
       "number": 28,
@@ -455,8 +455,8 @@
       "number": 65,
       "title": "NexusSync - automatisk luk af konti udenfor \"nexus organisationen\"",
       "url": "https://github.com/OS2sofd/issues/issues/65",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
     },
     "issue-66": {
       "number": 66,
