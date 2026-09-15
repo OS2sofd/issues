@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-15T07:05:43.1916089+00:00",
+  "updatedAt": "2026-09-15T07:07:26.5533322+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -756,8 +756,8 @@
       "number": 118,
       "title": "TEST - Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/118",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-11T14:16:08.3517807+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-15T07:07:25.2025938+00:00"
     },
     "issue-119": {
       "number": 119,
@@ -765,6 +765,13 @@
       "url": "https://github.com/OS2sofd/issues/issues/119",
       "status": "Nye ændringsønsker",
       "lastObserved": "2026-09-15T07:05:42.9163007+00:00"
+    },
+    "issue-120": {
+      "number": 120,
+      "title": "Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen",
+      "url": "https://github.com/OS2sofd/issues/issues/120",
+      "status": "Nye ændringsønsker",
+      "lastObserved": "2026-09-15T07:07:25.2025938+00:00"
     }
   }
 }
