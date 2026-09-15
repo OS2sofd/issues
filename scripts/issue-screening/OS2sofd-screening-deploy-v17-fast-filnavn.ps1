@@ -4,7 +4,7 @@
 
     [int[]]$Issues = @(),
 
-    [string]$PackagePath = (Join-Path $env:USERPROFILE "Downloads\OS2sofd-screening-resultat-aktuel.json"),
+    [string]$PackagePath = (Join-Path $PSScriptRoot "OS2sofd-screening-resultat-aktuel.json"),
 
     [string]$Repo = "OS2sofd/issues",
     [string]$ProjectOwner = "OS2sofd",
