@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-15T11:41:43.2305414+00:00",
+  "updatedAt": "2026-09-15T15:41:22.9687943+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -392,8 +392,8 @@
       "number": 49,
       "title": "Ændring af synkronisering af data ind i Nexus",
       "url": "https://github.com/OS2sofd/issues/issues/49",
-      "status": "Screening",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Won't fix",
+      "lastObserved": "2026-09-15T15:41:22.6770238+00:00"
     },
     "issue-52": {
       "number": 52,
