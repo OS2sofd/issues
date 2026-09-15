@@ -3,16 +3,24 @@ name: Opdater leverandøroverblik
 on:
   workflow_dispatch:
 
+  workflow_run:
+    workflows: ["Opdater PO-overblik"]
+    types:
+      - completed
+
 permissions:
   contents: write
 
 jobs:
   opdater:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Hent repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Generer leverandøroverblik
         shell: pwsh
