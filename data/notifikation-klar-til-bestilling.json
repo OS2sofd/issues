@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-15T07:07:26.5533322+00:00",
+  "updatedAt": "2026-09-15T11:41:43.2305414+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -238,8 +238,8 @@
       "number": 15,
       "title": "Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti",
       "url": "https://github.com/OS2sofd/issues/issues/15",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-16": {
       "number": 16,
@@ -294,8 +294,8 @@
       "number": 24,
       "title": "Prefix i AD Event Dispatcher",
       "url": "https://github.com/OS2sofd/issues/issues/24",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-25": {
       "number": 25,
@@ -392,8 +392,8 @@
       "number": 49,
       "title": "Ændring af synkronisering af data ind i Nexus",
       "url": "https://github.com/OS2sofd/issues/issues/49",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-14T18:11:48.0951804+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-52": {
       "number": 52,
@@ -406,8 +406,8 @@
       "number": 54,
       "title": "Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)",
       "url": "https://github.com/OS2sofd/issues/issues/54",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-55": {
       "number": 55,
@@ -434,8 +434,8 @@
       "number": 61,
       "title": "Vil gerne selv kunne styre username, og navngivningen generelt i ILM",
       "url": "https://github.com/OS2sofd/issues/issues/61",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Igangværende opgaver",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-62": {
       "number": 62,
@@ -567,8 +567,8 @@
       "number": 82,
       "title": "ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/82",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-83": {
       "number": 83,
@@ -588,8 +588,8 @@
       "number": 85,
       "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
       "url": "https://github.com/OS2sofd/issues/issues/85",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-86": {
       "number": 86,
@@ -651,8 +651,8 @@
       "number": 95,
       "title": "Mulighed for at deaktivere en konto med udskudt dato",
       "url": "https://github.com/OS2sofd/issues/issues/95",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-96": {
       "number": 96,
@@ -707,15 +707,15 @@
       "number": 106,
       "title": "OS2ILM: Det skal være muligt for en administrator at slette en konsulent helt.",
       "url": "https://github.com/OS2sofd/issues/issues/106",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Igangværende opgaver",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-107": {
       "number": 107,
       "title": "OS2ILM: Manglende e-mailnotifikationer ved konsulentgodkendelse",
       "url": "https://github.com/OS2sofd/issues/issues/107",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Igangværende opgaver",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-109": {
       "number": 109,
@@ -756,22 +756,22 @@
       "number": 118,
       "title": "TEST - Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/118",
-      "status": "Klar til prioritering",
-      "lastObserved": "2026-09-15T07:07:25.2025938+00:00"
+      "status": "Afsluttede løsninger",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-119": {
       "number": 119,
       "title": "Forbedret logning/dokumentation af ordredannelser.",
       "url": "https://github.com/OS2sofd/issues/issues/119",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-15T07:05:42.9163007+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     },
     "issue-120": {
       "number": 120,
       "title": "Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen",
       "url": "https://github.com/OS2sofd/issues/issues/120",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-15T07:07:25.2025938+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
     }
   }
 }
