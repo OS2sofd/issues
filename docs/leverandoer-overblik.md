@@ -3,7 +3,7 @@
 > **Formål:** fælles styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.
 
 Senest genereret: **15-09-2026 16:42**  
-Målsætning for samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning**
+Målsætning: samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning** og bedre gennemsigtighed i processen
 
 Følgende status-kolonner indgår i v1:
 
