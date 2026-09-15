@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$Repo = "OS2sofd/issues",
     [string]$ProjectOwner = "OS2sofd",
     [int]$ProjectNumber = 1,
@@ -299,7 +299,7 @@ else {
 }
 
 Write-Host ""
-Write-Host "OS2sofd leverandøroverblik v1" -ForegroundColor Cyan
+Write-Host "OS2sofd leverandøroverblik v1.1" -ForegroundColor Cyan
 Write-Host "Project: $ProjectOwner / #$ProjectNumber"
 Write-Host ""
 
@@ -350,6 +350,7 @@ foreach ($item in $projectItems) {
     $inactiveDays = [math]::Max(0, [math]::Floor(($generatedAt - $updatedAt).TotalDays))
 
     $status = Get-PropertyValue $item @("status","Status")
+    $priority = Get-PropertyValue $item @("Prioritet","prioritet","Priority","priority")
     $estimate = Get-PropertyValue $item @("Estimat","estimat")
     $releaseInfo = Get-ReleaseInfo $item
     $release = [string]$releaseInfo.Title
@@ -388,6 +389,7 @@ foreach ($item in $projectItems) {
         Title             = [string]$issue.title
         Url               = [string]$issue.html_url
         Status            = $status
+        Priority          = $priority
         CreatedAt         = $createdAt
         UpdatedAt         = $updatedAt
         AgeDays           = [int]$ageDays
@@ -422,6 +424,10 @@ foreach ($status in $statusOrder) {
             MedianStatusAge = 0
             OldestStatusAge = 0
             Over30          = 0
+            CriticalHigh    = 0
+            Medium          = 0
+            Low             = 0
+            NoPriority      = 0
             Near6           = 0
             Over6           = 0
         }
@@ -448,6 +454,10 @@ foreach ($status in $statusOrder) {
         MedianStatusAge = $medianStatusAge
         OldestStatusAge = $oldestStatusAge
         Over30          = @($stage | Where-Object { $_.StatusAgeKnown -and $_.StatusAgeDays -gt $StatusYellowDays }).Count
+        CriticalHigh    = @($stage | Where-Object { $_.Priority -in @("Kritisk","Høj") }).Count
+        Medium          = @($stage | Where-Object { $_.Priority -eq "Mellem" }).Count
+        Low             = @($stage | Where-Object { $_.Priority -eq "Lav" }).Count
+        NoPriority      = @($stage | Where-Object { [string]::IsNullOrWhiteSpace($_.Priority) }).Count
         Near6           = @($stage | Where-Object { $_.AgeDays -ge 137 -and $_.AgeDays -le 183 }).Count
         Over6           = @($stage | Where-Object { $_.AgeDays -gt 183 }).Count
     }
@@ -479,8 +489,20 @@ foreach ($r in $rows) {
     }
 
     # Gennemsigtighed
+    $isHighPriority = $r.Priority -in @("Kritisk","Høj")
+
+    if ($isHighPriority -and $r.InactiveDays -gt $InactiveYellowDays) {
+        $transparencyRows += [PSCustomObject]@{
+            Row = $r
+            Signal = "🔴"
+            Problem = "$($r.Priority) prioritet og ingen registreret opdatering i $($r.InactiveDays) dage"
+            NextAction = "Status, fremdrift eller blokering opdateres"
+        }
+        Add-Attention $attention $r "🔴" "$($r.Priority) prioritet uden registreret opdatering i $($r.InactiveDays) dage" "Status, fremdrift eller blokering opdateres"
+    }
+
     if ($r.Status -eq "Afventer løsningsbeskrivelse") {
-        if ($r.InactiveDays -gt $InactiveRedDays) {
+        if (-not $isHighPriority -and $r.InactiveDays -gt $InactiveRedDays) {
             $transparencyRows += [PSCustomObject]@{
                 Row = $r
                 Signal = "🔴"
@@ -489,7 +511,7 @@ foreach ($r in $rows) {
             }
             Add-Attention $attention $r "🔴" "Ingen registreret opdatering i $($r.InactiveDays) dage" "Status/afklaring opdateres"
         }
-        elseif ($r.InactiveDays -gt $InactiveYellowDays) {
+        elseif (-not $isHighPriority -and $r.InactiveDays -gt $InactiveYellowDays) {
             $transparencyRows += [PSCustomObject]@{
                 Row = $r
                 Signal = "🟡"
@@ -527,7 +549,7 @@ foreach ($r in $rows) {
     }
 
     if ($r.Status -eq "Igangværende opgaver") {
-        if ($r.InactiveDays -gt $InactiveYellowDays) {
+        if (-not $isHighPriority -and $r.InactiveDays -gt $InactiveYellowDays) {
             $signal = "🟡"
             if ($r.InactiveDays -gt $InactiveRedDays) { $signal = "🔴" }
 
@@ -542,7 +564,7 @@ foreach ($r in $rows) {
     }
 
     if ($r.Status -eq "Løsninger i test") {
-        if ($r.InactiveDays -gt $InactiveYellowDays) {
+        if (-not $isHighPriority -and $r.InactiveDays -gt $InactiveYellowDays) {
             $signal = "🟡"
             if ($r.InactiveDays -gt $InactiveRedDays) { $signal = "🔴" }
 
@@ -565,7 +587,7 @@ $md = New-Object System.Collections.Generic.List[string]
 
 $md.Add("# Leverandøroverblik – OS2sofd")
 $md.Add("")
-$md.Add("> **Formål:** fælles og leverandørneutralt styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**.")
+$md.Add("> **Formål:** fælles og leverandørneutralt styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.")
 $md.Add("")
 $md.Add("Senest genereret: **$($generatedAt.ToString("dd-MM-yyyy HH:mm"))**  ")
 $md.Add("Målsætning for samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning**")
@@ -581,9 +603,9 @@ $md.Add("> **Løsninger i review indgår ikke i v1.** Fasen afventer nærmere af
 $md.Add("")
 $md.Add("> **Om alder:** samlet alder beregnes fra GitHub-issuets oprettelsesdato. Migrerede ønsker kan derfor reelt være ældre.")
 $md.Add("")
-$md.Add("> **Om tid i status:** ``≥`` betyder, at issuet allerede stod i status, da historikmålingen begyndte. Den reelle tid i status kan derfor være længere.")
+$md.Add("> **Om tid i status:** `≥` betyder, at issuet allerede stod i status, da historikmålingen begyndte. Den reelle tid i status kan derfor være længere.")
 $md.Add("")
-$md.Add("> **Om 'senest opdateret':** GitHubs ``updated_at`` bruges som indikator. Det er en proxy og er ikke nødvendigvis det samme som en faglig statusopdatering.")
+$md.Add("> **Om 'senest opdateret':** GitHubs `updated_at` bruges som indikator. Det er en proxy og er ikke nødvendigvis det samme som en faglig statusopdatering.")
 $md.Add("")
 $md.Add("---")
 $md.Add("")
@@ -607,8 +629,8 @@ if ($attentionRows.Count -eq 0) {
     $md.Add("Ingen leverandørsager udløser de aktuelle v1-signaler.")
 }
 else {
-    $md.Add("| Signal | Issue | Status | Tid i status | Samlet GitHub-alder | Opmærksomhed | Næste handling |")
-    $md.Add("| --- | --- | --- | ---: | ---: | --- | --- |")
+    $md.Add("| Signal | Issue | Prioritet | Status | Tid i status | Samlet GitHub-alder | Opmærksomhed | Næste handling |")
+    $md.Add("| --- | --- | --- | --- | ---: | ---: | --- | --- |")
 
     foreach ($a in $attentionRows) {
         $r = $a.Row
@@ -624,7 +646,7 @@ else {
         $reason = ($a.Reasons -join "; ")
         $next = ($a.NextActions -join "; ")
 
-        $md.Add("| $signal | $(Issue-Link $r.Number $r.Title $r.Url) | $(Escape-Md $r.Status) | $(Status-Age-Text $r.StatusAgeDays $r.StatusAgeKnown $r.StatusAgeBaseline) | $(Age-Text $r.AgeDays) | $(Escape-Md $reason) | $(Escape-Md $next) |")
+        $md.Add("| $signal | $(Issue-Link $r.Number $r.Title $r.Url) | $(Escape-Md $r.Priority) | $(Escape-Md $r.Status) | $(Status-Age-Text $r.StatusAgeDays $r.StatusAgeKnown $r.StatusAgeBaseline) | $(Age-Text $r.AgeDays) | $(Escape-Md $reason) | $(Escape-Md $next) |")
     }
 }
 
@@ -639,8 +661,8 @@ $md.Add("Aktive sager i leverandørfaser: **$($rows.Count)**  ")
 $md.Add("GitHub-alder 4,5–6 måneder: **$($near6.Count)**  ")
 $md.Add("GitHub-alder over 6 måneder: **$($over6.Count)**")
 $md.Add("")
-$md.Add("| Status | Antal | Median observeret tid i status | Ældste observerede tid i status | >$StatusYellowDays dage i status | 4,5–6 mdr. samlet alder | >6 mdr. samlet alder |")
-$md.Add("| --- | ---: | ---: | ---: | ---: | ---: | ---: |")
+$md.Add("| Status | Antal | Kritisk/Høj | Mellem | Lav | Uden prioritet | Median observeret tid i status | Ældste observerede tid i status | >$StatusYellowDays dage i status | 4,5–6 mdr. samlet alder | >6 mdr. samlet alder |")
+$md.Add("| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |")
 
 foreach ($f in $flowRows) {
     $medianText = "–"
@@ -654,7 +676,7 @@ foreach ($f in $flowRows) {
         }
     }
 
-    $md.Add("| $(Escape-Md $f.Status) | $($f.Count) | $medianText | $oldestText | $($f.Over30) | $($f.Near6) | $($f.Over6) |")
+    $md.Add("| $(Escape-Md $f.Status) | $($f.Count) | $($f.CriticalHigh) | $($f.Medium) | $($f.Low) | $($f.NoPriority) | $medianText | $oldestText | $($f.Over30) | $($f.Near6) | $($f.Over6) |")
 }
 
 $md.Add("")
@@ -678,25 +700,26 @@ else {
             @{Expression={ $_.Row.AgeDays }; Descending=$true}
     )
 
-    $md.Add("| Signal | Issue | Status | Problem | Næste handling |")
-    $md.Add("| --- | --- | --- | --- | --- |")
+    $md.Add("| Signal | Issue | Prioritet | Status | Problem | Næste handling |")
+    $md.Add("| --- | --- | --- | --- | --- | --- |")
 
     foreach ($x in $transparencyRows) {
         $r = $x.Row
-        $md.Add("| $($x.Signal) | $(Issue-Link $r.Number $r.Title $r.Url) | $(Escape-Md $r.Status) | $(Escape-Md $x.Problem) | $(Escape-Md $x.NextAction) |")
+        $md.Add("| $($x.Signal) | $(Issue-Link $r.Number $r.Title $r.Url) | $(Escape-Md $r.Priority) | $(Escape-Md $r.Status) | $(Escape-Md $x.Problem) | $(Escape-Md $x.NextAction) |")
     }
 }
 
 $md.Add("")
 $md.Add("### Regler i v1")
 $md.Add("")
+$md.Add("- 🔴 `Kritisk` eller `Høj` prioritet uden registreret opdatering i mere end **$InactiveYellowDays dage**.")
 $md.Add("- 🟡 Mere end **$StatusYellowDays dage** i samme leverandørstatus.")
 $md.Add("- 🔴 Mere end **$StatusRedDays dage** i samme leverandørstatus.")
-$md.Add("- ``Afventer løsningsbeskrivelse``: manglende registreret opdatering efter **$InactiveYellowDays dage**; rødt efter **$InactiveRedDays dage**.")
-$md.Add("- ``Afventer løsningsbeskrivelse``: manglende estimat markeres, når sagen har stået mere end **$InactiveYellowDays dage** i status.")
-$md.Add("- ``Bestilt hos leverandør``: planlagt release skal være angivet.")
-$md.Add("- ``Igangværende opgaver``: manglende registreret opdatering efter **$InactiveYellowDays dage**.")
-$md.Add("- ``Løsninger i test``: manglende registreret opdatering efter **$InactiveYellowDays dage**.")
+$md.Add("- `Afventer løsningsbeskrivelse`: manglende registreret opdatering efter **$InactiveYellowDays dage**; rødt efter **$InactiveRedDays dage**.")
+$md.Add("- `Afventer løsningsbeskrivelse`: manglende estimat markeres, når sagen har stået mere end **$InactiveYellowDays dage** i status.")
+$md.Add("- `Bestilt hos leverandør`: planlagt release skal være angivet.")
+$md.Add("- `Igangværende opgaver`: manglende registreret opdatering efter **$InactiveYellowDays dage**.")
+$md.Add("- `Løsninger i test`: manglende registreret opdatering efter **$InactiveYellowDays dage**.")
 $md.Add("")
 $md.Add("---")
 $md.Add("")
