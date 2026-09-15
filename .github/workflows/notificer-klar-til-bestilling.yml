@@ -30,8 +30,8 @@ jobs:
           # PAT med adgang til org Project:
           GH_TOKEN: ${{ secrets.OS2SOFD_PROJECT_TOKEN }}
 
-          # Repoets GITHUB_TOKEN bruges kun til at skrive issue-kommentarer:
-          REPO_TOKEN: ${{ github.token }}
+          # PAT bruges også til at skrive issue-kommentarer, så team-mentions udløser notifikationer:
+          REPO_TOKEN: ${{ secrets.OS2SOFD_PROJECT_TOKEN }}
         run: |
           ./scripts/notifikation/notifikation-klar-til-bestilling.ps1 `
             -StatePath "data/notifikation-klar-til-bestilling.json"
