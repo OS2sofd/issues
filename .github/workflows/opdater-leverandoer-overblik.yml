@@ -1,0 +1,39 @@
+name: Opdater leverandøroverblik
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  opdater:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hent repository
+        uses: actions/checkout@v4
+
+      - name: Generer leverandøroverblik
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.OS2SOFD_PROJECT_TOKEN }}
+        run: |
+          ./scripts/leverandoer-overblik/generer-leverandoer-overblik-v1.ps1 `
+            -OutputPath "docs/leverandoer-overblik.md" `
+            -HistoryPath "data/po-overblik-history.json"
+
+      - name: Commit leverandøroverblik
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- docs/leverandoer-overblik.md)" ]; then
+            echo "Ingen ændringer i leverandøroverblikket."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs/leverandoer-overblik.md
+          git commit -m "chore: opdater leverandøroverblik"
+          git push
