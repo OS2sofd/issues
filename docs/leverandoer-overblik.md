@@ -1,18 +1,18 @@
 # Leverandøroverblik – OS2sofd
 
-> **Formål:** fælles og leverandørneutralt styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.
+> **Formål:** fælles styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.
 
 Senest genereret: **15-09-2026 16:42**  
 Målsætning for samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning**
 
-Følgende faser indgår i v1:
+Følgende status-kolonner indgår i v1:
 
 - Afventer løsningsbeskrivelse
 - Bestilt hos leverandør
 - Igangværende opgaver
 - Løsninger i test
 
-> **Løsninger i review indgår ikke i v1.** Fasen afventer nærmere afklaring og definition af ansvar, test, accept og næste handling.
+> **Løsninger i review indgår ikke i v1.** Denne status-kolonne afventer nærmere afklaring og definition af ansvar, test, accept og næste handling.
 
 > **Om alder:** samlet alder beregnes fra GitHub-issuets oprettelsesdato. Migrerede ønsker kan derfor reelt være ældre.
 
