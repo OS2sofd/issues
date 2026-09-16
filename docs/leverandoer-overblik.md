@@ -1,18 +1,18 @@
 # Leverandøroverblik – OS2sofd
 
-> **Formål:** fælles styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.
+> **Formål:** fælles og leverandørneutralt styringsblik på leverandørdelen af ændringsprocessen med fokus på **1) omløbstid** og **2) gennemsigtighed**. Prioritet vises som en tværgående styringsdimension.
 
-Senest genereret: **15-09-2026 16:42**  
-Målsætning: samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning** og bedre gennemsigtighed i processen
+Senest genereret: **16-09-2026 02:06**  
+Målsætning for samlet omløbstid: **maks. 6 måneder fra idé til færdig løsning**
 
-Følgende status-kolonner indgår i v1:
+Følgende faser indgår i v1:
 
 - Afventer løsningsbeskrivelse
 - Bestilt hos leverandør
 - Igangværende opgaver
 - Løsninger i test
 
-> **Løsninger i review indgår ikke i v1.** Denne status-kolonne afventer nærmere afklaring og definition af ansvar, test, accept og næste handling.
+> **Løsninger i review indgår ikke i v1.** Fasen afventer nærmere afklaring og definition af ansvar, test, accept og næste handling.
 
 > **Om alder:** samlet alder beregnes fra GitHub-issuets oprettelsesdato. Migrerede ønsker kan derfor reelt være ældre.
 
@@ -26,23 +26,23 @@ Følgende status-kolonner indgår i v1:
 
 | Signal | Issue | Prioritet | Status | Tid i status | Samlet GitHub-alder | Opmærksomhed | Næste handling |
 | --- | --- | --- | --- | ---: | ---: | --- | --- |
-| 🟠 | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#12 – Forstå forskel på Ansatte, Eksterne, Byrøddet, Konsulenter, Vikarer, m.m. typer af AD konti](https://github.com/OS2sofd/issues/issues/12) | – | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 179 dage / 5.9 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | – | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
-| 🟠 | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 173 dage / 5.7 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | – | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 178 dage / 5.8 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | Mellem | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 173 dage / 5.7 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 173 dage / 5.7 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
+| 🟠 | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 173 dage / 5.7 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 172 dage / 5.7 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | Lav | Afventer løsningsbeskrivelse | ≥ 11 dage / 0.4 mdr. | 155 dage / 5.1 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
 | 🟠 | [#50 – Mulighed for at opsætte grænser for varigheden af OS2sofd tilhørsforhold](https://github.com/OS2sofd/issues/issues/50) | Høj | Bestilt hos leverandør | 5 dage / 0.2 mdr. | 139 dage / 4.6 mdr. | GitHub-alderen er 4,5–6 måneder | Vurder risiko for at overskride 6-månedersmålet |
