@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-15T15:41:22.9687943+00:00",
+  "updatedAt": "2026-09-17T11:38:47.5633551+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -581,8 +581,8 @@
       "number": 84,
       "title": "At kunne skrive data attribut værdier fra OS2Vikar oprettelse til Data attribut i Active Directory",
       "url": "https://github.com/OS2sofd/issues/issues/84",
-      "status": "Screening",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Won't fix",
+      "lastObserved": "2026-09-17T11:38:47.2849402+00:00"
     },
     "issue-85": {
       "number": 85,
@@ -772,6 +772,13 @@
       "url": "https://github.com/OS2sofd/issues/issues/120",
       "status": "Afventer løsningsbeskrivelse",
       "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+    },
+    "issue-121": {
+      "number": 121,
+      "title": "Ændringsønske - Udfordring ved flere mobilnumre til samme person",
+      "url": "https://github.com/OS2sofd/issues/issues/121",
+      "status": "Nye ændringsønsker",
+      "lastObserved": "2026-09-17T11:38:47.2849402+00:00"
     }
   }
 }
