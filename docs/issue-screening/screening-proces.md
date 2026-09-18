@@ -13,41 +13,50 @@ Målet er at sikre en ensartet, gennemsigtig og sporbar behandling af ændrings�
 
 ## Overordnet proces
 
-Processen består aktuelt af to manuelle trin og én automatisk GitHub-opdatering:
+Processen består aktuelt af tre hovedtrin:
 
 1. Nye ændringsønsker findes og eksporteres fra GitHub.
 2. Ændringsønskerne screenes med AI efter den fastlagte screeningsmodel.
-3. Resultatet anvendes af et deploy-script, som opdaterer GitHub.
+3. Screeningsresultatet kontrolleres med DryRun og anvendes derefter af deploy-scriptet til at opdatere GitHub.
 
-### Faste filnavne
+### Fast lokal arbejdsmappe
+
+Scripts og screeningsfiler håndteres fra:
+
+`C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening`
+
+### Filnavne og arkiv
 
 Eksport fra GitHub:
 
 `OS2sofd-nye-aendringsoensker.json`
 
-Resultat efter screening:
+Screeningsresultatet gemmes med dato, fx:
+
+`OS2sofd-screening-resultat-20260918.json`
+
+Den daterede fil fungerer som arkiv. Før deployment kopieres den til det aktive filnavn:
 
 `OS2sofd-screening-resultat-aktuel.json`
 
-De faste filnavne betyder, at PO ikke skal ændre parametre eller issue-numre mellem kørsler.
+Deploy-scriptet læser som standard den aktive resultatfil fra samme mappe som scriptet.
 
 ---
 
 ## Trin 1 – Find nye ændringsønsker
 
-Kør:
+Start i den faste arbejdsmappe:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-find-nye-aendringsoensker.ps1"
+cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
+.\OS2sofd-find-nye-aendringsoensker.ps1
 ```
 
 Scriptet finder issues i Project-status:
 
 **Nye ændringsønsker**
 
-og opretter filen:
-
-`Downloads\OS2sofd-nye-aendringsoensker.json`
+og genererer JSON-eksporten til den efterfølgende AI-screening.
 
 Hvis der ikke er nye ændringsønsker, skal der ikke gennemføres screening.
 
@@ -260,6 +269,25 @@ Screeningen skelner mellem tre typer spørgsmål:
 
 ---
 
+## Acceptkriterier og ansvar
+
+Færdige acceptkriterier er **ikke et krav for at bestå screeningen**.
+
+Opretter skal først og fremmest beskrive behovet, den ønskede ændring og gerne i almindeligt sprog, hvordan man vil kunne se, at ændringen virker.
+
+Efter screeningen fordeles ansvaret sådan:
+
+- **Opretter** beskriver behovet og det forventede resultat.
+- **PO** ejer formuleringen af de forretningsmæssige acceptkriterier.
+- **Leverandøren** kvalificerer kriterierne teknisk og kan supplere med tekniske testkriterier, edge cases og begrænsninger.
+- De forretningsmæssige acceptkriterier bør være på plads, inden et ændringsønske går videre fra løsningsbeskrivelse til prioritering/bestilling.
+
+Acceptkriterierne skal dermed skabe sammenhæng mellem:
+
+**behov → løsning → test → accept**
+
+---
+
 ## Samlet vurdering
 
 Der anvendes kun to samlede udfald:
@@ -323,26 +351,52 @@ betragtes ikke som faglige kategorier.
 
 `wontfix` må ikke sættes automatisk.
 
+Faglige labels skal så vidt muligt vælges fra den eksisterende label-taksonomi i repoet. Der bør ikke oprettes en ny label, hvis en eksisterende label allerede dækker samme område.
+
+DryRun kontrollerer, at alle foreslåede labels findes i repoet. Hvis en label mangler, stoppes deployment, indtil PO enten:
+
+- vælger en eksisterende dækkende label, eller
+- bevidst opretter en ny label.
+
+Eksempel: hvis `middleware` allerede dækker integrationsområdet, bør der ikke samtidig oprettes en overlappende label som `integration` uden en særskilt begrundelse.
+
 ---
 
 ## GitHub-opdatering
 
-Når screeningsresultatet er gemt som:
+Gem først screeningsresultatet med dato, fx:
 
-`OS2sofd-screening-resultat-aktuel.json`
+`OS2sofd-screening-resultat-20260918.json`
 
-køres først en DryRun:
+Kopiér derefter den daterede fil til det aktive filnavn:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode DryRun
+Copy-Item ".\OS2sofd-screening-resultat-20260918.json" ".\OS2sofd-screening-resultat-aktuel.json"
 ```
+
+Kør altid først en DryRun fra den faste arbejdsmappe:
+
+```powershell
+cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode DryRun
+```
+
+DryRun skal især bruges til at kontrollere:
+
+- antal og identitet på de valgte issues
+- ny status
+- prioritet
+- Kontakt
+- Kommune
+- JIRA-Id
+- labels
+
+DryRun ændrer ikke noget i GitHub.
 
 Hvis resultatet ser korrekt ud, køres:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode Apply
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode Apply
 ```
 
 Deploy-scriptet håndterer:
@@ -366,7 +420,9 @@ Deploy-scriptet håndterer:
 
 Opretter pinges.
 
-Leverandørteamet pinges:
+Leverandørteamet pinges automatisk.
+
+Den aktuelle tekniske team-mention er:
 
 `@OS2sofd/leverandor-digital-identity`
 
@@ -414,6 +470,9 @@ PO-computeren skal have:
 - adgang til repo og GitHub Project
 - nødvendige GitHub scopes
 - PowerShell
+- den lokale arbejdsmappe:
+
+  `C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening`
 
 Hvis PowerShell blokerer scripts i en ny session:
 
@@ -422,6 +481,12 @@ Set-ExecutionPolicy -Scope Process Bypass
 ```
 
 Dette gælder kun den aktuelle PowerShell-session.
+
+---
+
+## Efter screeningen
+
+Når et ændringsønske senere flyttes til **Klar til prioritering**, håndteres koordinationsgruppens notifikation af en særskilt GitHub-automatisering. Det er ikke en del af screening-deploy-scriptet.
 
 ---
 
