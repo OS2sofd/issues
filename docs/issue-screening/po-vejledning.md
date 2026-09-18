@@ -16,6 +16,12 @@ Kommandoen kræver ikke administratorrettigheder og gælder kun det aktuelle Pow
 
 Scriptsene håndterer selv UTF-8/tegnsætning, så der er ikke behov for yderligere initialisering.
 
+Gå derefter til den faste arbejdsmappe:
+
+```powershell
+cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
+```
+
 ---
 
 ## Når nye ændringsønsker skal behandles
@@ -25,14 +31,12 @@ Scriptsene håndterer selv UTF-8/tegnsætning, så der er ikke behov for yderlig
 Kør:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-find-nye-aendringsoensker.ps1"
+.\OS2sofd-find-nye-aendringsoensker.ps1
 ```
 
-Scriptet opretter:
+Scriptet genererer:
 
 `OS2sofd-nye-aendringsoensker.json`
-
-i Downloads.
 
 Kontrollér, at scriptet viser det forventede antal nye ændringsønsker.
 
@@ -46,11 +50,17 @@ Upload:
 
 Bed om screening efter den aftalte OS2sofd-model.
 
-Resultatet skal returneres som:
+Resultatet gemmes med dato, fx:
 
-`OS2sofd-screening-resultat-aktuel.json`
+`OS2sofd-screening-resultat-20260918.json`
 
-Gem filen i Downloads.
+Den daterede fil beholdes som arkiv.
+
+Kopiér derefter filen til det aktive filnavn, som deploy-scriptet læser:
+
+```powershell
+Copy-Item ".\OS2sofd-screening-resultat-20260918.json" ".\OS2sofd-screening-resultat-aktuel.json"
+```
 
 ---
 
@@ -59,8 +69,7 @@ Gem filen i Downloads.
 Kør:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode DryRun
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode DryRun
 ```
 
 Kontrollér især:
@@ -81,8 +90,7 @@ DryRun ændrer ikke noget i GitHub.
 Hvis DryRun ser korrekt ud:
 
 ```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode Apply
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode Apply
 ```
 
 Scriptet opdaterer derefter GitHub.
@@ -100,7 +108,7 @@ Issuet:
 - får Project-felter udfyldt
 - får prioritet sat, hvis prioriteringsgrundlaget er grønt
 - pinger opretter
-- pinger Digital Identity
+- pinger leverandørteamet
 
 PO skal normalt ikke gøre mere på dette trin.
 
@@ -120,6 +128,12 @@ Issuet:
 Prioritet behandles ikke endnu.
 
 Når opretter har svaret, skal issuet screenes igen.
+
+---
+
+## Senere i processen
+
+Når et issue senere flyttes til **Klar til prioritering**, notificeres koordinationsgruppen via en særskilt GitHub-automatisering. Det er ikke en del af screening-deploy-scriptet.
 
 ---
 
@@ -144,6 +158,17 @@ Den fulde definition af kriterierne findes i `screening-proces.md`.
 
 ---
 
+## Acceptkriterier – hvem gør hvad?
+
+Færdige acceptkriterier er ikke et krav for at bestå screeningen.
+
+- **Opretter** beskriver behovet og gerne, hvordan man vil kunne se, at ændringen virker.
+- **PO** formulerer de forretningsmæssige acceptkriterier.
+- **Leverandøren** kvalificerer dem teknisk og kan supplere med tekniske testkriterier.
+- De forretningsmæssige acceptkriterier bør være på plads, inden sagen går videre fra løsningsbeskrivelse til prioritering/bestilling.
+
+---
+
 ## Hvornår skal PO reagere manuelt?
 
 PO skal reagere, hvis:
@@ -154,6 +179,7 @@ PO skal reagere, hvis:
 - en opgave ser ud til at være usædvanligt stor
 - et returneret issue er blevet suppleret af opretter
 - en label eller status ikke virker korrekt
+- DryRun melder, at en foreslået repo-label mangler
 
 ---
 
@@ -172,9 +198,21 @@ PO skal reagere, hvis:
 
 ### "Kan ikke finde deployment-filen"
 
-Kontrollér, at denne fil findes i Downloads:
+Kontrollér, at denne fil findes i den faste arbejdsmappe:
 
-`OS2sofd-screening-resultat-aktuel.json`
+`C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening\OS2sofd-screening-resultat-aktuel.json`
+
+Deploy-scriptet læser som standard resultatfilen fra samme mappe som scriptet.
+
+### "Manglende repo-labels"
+
+Hvis DryRun stopper med fx:
+
+`STOP/FEJL: Manglende repo-labels: ...`
+
+skal `Apply` ikke køres.
+
+Kontrollér først, om en eksisterende repo-label allerede dækker området. Genbrug eksisterende taksonomi frem for at oprette næsten ens labels. Opret kun en ny label, hvis kategorien reelt mangler.
 
 ### Scriptet må ikke køres
 
@@ -199,3 +237,16 @@ Hvis kvoten er opbrugt, vent til reset og kør igen.
 ### Er du i tvivl?
 
 Kør altid `-Mode DryRun` først. DryRun ændrer ikke GitHub.
+
+
+---
+
+## Relateret kørevejledning
+
+Den samlede lokale kørevejledning findes i:
+
+`docs/issue-screening/koerevejledning-screening.md`
+
+Den faste lokale arbejdsmappe er:
+
+`C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening`
