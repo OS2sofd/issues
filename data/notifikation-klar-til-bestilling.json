@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-17T11:38:47.5633551+00:00",
+  "updatedAt": "2026-09-18T11:11:01.3248632+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -777,8 +777,8 @@
       "number": 121,
       "title": "Ændringsønske - Udfordring ved flere mobilnumre til samme person",
       "url": "https://github.com/OS2sofd/issues/issues/121",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-17T11:38:47.2849402+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "lastObserved": "2026-09-18T11:11:01.0314656+00:00"
     }
   }
 }
