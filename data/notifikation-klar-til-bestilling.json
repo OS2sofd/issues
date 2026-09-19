@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-18T11:11:01.3248632+00:00",
+  "updatedAt": "2026-09-19T10:55:32.8527638+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -441,8 +441,8 @@
       "number": 62,
       "title": "Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper",
       "url": "https://github.com/OS2sofd/issues/issues/62",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-64": {
       "number": 64,
@@ -476,8 +476,8 @@
       "number": 68,
       "title": "API-udvidelse til undtagelse/pausemarkering",
       "url": "https://github.com/OS2sofd/issues/issues/68",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-69": {
       "number": 69,
@@ -595,15 +595,15 @@
       "number": 86,
       "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
       "url": "https://github.com/OS2sofd/issues/issues/86",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-87": {
       "number": 87,
       "title": "Begrænse en systemansvarlig's view af it-systemer i OS2Rollekatalog",
       "url": "https://github.com/OS2sofd/issues/issues/87",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-88": {
       "number": 88,
@@ -630,22 +630,22 @@
       "number": 91,
       "title": "Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv",
       "url": "https://github.com/OS2sofd/issues/issues/91",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-92": {
       "number": 92,
       "title": "Konfigurationsindstilling: Jobfunktionsroller og Rollebuketter listes samlet",
       "url": "https://github.com/OS2sofd/issues/issues/92",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-93": {
       "number": 93,
       "title": "Berigelse af titelfelt for skoleelever med klassetrin",
       "url": "https://github.com/OS2sofd/issues/issues/93",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-95": {
       "number": 95,
@@ -658,8 +658,8 @@
       "number": 96,
       "title": "Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer",
       "url": "https://github.com/OS2sofd/issues/issues/96",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-97": {
       "number": 97,
@@ -742,15 +742,15 @@
       "number": 112,
       "title": "Migrering til Datafordeleren til CPR opslag",
       "url": "https://github.com/OS2sofd/issues/issues/112",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-113": {
       "number": 113,
       "title": "Indlæsning af Mit Erhverv status til OS2Sofd",
       "url": "https://github.com/OS2sofd/issues/issues/113",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-118": {
       "number": 118,
@@ -763,22 +763,22 @@
       "number": 119,
       "title": "Forbedret logning/dokumentation af ordredannelser.",
       "url": "https://github.com/OS2sofd/issues/issues/119",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-120": {
       "number": 120,
       "title": "Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen",
       "url": "https://github.com/OS2sofd/issues/issues/120",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     },
     "issue-121": {
       "number": 121,
       "title": "Ændringsønske - Udfordring ved flere mobilnumre til samme person",
       "url": "https://github.com/OS2sofd/issues/issues/121",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-18T11:11:01.0314656+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
     }
   }
 }
