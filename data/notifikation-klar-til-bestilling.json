@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-19T10:55:32.8527638+00:00",
+  "updatedAt": "2026-09-19T14:23:33.8129311+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -504,8 +504,8 @@
       "number": 72,
       "title": "Ekstra data på skoleelever",
       "url": "https://github.com/OS2sofd/issues/issues/72",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-73": {
       "number": 73,
@@ -539,8 +539,8 @@
       "number": 78,
       "title": "Bjælke for oven og i venstre side, skal fryses fast",
       "url": "https://github.com/OS2sofd/issues/issues/78",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-79": {
       "number": 79,
@@ -553,15 +553,15 @@
       "number": 80,
       "title": "ÆndringsønskeUdvidet information ved anmodning om rolle i OS2Rolekatalog Anmod/Godkend",
       "url": "https://github.com/OS2sofd/issues/issues/80",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-81": {
       "number": 81,
       "title": "At kunne ændre afsendernavn på mails fra Rollekatalog",
       "url": "https://github.com/OS2sofd/issues/issues/81",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-82": {
       "number": 82,
@@ -609,22 +609,22 @@
       "number": 88,
       "title": "Ny kolonne i rapporten 'Historiske rolleanmodninger', så man kan se hvilket IT-System de forskellige roller er tilknyttet",
       "url": "https://github.com/OS2sofd/issues/issues/88",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-89": {
       "number": 89,
       "title": "Udvide 'Status' typer for tildeling af rettigheder med 'Tildelt ved godkendt anmodning'.",
       "url": "https://github.com/OS2sofd/issues/issues/89",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-90": {
       "number": 90,
       "title": "At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek",
       "url": "https://github.com/OS2sofd/issues/issues/90",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
     },
     "issue-91": {
       "number": 91,
