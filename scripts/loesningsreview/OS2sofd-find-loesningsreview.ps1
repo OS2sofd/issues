@@ -301,6 +301,18 @@ if ($comments.Count -gt 0) {
     ).id
 }
 
+# Hvis issuet allerede er reviewet, og der ikke er kommet nye kommentarer,
+# er der intet nyt reviewgrundlag. Stop uden at oprette en ny inputfil.
+if ($null -ne $latestPreviousReview -and @($newCommentsSinceLastReview).Count -eq 0) {
+    Write-Host ""
+    Write-Host "Tidligere PO-review fundet: review $($latestPreviousReview.review_number)." -ForegroundColor Green
+    Write-Host "Senest reviewet t.o.m. kommentar: $lastReviewedThroughCommentId"
+    Write-Host "Nye kommentarer siden seneste review: 0"
+    Write-Host ""
+    Write-Host "Ingen handling: Issue #$IssueNumber skal ikke reviewes igen." -ForegroundColor Green
+    exit 0
+}
+
 $contextComments = @(
     $comments | ForEach-Object {
         [ordered]@{
