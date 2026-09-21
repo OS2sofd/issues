@@ -148,16 +148,24 @@ try {
 
         Write-Host "Kontrollerer issue #${number}: $title" -ForegroundColor DarkGray
 
-        $processOutput = & $pwshExe `
-            -NoProfile `
-            -File $SingleReviewScript `
-            -IssueNumber $number `
-            -Owner $Owner `
-            -Repo $Repo `
-            -ProjectNumber $ProjectNumber `
-            -OutputPath $tempFile 2>&1
+        $oldPreference = $ErrorActionPreference
 
-        $exitCode = $LASTEXITCODE
+        try {
+            $ErrorActionPreference = "Continue"
+
+            $processOutput = & $pwshExe `
+                -NoProfile `
+                -File $SingleReviewScript `
+                -IssueNumber $number `
+                -Owner $Owner `
+                -Repo $Repo `
+                -OutputPath $tempFile 2>&1
+
+            $exitCode = $LASTEXITCODE
+        }
+        finally {
+            $ErrorActionPreference = $oldPreference
+        }
 
         if ($exitCode -ne 0) {
             $errorCount++
