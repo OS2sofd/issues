@@ -497,8 +497,12 @@ if ($null -ne $latestPreviousReview) {
 $newCommentsSinceLastReview = @(
     $comments |
     Where-Object {
+        $body = [string]$_.body
+
         [long]$_.id -gt $lastReviewedThroughCommentId -and
-        [string]$_.body -notmatch 'os2sofd-loesningsreview-v1'
+        $body -notmatch 'os2sofd-loesningsreview-v1' -and
+        $body -notmatch 'os2sofd-klar-til-bestilling' -and
+        $body -notmatch 'os2sofd-screening-v3'
     } |
     Sort-Object created_at
 )
