@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-21T13:42:42.7486980+00:00",
+  "updatedAt": "2026-09-21T13:53:43.2347743+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -120,7 +120,9 @@
       "title": "OS2ILM: Flytning af ILM-oprettede konsulenter",
       "url": "https://github.com/OS2sofd/issues/issues/105",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "2026-09-21T13:53:40.8484264+00:00",
+      "lastObserved": "2026-09-21T13:53:40.8484264+00:00"
     },
     "issue-58": {
       "number": 58,
