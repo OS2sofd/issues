@@ -246,6 +246,55 @@ Kør scriptet igen med -SolutionCommentId <id> for at vælge kommentaren manuelt
 
 $estimate = Find-EstimateInComment -Body ([string]$solutionComment.body)
 
+
+# Find tidligere PO-reviews og identificer nye kommentarer siden seneste review.
+$reviewMarkerPattern = '<!--\s*os2sofd-loesningsreview-v1\s+issue:(\d+)\s+review:(\d+)\s+reviewed-through-comment:(\d+)\s*-->'
+
+$previousReviews = @()
+
+foreach ($comment in $comments) {
+    $match = [regex]::Match([string]$comment.body, $reviewMarkerPattern)
+    if ($match.Success) {
+        $previousReviews += [pscustomobject]@{
+            comment_id                = [long]$comment.id
+            review_number             = [int]$match.Groups[2].Value
+            reviewed_through_comment_id = [long]$match.Groups[3].Value
+            author                    = [string]$comment.user.login
+            created_at                = [string]$comment.created_at
+        }
+    }
+}
+
+$latestPreviousReview = @(
+    $previousReviews | Sort-Object review_number -Descending
+) | Select-Object -First 1
+
+$nextReviewNumber = 1
+$lastReviewedThroughCommentId = 0
+
+if ($null -ne $latestPreviousReview) {
+    $nextReviewNumber = [int]$latestPreviousReview.review_number + 1
+    $lastReviewedThroughCommentId = [long]$latestPreviousReview.reviewed_through_comment_id
+}
+
+$newCommentsSinceLastReview = @(
+    $comments |
+    Where-Object {
+        [long]$_.id -gt $lastReviewedThroughCommentId -and
+        [string]$_.body -notmatch 'os2sofd-loesningsreview-v1'
+    } |
+    Sort-Object created_at
+)
+
+$currentReviewedThroughCommentId = 0
+if ($comments.Count -gt 0) {
+    $currentReviewedThroughCommentId = [long](
+        $comments |
+        Sort-Object { [long]$_.id } -Descending |
+        Select-Object -First 1
+    ).id
+}
+
 $contextComments = @(
     $comments | ForEach-Object {
         [ordered]@{
@@ -283,6 +332,39 @@ $result = [ordered]@{
         body             = [string]$solutionComment.body
     }
 
+    review_state = [ordered]@{
+        previous_review_count             = @($previousReviews).Count
+        next_review_number                = $nextReviewNumber
+        last_reviewed_through_comment_id  = $lastReviewedThroughCommentId
+        reviewed_through_comment_id       = $currentReviewedThroughCommentId
+        new_comment_count_since_last_review = @($newCommentsSinceLastReview).Count
+        has_new_comments_since_last_review  = (@($newCommentsSinceLastReview).Count -gt 0)
+    }
+
+    previous_reviews = @(
+        $previousReviews | ForEach-Object {
+            [ordered]@{
+                comment_id                  = $_.comment_id
+                review_number               = $_.review_number
+                reviewed_through_comment_id = $_.reviewed_through_comment_id
+                author                      = $_.author
+                created_at                  = $_.created_at
+            }
+        }
+    )
+
+    new_comments_since_last_review = @(
+        $newCommentsSinceLastReview | ForEach-Object {
+            [ordered]@{
+                id         = [long]$_.id
+                author     = [string]$_.user.login
+                created_at = [string]$_.created_at
+                updated_at = [string]$_.updated_at
+                body       = [string]$_.body
+            }
+        }
+    )
+
     estimate = [ordered]@{
         found      = [bool]$estimate.found
         ambiguous  = [bool]$estimate.ambiguous
@@ -317,6 +399,18 @@ else {
 }
 
 Write-Host ""
+if ($null -eq $latestPreviousReview) {
+    Write-Host "  Tidligere PO-review: Ingen"
+    Write-Host "  Næste reviewnr.:     1"
+}
+else {
+    Write-Host "  Tidligere PO-reviews: $(@($previousReviews).Count)"
+    Write-Host "  Senest reviewet t.o.m. kommentar: $lastReviewedThroughCommentId"
+    Write-Host "  Nye kommentarer siden seneste review: $(@($newCommentsSinceLastReview).Count)"
+    Write-Host "  Næste reviewnr.: $nextReviewNumber"
+}
+Write-Host ""
+
 Write-Host "Review-input gemt:" -ForegroundColor Cyan
 Write-Host "  $OutputPath"
 Write-Host ""
