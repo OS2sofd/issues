@@ -6,7 +6,11 @@ param(
     [string]$Mode = "DryRun",
 
     [string]$Owner = "OS2sofd",
-    [string]$Repo = "issues"
+    [string]$Repo = "issues",
+
+    [string]$ProjectOwner = "OS2sofd",
+    [int]$ProjectNumber = 1,
+    [string]$EstimateFieldName = "Estimat"
 )
 
 $ErrorActionPreference = "Stop"
@@ -37,6 +41,110 @@ function Invoke-GhJson {
     }
 
     return $text | ConvertFrom-Json
+}
+
+
+function Set-ProjectEstimate {
+    param(
+        [Parameter(Mandatory = $true)]
+        [int]$IssueNumber,
+
+        [Parameter(Mandatory = $true)]
+        [string]$Estimate,
+
+        [Parameter(Mandatory = $true)]
+        [ValidateSet("DryRun", "Apply")]
+        [string]$Mode
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Estimate)) {
+        Write-Host "Estimat: ingen værdi i review-resultatet. Project-feltet ændres ikke." -ForegroundColor DarkGray
+        return
+    }
+
+    $project = Invoke-GhJson -Arguments @(
+        "project", "view",
+        "$ProjectNumber",
+        "--owner", "$ProjectOwner",
+        "--format", "json"
+    )
+
+    $projectId = [string]$project.id
+    if ([string]::IsNullOrWhiteSpace($projectId)) {
+        throw "Kunne ikke finde Project ID for $ProjectOwner / #$ProjectNumber."
+    }
+
+    $fields = Invoke-GhJson -Arguments @(
+        "project", "field-list",
+        "$ProjectNumber",
+        "--owner", "$ProjectOwner",
+        "--format", "json"
+    )
+
+    $field = @(
+        $fields.fields | Where-Object { $_.name -eq $EstimateFieldName }
+    ) | Select-Object -First 1
+
+    if ($null -eq $field) {
+        throw "Kunne ikke finde Project-feltet '$EstimateFieldName'."
+    }
+
+    $items = Invoke-GhJson -Arguments @(
+        "project", "item-list",
+        "$ProjectNumber",
+        "--owner", "$ProjectOwner",
+        "--format", "json",
+        "--limit", "1000"
+    )
+
+    $item = @(
+        $items.items | Where-Object {
+            $_.content.repository -eq "$Owner/$Repo" -and
+            $_.content.number -eq $IssueNumber
+        }
+    ) | Select-Object -First 1
+
+    if ($null -eq $item) {
+        throw "Issue #$IssueNumber blev ikke fundet i Project #$ProjectNumber."
+    }
+
+    $currentEstimate = ""
+    $estimateProp = $item.PSObject.Properties |
+        Where-Object { $_.Name -ieq $EstimateFieldName } |
+        Select-Object -First 1
+
+    if ($null -ne $estimateProp -and $null -ne $estimateProp.Value) {
+        $currentEstimate = [string]$estimateProp.Value
+    }
+
+    if ($currentEstimate -eq $Estimate) {
+        Write-Host "Estimat: Project-feltet er allerede '$Estimate'." -ForegroundColor Green
+        return
+    }
+
+    if ([string]::IsNullOrWhiteSpace($currentEstimate)) {
+        Write-Host "Estimat: sætter '$EstimateFieldName' til '$Estimate'." -ForegroundColor Yellow
+    }
+    else {
+        Write-Host "Estimat: ændrer '$EstimateFieldName' fra '$currentEstimate' til '$Estimate'." -ForegroundColor Yellow
+    }
+
+    if ($Mode -eq "DryRun") {
+        Write-Host "DRY RUN: Estimat ændres ikke." -ForegroundColor Yellow
+        return
+    }
+
+    & gh project item-edit `
+        --id $item.id `
+        --project-id $projectId `
+        --field-id $field.id `
+        --text $Estimate
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Kunne ikke opdatere Project-feltet '$EstimateFieldName'."
+    }
+
+    Write-Host "OK: Estimat på issue #$IssueNumber er sat til $Estimate." -ForegroundColor Green
 }
 
 function Add-Line {
@@ -233,6 +341,15 @@ Write-Host "Reviewkommentar for issue #$issueNumber" -ForegroundColor Cyan
 Write-Host "------------------------------------------------------------"
 Write-Host $body
 Write-Host "------------------------------------------------------------"
+Write-Host ""
+
+# Estimat håndteres som en del af samme DryRun/Apply som reviewkommentaren.
+# Dermed er der ikke længere behov for at køre et separat pris-script.
+Set-ProjectEstimate `
+    -IssueNumber $issueNumber `
+    -Estimate ([string]$result.estimate) `
+    -Mode $Mode
+
 Write-Host ""
 
 # Beskyt mod at samme review-resultat postes flere gange.
