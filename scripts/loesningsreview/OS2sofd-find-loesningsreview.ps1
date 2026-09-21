@@ -159,6 +159,176 @@ function Find-EstimateInComment {
     }
 }
 
+
+function Get-IssueFormValue {
+    param(
+        [Parameter(Mandatory = $true)]
+        [AllowEmptyString()]
+        [string]$Body,
+
+        [Parameter(Mandatory = $true)]
+        [string]$Heading
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Body)) {
+        return ""
+    }
+
+    $escapedHeading = [regex]::Escape($Heading)
+    $pattern = "(?ms)^###\s*$escapedHeading\s*\r?\n+(?<value>.*?)(?=^###\s|\z)"
+    $match = [regex]::Match($Body, $pattern)
+
+    if (-not $match.Success) {
+        return ""
+    }
+
+    $value = $match.Groups["value"].Value.Trim()
+
+    if ($value -match '^(?i)_?No response_?$') {
+        return ""
+    }
+
+    return $value
+}
+
+function Normalize-PersonName {
+    param(
+        [AllowEmptyString()]
+        [string]$Name
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Name)) {
+        return ""
+    }
+
+    $value = $Name.Trim().ToLowerInvariant()
+    $value = $value -replace '\s+', ' '
+    return $value
+}
+
+function Test-GitHubUserMatchesContact {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Login,
+
+        [Parameter(Mandatory = $true)]
+        [string]$ContactName
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Login) -or [string]::IsNullOrWhiteSpace($ContactName)) {
+        return $false
+    }
+
+    try {
+        $profile = Invoke-GhJson -Arguments @(
+            "api",
+            "users/$Login"
+        )
+
+        $profileName = [string]$profile.name
+        if ([string]::IsNullOrWhiteSpace($profileName)) {
+            return $false
+        }
+
+        return (
+            (Normalize-PersonName -Name $profileName) -eq
+            (Normalize-PersonName -Name $ContactName)
+        )
+    }
+    catch {
+        return $false
+    }
+}
+
+function Resolve-ContactGitHub {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$ContactName,
+
+        [Parameter(Mandatory = $true)]
+        [string]$IssueAuthor,
+
+        [Parameter(Mandatory = $true)]
+        [string]$Owner,
+
+        [Parameter(Mandatory = $true)]
+        [string]$Repo
+    )
+
+    if ([string]::IsNullOrWhiteSpace($ContactName)) {
+        return [pscustomobject]@{
+            login  = ""
+            method = "no_contact_name"
+        }
+    }
+
+    # Første og billigste kontrol: svarer issue-forfatterens GitHub-profil
+    # faktisk til kontaktpersonen i formularen?
+    if (
+        -not [string]::IsNullOrWhiteSpace($IssueAuthor) -and
+        (Test-GitHubUserMatchesContact -Login $IssueAuthor -ContactName $ContactName)
+    ) {
+        return [pscustomobject]@{
+            login  = $IssueAuthor
+            method = "issue_author_profile_match"
+        }
+    }
+
+    # Hvis ikke: se efter andre issues i samme repo med samme kontaktperson.
+    # Et GitHub-login accepteres kun, hvis profilens navn også matcher
+    # kontaktpersonen. Dermed undgår vi at antage, at issue-forfatter = kontakt.
+    try {
+        $repoIssues = Invoke-GhJson -Arguments @(
+            "issue", "list",
+            "--repo", "$Owner/$Repo",
+            "--state", "all",
+            "--limit", "1000",
+            "--json", "number,author,body"
+        )
+
+        $candidateLogins = @()
+
+        foreach ($repoIssue in @($repoIssues)) {
+            $body = [string]$repoIssue.body
+            $name = Get-IssueFormValue -Body $body -Heading "Navn"
+
+            if (
+                -not [string]::IsNullOrWhiteSpace($name) -and
+                (Normalize-PersonName -Name $name) -eq (Normalize-PersonName -Name $ContactName)
+            ) {
+                $login = [string]$repoIssue.author.login
+                if (-not [string]::IsNullOrWhiteSpace($login)) {
+                    $candidateLogins += $login
+                }
+            }
+        }
+
+        $candidateLogins = @($candidateLogins | Sort-Object -Unique)
+
+        $verified = @(
+            $candidateLogins |
+            Where-Object {
+                Test-GitHubUserMatchesContact -Login $_ -ContactName $ContactName
+            }
+        )
+
+        if ($verified.Count -eq 1) {
+            return [pscustomobject]@{
+                login  = [string]$verified[0]
+                method = "verified_from_other_issue"
+            }
+        }
+    }
+    catch {
+        # Manglende opslag må ikke stoppe review-input.
+    }
+
+    return [pscustomobject]@{
+        login  = ""
+        method = "unresolved"
+    }
+}
+
 function Get-SolutionCommentScore {
     param(
         [Parameter(Mandatory = $true)]
@@ -198,6 +368,16 @@ $commentsRaw = Invoke-GhJson -Arguments @(
 )
 
 $comments = @($commentsRaw)
+
+$contactName = Get-IssueFormValue -Body ([string]$issue.body) -Heading "Navn"
+$contactEmail = Get-IssueFormValue -Body ([string]$issue.body) -Heading "Mail"
+$contactMunicipality = Get-IssueFormValue -Body ([string]$issue.body) -Heading "Kommune"
+
+$contactResolution = Resolve-ContactGitHub `
+    -ContactName $contactName `
+    -IssueAuthor ([string]$issue.user.login) `
+    -Owner $Owner `
+    -Repo $Repo
 
 if ($comments.Count -eq 0) {
     throw "Issue #$IssueNumber har ingen kommentarer. Der kan ikke identificeres en løsningsbeskrivelse."
@@ -341,6 +521,14 @@ $result = [ordered]@{
         labels     = @($issue.labels | ForEach-Object { [string]$_.name })
     }
 
+    contact = [ordered]@{
+        name              = $contactName
+        email             = $contactEmail
+        municipality      = $contactMunicipality
+        github            = [string]$contactResolution.login
+        resolution_method = [string]$contactResolution.method
+    }
+
     solution_comment = [ordered]@{
         id               = [long]$solutionComment.id
         author           = [string]$solutionComment.user.login
@@ -405,6 +593,22 @@ Write-Host "Løsningsbeskrivelse fundet:" -ForegroundColor Green
 Write-Host "  Kommentar: $($solutionComment.id)"
 Write-Host "  Forfatter: @$($solutionComment.user.login)"
 Write-Host "  Valg:      $selectionMethod"
+Write-Host ""
+Write-Host "Kontaktperson:" -ForegroundColor Cyan
+Write-Host "  Navn:      $contactName"
+if (-not [string]::IsNullOrWhiteSpace($contactEmail)) {
+    Write-Host "  Mail:      $contactEmail"
+}
+if (-not [string]::IsNullOrWhiteSpace($contactMunicipality)) {
+    Write-Host "  Kommune:   $contactMunicipality"
+}
+if (-not [string]::IsNullOrWhiteSpace([string]$contactResolution.login)) {
+    Write-Host "  GitHub:    @$($contactResolution.login)"
+    Write-Host "  Opløst via: $($contactResolution.method)"
+}
+else {
+    Write-Host "  GitHub:    ikke identificeret automatisk"
+}
 
 if ($estimate.found) {
     Write-Host "  Estimat:   $($estimate.raw) -> $($estimate.normalized)"
