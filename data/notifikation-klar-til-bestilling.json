@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-21T14:08:57.8892645+00:00",
+  "updatedAt": "2026-09-21T22:13:46.8059005+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -396,8 +396,10 @@
       "number": 101,
       "title": "OS2ILM: Tildeling af leder via Virksomhed",
       "url": "https://github.com/OS2sofd/issues/issues/101",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-21T22:13:45.7559749+00:00"
     },
     "issue-48": {
       "number": 48,
@@ -730,15 +732,19 @@
       "number": 102,
       "title": "OS2ILM: Mere specifik log",
       "url": "https://github.com/OS2sofd/issues/issues/102",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-21T22:13:45.7559749+00:00"
     },
     "issue-103": {
       "number": 103,
       "title": "OS2ILM: Visning af firma og navn",
       "url": "https://github.com/OS2sofd/issues/issues/103",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-21T22:13:45.7559749+00:00"
     },
     "issue-104": {
       "number": 104,
