@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-21T13:53:43.2347743+00:00",
+  "updatedAt": "2026-09-21T14:08:57.8892645+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -439,7 +439,9 @@
       "title": "OS2sofd - ilm: udfyld displayName ved oprettelse af konsulent",
       "url": "https://github.com/OS2sofd/issues/issues/59",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "2026-09-21T14:08:55.7429553+00:00",
+      "lastObserved": "2026-09-21T14:08:55.7429553+00:00"
     },
     "issue-60": {
       "number": 60,
