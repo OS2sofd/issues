@@ -12,6 +12,17 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Sørg for korrekt UTF-8 ved output fra native kommandoer som GitHub CLI (gh).
+# Det er især vigtigt for danske tegn i issue-tekst og kommentarer.
+$Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[Console]::InputEncoding = $Utf8NoBom
+[Console]::OutputEncoding = $Utf8NoBom
+$OutputEncoding = $Utf8NoBom
+
+if ($env:OS -eq "Windows_NT") {
+    & chcp 65001 *> $null
+}
+
 function Invoke-GhJson {
     param(
         [Parameter(Mandatory = $true)]
