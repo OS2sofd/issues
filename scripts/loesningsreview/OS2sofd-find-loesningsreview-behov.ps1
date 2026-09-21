@@ -21,20 +21,51 @@ if ($env:OS -eq "Windows_NT") {
 function Invoke-GhJson {
     param(
         [Parameter(Mandatory = $true)]
-        [string[]]$Arguments
+        [string[]]$Arguments,
+
+        [int]$MaxAttempts = 3
     )
 
-    $output = & gh @Arguments 2>&1
-    if ($LASTEXITCODE -ne 0) {
-        throw "gh fejlede: $($output -join "`n")"
-    }
+    for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
+        $oldPreference = $ErrorActionPreference
 
-    $text = $output -join "`n"
-    if ([string]::IsNullOrWhiteSpace($text)) {
-        return $null
-    }
+        try {
+            # Windows PowerShell kan ellers gøre stderr fra gh til en
+            # terminating NativeCommandError, før vi selv kan håndtere fejlen.
+            $ErrorActionPreference = "Continue"
+            $output = & gh @Arguments 2>&1
+            $exitCode = $LASTEXITCODE
+        }
+        finally {
+            $ErrorActionPreference = $oldPreference
+        }
 
-    return $text | ConvertFrom-Json
+        $text = ($output -join "`n").Trim()
+
+        if ($exitCode -eq 0) {
+            if ([string]::IsNullOrWhiteSpace($text)) {
+                return $null
+            }
+
+            return $text | ConvertFrom-Json
+        }
+
+        $isTransient = (
+            $text -match '(?i)502|Bad Gateway|' +
+                         '503|Service Unavailable|' +
+                         '504|Gateway Timeout|' +
+                         'temporarily unavailable'
+        )
+
+        if ($isTransient -and $attempt -lt $MaxAttempts) {
+            $waitSeconds = 3 * $attempt
+            Write-Warning "Midlertidig GitHub-fejl ved gh $($Arguments -join ' '). Forsøg $attempt/$MaxAttempts. Prøver igen om $waitSeconds sek."
+            Start-Sleep -Seconds $waitSeconds
+            continue
+        }
+
+        throw "gh fejlede efter $attempt forsøg: $text"
+    }
 }
 
 function Get-ItemStatus {
