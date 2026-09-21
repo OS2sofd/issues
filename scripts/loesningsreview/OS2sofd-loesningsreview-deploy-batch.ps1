@@ -55,15 +55,22 @@ function Invoke-GhJson {
 }
 
 function Get-GraphQlRateLimit {
-    $rate = Invoke-GhJson -Arguments @("api", "rate_limit")
+    # Brug GraphQLs egen rateLimit-status. REST-endpointet /rate_limit kan
+    # i praksis vise en anden/stale værdi end den kvote, som gh project bruger.
+    $query = 'query { viewer { login } rateLimit { limit remaining used resetAt } }'
+
+    $rateResponse = Invoke-GhJson -Arguments @(
+        "api", "graphql",
+        "-f", "query=$query"
+    )
+
+    $rate = $rateResponse.data.rateLimit
 
     return [pscustomobject]@{
-        Remaining = [int]$rate.resources.graphql.remaining
-        Limit     = [int]$rate.resources.graphql.limit
-        ResetUnix = [long]$rate.resources.graphql.reset
-        ResetAt   = [DateTimeOffset]::FromUnixTimeSeconds(
-            [long]$rate.resources.graphql.reset
-        ).ToLocalTime()
+        Remaining = [int]$rate.remaining
+        Limit     = [int]$rate.limit
+        Used      = [int]$rate.used
+        ResetAt   = [DateTimeOffset]::Parse([string]$rate.resetAt).ToLocalTime()
     }
 }
 
@@ -168,6 +175,7 @@ else {
     Write-Host ""
     Write-Host "GraphQL-kvote:" -ForegroundColor Cyan
     Write-Host "  Tilbage: $($rate.Remaining) / $($rate.Limit)"
+    Write-Host "  Brugt:   $($rate.Used)"
     Write-Host "  Reset:   $($rate.ResetAt.ToString('yyyy-MM-dd HH:mm:ss zzz'))"
     Write-Host "  Behov, worst case: $requiredWorstCase + $safetyMargin sikkerhedsmargin"
 
