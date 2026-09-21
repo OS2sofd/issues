@@ -66,6 +66,7 @@ function Convert-ToEstimateValue {
 function Normalize-MarkdownLine {
     param(
         [Parameter(Mandatory = $true)]
+        [AllowEmptyString()]
         [string]$Line
     )
 
