@@ -61,6 +61,32 @@ $issueNumber = [int]$result.issue_number
 $solutionAuthor = [string]$result.solution_author
 $issueAuthor = [string]$result.issue_author
 
+$contactName = ""
+$contactGithub = ""
+$mentionContact = $false
+
+if ($null -ne $result.contact_name) {
+    $contactName = [string]$result.contact_name
+}
+elseif ($null -ne $result.contact -and $null -ne $result.contact.name) {
+    $contactName = [string]$result.contact.name
+}
+
+if ($null -ne $result.contact_github) {
+    $contactGithub = [string]$result.contact_github
+}
+elseif ($null -ne $result.contact -and $null -ne $result.contact.github) {
+    $contactGithub = [string]$result.contact.github
+}
+
+if ($null -ne $result.mention_contact) {
+    $mentionContact = [bool]$result.mention_contact
+}
+elseif ($null -ne $result.mention_contact_github) {
+    # Bagudkompatibilitet med enkelte tidlige review-resultater.
+    $mentionContact = [bool]$result.mention_contact_github
+}
+
 $reviewNumber = 1
 if ($null -ne $result.review_number -and [int]$result.review_number -gt 0) {
     $reviewNumber = [int]$result.review_number
@@ -94,10 +120,20 @@ if (-not [string]::IsNullOrWhiteSpace($solutionAuthor)) {
 }
 
 if (
+    $mentionContact -and
+    -not [string]::IsNullOrWhiteSpace($contactGithub) -and
+    $contactGithub -ne $solutionAuthor
+) {
+    [void]$mentions.Add("@$contactGithub")
+}
+elseif (
+    $null -eq $result.mention_contact -and
+    $null -eq $result.mention_contact_github -and
     $result.mention_issue_author -eq $true -and
     -not [string]::IsNullOrWhiteSpace($issueAuthor) -and
     $issueAuthor -ne $solutionAuthor
 ) {
+    # Kun bagudkompatibilitet. Nye reviews skal bruge kontaktpersonen.
     [void]$mentions.Add("@$issueAuthor")
 }
 
@@ -144,6 +180,15 @@ if ($questions.Count -gt 0) {
     Add-Line $lines ""
     Add-Line $lines "### Afklaring"
     Add-Line $lines ""
+
+    if (
+        $mentionContact -and
+        [string]::IsNullOrWhiteSpace($contactGithub) -and
+        -not [string]::IsNullOrWhiteSpace($contactName)
+    ) {
+        Add-Line $lines ("**Kontaktperson:** " + $contactName + " – GitHub-brugernavn kunne ikke identificeres automatisk.")
+        Add-Line $lines ""
+    }
 
     if (-not [string]::IsNullOrWhiteSpace($solutionAuthor)) {
         Add-Line $lines "@$solutionAuthor Kan du kort supplere:"
