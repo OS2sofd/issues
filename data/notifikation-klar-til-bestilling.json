@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-21T12:44:38.8261061+00:00",
+  "updatedAt": "2026-09-21T13:42:42.7486980+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -204,7 +204,9 @@
       "title": "Person tilhørsforhold - Tilføj markering af primært tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/9",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-10": {
       "number": 10,
@@ -218,7 +220,9 @@
       "title": "Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/11",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-12": {
       "number": 12,
@@ -239,7 +243,9 @@
       "title": "Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti",
       "url": "https://github.com/OS2sofd/issues/issues/15",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-16": {
       "number": 16,
@@ -253,7 +259,9 @@
       "title": "SOFD GUI: Udvidet overblik over tilhørsforhold og typer",
       "url": "https://github.com/OS2sofd/issues/issues/17",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-18": {
       "number": 18,
@@ -295,14 +303,18 @@
       "title": "Prefix i AD Event Dispatcher",
       "url": "https://github.com/OS2sofd/issues/issues/24",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-25": {
       "number": 25,
       "title": "Brugertjek: Udvidelse af informationer i tilhørforholdstabellen",
       "url": "https://github.com/OS2sofd/issues/issues/25",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-26": {
       "number": 26,
@@ -316,7 +328,9 @@
       "title": "Oprettelse af KSP/CICS konti på baggrund af rolletildelinger",
       "url": "https://github.com/OS2sofd/issues/issues/27",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-28": {
       "number": 28,
@@ -365,7 +379,9 @@
       "title": "Auto-opdatere enheder i FK Organisation ved nye KLE emner",
       "url": "https://github.com/OS2sofd/issues/issues/36",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T12:42:57.6501305+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-37": {
       "number": 37,
@@ -442,7 +458,9 @@
       "title": "Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper",
       "url": "https://github.com/OS2sofd/issues/issues/62",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-64": {
       "number": 64,
@@ -456,7 +474,9 @@
       "title": "NexusSync - automatisk luk af konti udenfor \"nexus organisationen\"",
       "url": "https://github.com/OS2sofd/issues/issues/65",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T12:35:23.3063891+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-66": {
       "number": 66,
@@ -512,7 +532,9 @@
       "title": "OS2sofd Kommunikationsmodul - Ønsker til forbedringer",
       "url": "https://github.com/OS2sofd/issues/issues/73",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-74": {
       "number": 74,
@@ -540,7 +562,9 @@
       "title": "Bjælke for oven og i venstre side, skal fryses fast",
       "url": "https://github.com/OS2sofd/issues/issues/78",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-79": {
       "number": 79,
@@ -568,14 +592,18 @@
       "title": "ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/82",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-83": {
       "number": 83,
       "title": "At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/83",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T13:07:33.0514491+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-84": {
       "number": 84,
@@ -589,14 +617,18 @@
       "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
       "url": "https://github.com/OS2sofd/issues/issues/85",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-86": {
       "number": 86,
       "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
       "url": "https://github.com/OS2sofd/issues/issues/86",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-87": {
       "number": 87,
@@ -631,7 +663,9 @@
       "title": "Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv",
       "url": "https://github.com/OS2sofd/issues/issues/91",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-92": {
       "number": 92,
@@ -645,7 +679,9 @@
       "title": "Berigelse af titelfelt for skoleelever med klassetrin",
       "url": "https://github.com/OS2sofd/issues/issues/93",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-95": {
       "number": 95,
@@ -659,14 +695,18 @@
       "title": "Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer",
       "url": "https://github.com/OS2sofd/issues/issues/96",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-97": {
       "number": 97,
       "title": "Vedligehold/rettidige opdateringer af Autorisationskoder",
       "url": "https://github.com/OS2sofd/issues/issues/97",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-14T18:11:48.0951804+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-98": {
       "number": 98,
@@ -743,14 +783,18 @@
       "title": "Migrering til Datafordeleren til CPR opslag",
       "url": "https://github.com/OS2sofd/issues/issues/112",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-113": {
       "number": 113,
       "title": "Indlæsning af Mit Erhverv status til OS2Sofd",
       "url": "https://github.com/OS2sofd/issues/issues/113",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-118": {
       "number": 118,
@@ -764,21 +808,27 @@
       "title": "Forbedret logning/dokumentation af ordredannelser.",
       "url": "https://github.com/OS2sofd/issues/issues/119",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-120": {
       "number": 120,
       "title": "Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen",
       "url": "https://github.com/OS2sofd/issues/issues/120",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-121": {
       "number": 121,
       "title": "Ændringsønske - Udfordring ved flere mobilnumre til samme person",
       "url": "https://github.com/OS2sofd/issues/issues/121",
       "status": "Klar til prioritering",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "existing-comment",
+      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
     },
     "issue-122": {
       "number": 122,
