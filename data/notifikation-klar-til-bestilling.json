@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "initialized": true,
-  "updatedAt": "2026-09-19T14:23:33.8129311+00:00",
+  "updatedAt": "2026-09-21T12:44:38.8261061+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -210,15 +210,15 @@
       "number": 10,
       "title": "Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er",
       "url": "https://github.com/OS2sofd/issues/issues/10",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     },
     "issue-11": {
       "number": 11,
       "title": "Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/11",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     },
     "issue-12": {
       "number": 12,
@@ -252,8 +252,8 @@
       "number": 17,
       "title": "SOFD GUI: Udvidet overblik over tilhørsforhold og typer",
       "url": "https://github.com/OS2sofd/issues/issues/17",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     },
     "issue-18": {
       "number": 18,
@@ -280,8 +280,8 @@
       "number": 22,
       "title": "Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed",
       "url": "https://github.com/OS2sofd/issues/issues/22",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     },
     "issue-23": {
       "number": 23,
@@ -511,8 +511,8 @@
       "number": 73,
       "title": "OS2sofd Kommunikationsmodul - Ønsker til forbedringer",
       "url": "https://github.com/OS2sofd/issues/issues/73",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     },
     "issue-74": {
       "number": 74,
@@ -779,6 +779,20 @@
       "url": "https://github.com/OS2sofd/issues/issues/121",
       "status": "Klar til prioritering",
       "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+    },
+    "issue-122": {
+      "number": 122,
+      "title": "Mulighed for at angive leder på institutioner",
+      "url": "https://github.com/OS2sofd/issues/issues/122",
+      "status": "Nye ændringsønsker",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+    },
+    "issue-123": {
+      "number": 123,
+      "title": "OS2ILM - Tilknytning af allerede oprettede brugere",
+      "url": "https://github.com/OS2sofd/issues/issues/123",
+      "status": "Nye ændringsønsker",
+      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
     }
   }
 }
