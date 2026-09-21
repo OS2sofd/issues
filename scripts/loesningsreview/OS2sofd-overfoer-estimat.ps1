@@ -38,7 +38,6 @@ function Convert-ToEstimateValue {
         [string]$RawAmount
     )
 
-    # Fjern valuta, mellemrum og almindelige pris-suffikser.
     $clean = $RawAmount.Trim()
     $clean = $clean -replace '(?i)\b(DKK|DKR|KRONER|KR)\b', ''
     $clean = $clean -replace '\s+', ''
@@ -46,8 +45,6 @@ function Convert-ToEstimateValue {
     $clean = $clean -replace ',-', ''
     $clean = $clean.Trim()
 
-    # Accepter heltalspriser med punktum, komma eller ingen tusindtalsseparator.
-    # Eksempler: 16.500 / 16,500 / 16500 / 16 500
     $digits = $clean -replace '[\.,]', ''
 
     if ($digits -notmatch '^\d+$') {
@@ -56,16 +53,36 @@ function Convert-ToEstimateValue {
 
     $value = [int64]$digits
 
-    # Undgå åbenlyst fejlagtige fund.
     if ($value -le 0) {
         return $null
     }
 
     $formatted = "{0:N0}" -f $value
-    # N0 følger lokalitet. Tving dansk tusindtalsseparator.
     $formatted = $formatted -replace ',', '.'
 
     return "${formatted}kr"
+}
+
+function Normalize-MarkdownLine {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Line
+    )
+
+    $normalized = $Line.Trim()
+
+    # Fjern almindelig Markdown-formatering omkring overskrifter/feltnavne.
+    # Eksempler:
+    #   Pris
+    #   **Pris**
+    #   ### Pris
+    #   **Pris:**
+    #   **Pris: 9.500 DKK**
+    $normalized = $normalized -replace '^\s*#{1,6}\s*', ''
+    $normalized = $normalized -replace '^\s*[*_]{1,3}\s*', ''
+    $normalized = $normalized -replace '\s*[*_]{1,3}\s*$', ''
+
+    return $normalized.Trim()
 }
 
 function Find-EstimateInComment {
@@ -77,11 +94,11 @@ function Find-EstimateInComment {
     $lines = $Body -split "`r?`n"
 
     for ($i = 0; $i -lt $lines.Count; $i++) {
-        $line = $lines[$i].Trim()
+        $line = Normalize-MarkdownLine -Line $lines[$i]
 
-        # Match kun tydelige pris-/estimatmarkører.
-        if ($line -match '(?i)^(#{1,6}\s*)?(pris|estimat|estimeret pris)\s*:?\s*(.*)$') {
-            $tail = $Matches[3].Trim()
+        # Match tydelige pris-/estimatmarkører - også når de er Markdown-formateret.
+        if ($line -match '(?i)^(pris|estimat|estimeret pris)\s*:?\s*(.*)$') {
+            $tail = $Matches[2].Trim()
 
             $candidateTexts = @()
 
@@ -89,9 +106,8 @@ function Find-EstimateInComment {
                 $candidateTexts += $tail
             }
 
-            # Hvis beløbet står på næste linje, tag den med.
             if (($i + 1) -lt $lines.Count) {
-                $next = $lines[$i + 1].Trim()
+                $next = Normalize-MarkdownLine -Line $lines[$i + 1]
                 if (-not [string]::IsNullOrWhiteSpace($next)) {
                     $candidateTexts += $next
                 }
@@ -100,8 +116,12 @@ function Find-EstimateInComment {
             $found = @()
 
             foreach ($candidate in $candidateTexts) {
-                # Beløbet skal ligne en pris tæt på pris-markøren.
-                # Accepter bl.a.: 16.500 DKK, 16 500 kr, 16500, 16000,-
+                # Accepter bl.a.:
+                # 16.500 DKK
+                # 16 500 kr
+                # 16,500
+                # 16500
+                # 16000,-
                 $matches = [regex]::Matches(
                     $candidate,
                     '(?i)(?<!\d)(\d{1,3}(?:[.\s,]\d{3})+|\d{4,9})(?:\s*(?:DKK|DKR|KRONER|KR))?(?:,-)?(?!\d)'
@@ -157,7 +177,6 @@ if ($null -eq $comments) {
     throw "Ingen kommentarer fundet på issue #$IssueNumber."
 }
 
-# Find seneste kommentar med en entydig pris.
 $priceHit = $null
 
 foreach ($comment in @($comments | Sort-Object created_at -Descending)) {
