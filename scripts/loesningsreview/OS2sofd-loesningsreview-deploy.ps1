@@ -10,7 +10,9 @@ param(
 
     [string]$ProjectOwner = "OS2sofd",
     [int]$ProjectNumber = 1,
-    [string]$EstimateFieldName = "Estimat"
+    [string]$EstimateFieldName = "Estimat",
+
+    [switch]$SkipEstimate
 )
 
 $ErrorActionPreference = "Stop"
@@ -343,14 +345,16 @@ Write-Host $body
 Write-Host "------------------------------------------------------------"
 Write-Host ""
 
-# Estimat håndteres som en del af samme DryRun/Apply som reviewkommentaren.
-# Dermed er der ikke længere behov for at køre et separat pris-script.
-Set-ProjectEstimate `
-    -IssueNumber $issueNumber `
-    -Estimate ([string]$result.estimate) `
-    -Mode $Mode
+# Estimat håndteres normalt som en del af samme DryRun/Apply som reviewkommentaren.
+# Ved batch-kørsel håndterer batch-scriptet estimater samlet for at spare GraphQL-kald.
+if (-not $SkipEstimate) {
+    Set-ProjectEstimate `
+        -IssueNumber $issueNumber `
+        -Estimate ([string]$result.estimate) `
+        -Mode $Mode
 
-Write-Host ""
+    Write-Host ""
+}
 
 # Beskyt mod at samme review-resultat postes flere gange.
 $comments = Invoke-GhJson -Arguments @(
