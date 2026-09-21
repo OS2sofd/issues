@@ -18,12 +18,20 @@ Reviewet gennemføres, når et ændringsønske er flyttet til:
 
 **Klar til prioritering**
 
-Formålet er at sikre, at koordinationsgruppen får et tilstrækkeligt og forståeligt beslutningsgrundlag.
+Reviewet er et kvalitetstjek oven på det eksisterende statusflow. Der indføres ikke en særskilt review-status.
+
+Reviewet baseres på:
+
+- det oprindelige ændringsønske
+- den identificerede løsningsbeskrivelse
+- alle eksisterende issue-kommentarer på reviewtidspunktet
+- det fundne estimat, hvis dette kan identificeres sikkert
+
+Det er vigtigt, at hele kommentarsporet indgår. En senere kommentar kan allerede have afklaret et forhold, som ellers ville fremstå som en mangel i selve løsningsbeskrivelsen.
 
 Reviewet må ikke i sig selv flytte et issue tilbage til en tidligere status. Hvis der findes blokerende mangler, afgør PO, om sagen skal returneres til **Afventer løsningsbeskrivelse**.
 
 ---
-
 
 ## Relevans og proportionalitet
 
@@ -239,20 +247,29 @@ Automationen må ikke selv foretage denne tilbageflytning.
 
 ---
 
-## Reviewkommentar – forventet indhold
+## Reviewkommentar – indhold og modtagere
 
-Det automatiske review skal senere kunne skrive en kommentar på issuet med:
+Det automatiske review skrives som en kommentar på issuet og indeholder:
 
-1. tabel med de syv reviewkriterier og vurdering
-2. kort opsummering af opmærksomhedspunkter
-3. konkrete mangler eller spørgsmål, som bør afklares
-4. fundet estimeret pris, hvis den kan identificeres sikkert
-5. samlet PO-review
+1. ændringens karakter
+2. tabel med de syv reviewkriterier, relevans og vurdering
+3. kort opsummering af reelle opmærksomhedspunkter
+4. konkrete afklaringsspørgsmål, hvis noget mangler
+5. estimeret pris
+6. samlet PO-review
+
+Forfatteren til løsningsbeskrivelsen notificeres altid med `@mention`.
+
+Den forretningsmæssige kontaktperson fra ændringsønsket notificeres kun, når reviewet identificerer et forhold, hvor kontaktpersonens input er relevant. GitHub-issueforfatteren betragtes ikke automatisk som kontaktperson. Hvis kontaktpersonens GitHub-brugernavn ikke kan identificeres sikkert, må automatikken ikke gætte.
 
 Eksempel:
 
 ```markdown
 ## PO-review af løsningsbeskrivelse
+
+@udvikler – review af den tilføjede løsningsbeskrivelse.
+
+**Ændringens karakter:** Mellemstor ændring
 
 | Kriterium | Relevans | Vurdering |
 | --- | --- | --- |
@@ -269,11 +286,27 @@ Eksempel:
 - Dokumentationsbehovet er ikke tydeligt beskrevet.
 
 ### Estimat
-16.500 kr.
+16.500kr
 
 ### Samlet PO-review
-🟡 Klar til prioritering med opmærksomhedspunkter.
+🟡 **Klar til prioritering med opmærksomhedspunkter.**
 ```
+
+### Reviewhistorik og opfølgende review
+
+Et tidligere PO-review overskrives ikke.
+
+Reviewkommentaren indeholder en skjult markør med issue, reviewnummer og den seneste kommentar, som reviewet dækkede. Dermed kan automatikken se:
+
+- om et issue allerede er reviewet
+- hvilket reviewnummer der er senest
+- om der er kommet nye kommentarer efter seneste review
+
+Hvis der ikke er kommet nye kommentarer, gennemføres der ikke et nyt review.
+
+Hvis der er kommet nye kommentarer, vurderes først, om de er relevante for beslutningsgrundlaget. Kun relevante nye oplysninger giver anledning til et opfølgende review. Et opfølgende review skrives som en **ny kommentar**, så historikken bevares.
+
+Automatiske proceskommentarer skal ikke i sig selv udløse et nyt review.
 
 ---
 
@@ -284,7 +317,7 @@ Eksempel:
 - Ikke relevante kriterier skal ikke påvirke den samlede vurdering.
 - Der stilles ikke krav om faste overskrifter i leverandørens løsningsbeskrivelse.
 - Manglende oplysninger skal identificeres og gøres konkrete.
-- AI må ikke opfinde oplysninger, som ikke fremgår af issue eller løsningsbeskrivelse.
+- AI må ikke opfinde oplysninger eller gøre mulige risici til konkrete problemer uden belæg i issue, løsningsbeskrivelse eller kommentarer.
 - Et gult signal er ikke automatisk blokerende.
 - Et rødt signal kræver PO-vurdering.
 - Automationen må ikke selv ændre status på baggrund af reviewet.
@@ -293,11 +326,34 @@ Eksempel:
 
 ---
 
-## Næste udviklingstrin
+## Automatiseret proces i v1
 
-Efter denne v1-specifikation følger:
+Den implementerede proces er:
 
-1. automatisk prisudlæsning fra løsningsbeskrivelsen til Project-feltet **Estimat**
-2. automatisk generering af reviewkommentar
-3. review-afsnit i PO-overblikket
-4. kobling til eksisterende notifikation af koordinationsgruppen, så notifikation først sker, når review og estimat er håndteret
+1. Issue flyttes til **Klar til prioritering**.
+2. `OS2sofd-find-loesningsreview.ps1` henter issue, løsningsbeskrivelse og hele kommentarsporet og opretter review-input.
+3. Reviewet gennemføres efter kriterierne i dette dokument.
+4. Estimat udlæses og normaliseres til Project-formatet, fx `16.500kr`.
+5. `OS2sofd-loesningsreview-deploy.ps1` anvendes først i `DryRun` og derefter i `Apply`.
+6. Ved `Apply` opdateres Project-feltet **Estimat** automatisk og reviewkommentaren oprettes på issuet.
+7. PO-overblikket viser reviewstatus, opmærksomhedspunkter og eventuelle nye kommentarer efter seneste review.
+8. Koordinationsgruppen notificeres først, når:
+   - status er **Klar til prioritering**
+   - **Estimat** er udfyldt
+   - seneste PO-review er 🟢 eller 🟡
+   - koordinationsgruppen ikke allerede er notificeret
+9. Et 🔴 review blokerer den automatiske notifikation til koordinationsgruppen, indtil PO har afklaret sagen og eventuelt gennemført et senere review.
+
+### Estimat
+
+Prisudlæsningen er regelbaseret og må ikke gætte.
+
+Eksempler på normalisering:
+
+- `16.500 DKK` → `16.500kr`
+- `16 500 kr` → `16.500kr`
+- `16500` → `16.500kr`
+
+Hvis pris ikke kan identificeres entydigt, udfyldes Project-feltet ikke automatisk, og forholdet skal fremgå som et opmærksomhedspunkt.
+
+Betingede priser, fx forskellig pris afhængigt af om ændringen gennemføres sammen med en anden sag, skal fremhæves særskilt i reviewet.
