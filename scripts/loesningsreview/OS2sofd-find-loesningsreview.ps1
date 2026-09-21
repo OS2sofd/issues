@@ -217,6 +217,12 @@ if ($SolutionCommentId -gt 0) {
 }
 else {
     $candidates = foreach ($comment in $comments) {
+        # Tidligere PO-reviewkommentarer må aldrig kunne vælges som
+        # leverandørens løsningsbeskrivelse ved en senere kørsel.
+        if ([string]$comment.body -match 'os2sofd-loesningsreview-v1') {
+            continue
+        }
+
         $score = Get-SolutionCommentScore -Comment $comment
         if ($score -gt 0) {
             [pscustomobject]@{
