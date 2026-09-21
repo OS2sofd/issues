@@ -1,26 +1,30 @@
-# PO-vejledning – screening af nye OS2sofd-ændringsønsker
+# PO-vejledning – screening og review af OS2sofd-ændringsønsker
 
 Denne vejledning er den korte arbejdsgang for Product Owner.
 
 ---
 
-## Før du starter – hver ny PowerShell-session
+## Før du starter
 
-Når et nyt PowerShell-vindue åbnes, skal scriptkørsel først tillades for den aktuelle session:
+PowerShell er sat til `RemoteSigned` for den aktuelle bruger. Derfor skal denne kommando normalt **ikke** længere køres i hver session:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
 ```
 
-Kommandoen kræver ikke administratorrettigheder og gælder kun det aktuelle PowerShell-vindue. Når vinduet lukkes, nulstilles indstillingen. Den skal derfor køres igen næste gang et nyt PowerShell-vindue åbnes.
+Hvis en ny downloadet `.ps1`-fil er blokeret af Windows, kan alle scripts i arbejds­mappen frigives med:
 
-Scriptsene håndterer selv UTF-8/tegnsætning, så der er ikke behov for yderligere initialisering.
+```powershell
+Get-ChildItem *.ps1 | Unblock-File
+```
 
 Gå derefter til den faste arbejdsmappe:
 
 ```powershell
 cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
 ```
+
+Scriptsene håndterer selv UTF-8/tegnsætning.
 
 ---
 
@@ -131,9 +135,124 @@ Når opretter har svaret, skal issuet screenes igen.
 
 ---
 
-## Senere i processen
+## Når der foreligger en løsningsbeskrivelse
 
-Når et issue senere flyttes til **Klar til prioritering**, notificeres koordinationsgruppen via en særskilt GitHub-automatisering. Det er ikke en del af screening-deploy-scriptet.
+Når leverandøren har tilføjet en løsningsbeskrivelse og issuet står i **Klar til prioritering**, gennemføres PO-review efter `po-review-loesningsbeskrivelser-v1.md`.
+
+Reviewet indfører ikke en ny status.
+
+### 1. Opret review-input
+
+Kør fx:
+
+```powershell
+.\OS2sofd-find-loesningsreview.ps1 -IssueNumber 105
+```
+
+Scriptet:
+
+- henter det oprindelige issue
+- identificerer den sandsynlige løsningsbeskrivelse
+- medtager alle issue-kommentarer
+- finder forfatteren til løsningsbeskrivelsen
+- finder kontaktpersonen i ændringsønsket og forsøger sikkert at identificere kontaktens GitHub-bruger
+- udlæser og normaliserer estimat, hvis det kan findes entydigt
+- registrerer tidligere PO-reviews og nye kommentarer siden seneste review
+
+Hvis issuet allerede er reviewet og der ikke er kommet nye kommentarer, stopper scriptet uden at oprette et nyt review-input.
+
+### 2. Upload review-input til ChatGPT
+
+Upload:
+
+`OS2sofd-loesningsreview-input-<issue>.json`
+
+Reviewet gennemføres efter de syv kriterier i `po-review-loesningsbeskrivelser-v1.md`.
+
+Resultatet gemmes som:
+
+`OS2sofd-loesningsreview-resultat-<issue>.json`
+
+Brug samme filnavn igen ved senere opfølgende review. Reviewnummeret ligger i selve resultatfilen og i GitHub-kommentarens skjulte markør.
+
+### 3. Kontrollér review med DryRun
+
+Kør:
+
+```powershell
+.\OS2sofd-loesningsreview-deploy.ps1 `
+  -ResultPath ".\OS2sofd-loesningsreview-resultat-105.json" `
+  -Mode DryRun
+```
+
+Kontrollér især:
+
+- ændringens karakter
+- relevans og 🟢 / 🟡 / 🔴 pr. kriterium
+- at opmærksomhedspunkterne er reelle og ikke spekulative
+- eventuelle afklaringsspørgsmål
+- `@mention` af løsningsforfatteren
+- om kontaktpersonen kun nævnes, når dennes input er relevant
+- estimatet
+
+DryRun ændrer ikke GitHub.
+
+### 4. Gennemfør reviewet
+
+Hvis DryRun ser korrekt ud:
+
+```powershell
+.\OS2sofd-loesningsreview-deploy.ps1 `
+  -ResultPath ".\OS2sofd-loesningsreview-resultat-105.json" `
+  -Mode Apply
+```
+
+Ved `Apply`:
+
+- Project-feltet **Estimat** udfyldes eller opdateres automatisk
+- reviewkommentaren oprettes på issuet
+- et eksisterende review overskrives ikke
+
+### 5. Hvad sker der bagefter?
+
+Den særskilte notifikationsautomatik vurderer issuet.
+
+Koordinationsgruppen notificeres kun, når:
+
+- status er **Klar til prioritering**
+- **Estimat** er udfyldt
+- seneste PO-review er 🟢 eller 🟡
+- koordinationsgruppen ikke allerede er notificeret
+
+Et 🔴 PO-review stopper automatisk KG-notifikationen. PO afgør derefter, om sagen skal afklares i samme status eller flyttes tilbage til **Afventer løsningsbeskrivelse**.
+
+Et 🟡 review er ikke blokerende.
+
+### 6. Nye kommentarer efter et review
+
+Et issue reviewes ikke igen alene, fordi processen kører igen.
+
+Hvis der kommer nye kommentarer efter seneste review:
+
+- input-generatoren registrerer dem
+- PO/AI vurderer, om de er relevante for beslutningsgrundlaget
+- kun relevante nye oplysninger giver et opfølgende review
+- opfølgende review skrives som en **ny GitHub-kommentar**
+- gamle reviews redigeres ikke
+
+Automatiske proceskommentarer skal ikke i sig selv udløse nyt review.
+
+### 7. PO-overblikket
+
+`docs/po-overblik.md` indeholder et særskilt afsnit **Review af løsningsbeskrivelser** med bl.a.:
+
+- antal issues i **Klar til prioritering**
+- antal reviewede issues
+- issues der mangler PO-review
+- gule/røde reviews
+- estimat
+- opmærksomhedspunkter
+- nye kommentarer efter seneste review
 
 ---
 
@@ -165,7 +284,7 @@ Færdige acceptkriterier er ikke et krav for at bestå screeningen.
 - **Opretter** beskriver behovet og gerne, hvordan man vil kunne se, at ændringen virker.
 - **PO** formulerer de forretningsmæssige acceptkriterier.
 - **Leverandøren** kvalificerer dem teknisk og kan supplere med tekniske testkriterier.
-- De forretningsmæssige acceptkriterier bør være på plads, inden sagen går videre fra løsningsbeskrivelse til prioritering/bestilling.
+- PO-reviewet skal vurdere, om løsningsbeskrivelsen giver tilstrækkeligt grundlag for senere test og accept. De forretningsmæssige acceptkriterier bør være på plads, inden løsningen bestilles til udvikling.
 
 ---
 
@@ -180,6 +299,9 @@ PO skal reagere, hvis:
 - et returneret issue er blevet suppleret af opretter
 - en label eller status ikke virker korrekt
 - DryRun melder, at en foreslået repo-label mangler
+- et PO-review er 🔴 og kræver afklaring før prioritering
+- et allerede reviewet issue har fået nye fagligt relevante kommentarer
+- kontaktpersonen i ændringsønsket ikke kan identificeres korrekt, når kontaktens input er nødvendigt
 
 ---
 
@@ -216,11 +338,19 @@ Kontrollér først, om en eksisterende repo-label allerede dækker området. Gen
 
 ### Scriptet må ikke køres
 
-Kør:
+Hvis filen er downloadet og blokeret af Windows, kør:
 
 ```powershell
-Set-ExecutionPolicy -Scope Process Bypass
+Get-ChildItem *.ps1 | Unblock-File
 ```
+
+Kontrollér om nødvendigt brugerens policy:
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+`CurrentUser` bør normalt stå som `RemoteSigned`.
 
 ### API-rate-limit
 
@@ -243,9 +373,17 @@ Kør altid `-Mode DryRun` først. DryRun ændrer ikke GitHub.
 
 ## Relateret kørevejledning
 
-Den samlede lokale kørevejledning findes i:
+Den samlede lokale kørevejledning for screening findes i:
 
 `docs/issue-screening/koerevejledning-screening.md`
+
+Kørevejledningen for PO-review af løsningsbeskrivelser findes i:
+
+`docs/issue-screening/koerevejledning-loesningsreview.md`
+
+Reviewkriterier og regler findes i:
+
+`docs/issue-screening/po-review-loesningsbeskrivelser-v1.md`
 
 Den faste lokale arbejdsmappe er:
 
