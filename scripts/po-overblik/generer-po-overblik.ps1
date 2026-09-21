@@ -352,6 +352,105 @@ function Format-StatusAge {
     return $value
 }
 
+
+function Get-PoReviewInfo {
+    param(
+        [object[]]$Comments,
+        [int]$IssueNumber
+    )
+
+    $reviewPattern = '<!--\s*os2sofd-loesningsreview-v1\s+issue:(\d+)\s+review:(\d+)\s+reviewed-through-comment:(\d+)\s*-->'
+    $reviews = @()
+
+    foreach ($comment in @($Comments)) {
+        $body = [string]$comment.body
+        $match = [regex]::Match($body, $reviewPattern)
+
+        if ($match.Success -and [int]$match.Groups[1].Value -eq $IssueNumber) {
+            $reviews += [PSCustomObject]@{
+                CommentId               = [long]$comment.id
+                ReviewNumber            = [int]$match.Groups[2].Value
+                ReviewedThroughCommentId = [long]$match.Groups[3].Value
+                CreatedAt               = [string]$comment.created_at
+                Body                    = $body
+            }
+        }
+    }
+
+    if ($reviews.Count -eq 0) {
+        return [PSCustomObject]@{
+            HasReview                = $false
+            ReviewNumber             = 0
+            ReviewSignal             = ""
+            ReviewText               = ""
+            ReviewAttention          = ""
+            ReviewCommentId          = 0
+            ReviewedThroughCommentId = 0
+            NewCommentsSinceReview   = 0
+        }
+    }
+
+    $latest = @(
+        $reviews |
+        Sort-Object ReviewNumber -Descending
+    ) | Select-Object -First 1
+
+    $reviewSignal = ""
+    $reviewText = ""
+
+    $overallMatch = [regex]::Match(
+        [string]$latest.Body,
+        '(?ms)###\s*Samlet PO-review\s*\r?\n+\s*(?<signal>🟢|🟡|🔴)\s*\*\*(?<text>.*?)\*\*'
+    )
+
+    if ($overallMatch.Success) {
+        $reviewSignal = $overallMatch.Groups["signal"].Value
+        $reviewText = $overallMatch.Groups["text"].Value.Trim()
+    }
+
+    $reviewAttention = ""
+    $attentionMatch = [regex]::Match(
+        [string]$latest.Body,
+        '(?ms)###\s*Opmærksomhed\s*\r?\n+(?<content>.*?)(?=\r?\n###\s|\z)'
+    )
+
+    if ($attentionMatch.Success) {
+        $attentionLines = @(
+            $attentionMatch.Groups["content"].Value -split "`r?`n" |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -match '^-\s+' } |
+            ForEach-Object { $_ -replace '^-\s+', '' }
+        )
+
+        if ($attentionLines.Count -gt 0) {
+            $reviewAttention = ($attentionLines -join "; ")
+        }
+    }
+
+    # Kommentarer efter det grundlag, som seneste review dækkede.
+    # Kendte automatiske proceskommentarer tælles ikke som nyt reviewgrundlag.
+    $newComments = @(
+        $Comments |
+        Where-Object {
+            [long]$_.id -gt [long]$latest.ReviewedThroughCommentId -and
+            [string]$_.body -notmatch 'os2sofd-loesningsreview-v1' -and
+            [string]$_.body -notmatch 'os2sofd-klar-til-bestilling' -and
+            [string]$_.body -notmatch 'os2sofd-screening-v3'
+        }
+    )
+
+    return [PSCustomObject]@{
+        HasReview                = $true
+        ReviewNumber             = [int]$latest.ReviewNumber
+        ReviewSignal             = $reviewSignal
+        ReviewText               = $reviewText
+        ReviewAttention          = $reviewAttention
+        ReviewCommentId          = [long]$latest.CommentId
+        ReviewedThroughCommentId = [long]$latest.ReviewedThroughCommentId
+        NewCommentsSinceReview   = @($newComments).Count
+    }
+}
+
 # ---------------------------
 # Forudsætninger
 # ---------------------------
@@ -463,6 +562,8 @@ foreach ($item in $projectItems) {
         }
     }
 
+    $reviewInfo = Get-PoReviewInfo -Comments $allComments -IssueNumber $n
+
     $createdAt = [DateTimeOffset]::Parse([string]$issue.created_at).LocalDateTime
     $updatedAt = [DateTimeOffset]::Parse([string]$issue.updated_at).LocalDateTime
     $closedAt = $null
@@ -531,6 +632,14 @@ foreach ($item in $projectItems) {
         LastResponseAt     = $lastResponseAt
         LastResponseDays   = $lastResponseDays
         LastResponseAuthor = $lastResponseAuthor
+        HasPoReview         = [bool]$reviewInfo.HasReview
+        PoReviewNumber      = [int]$reviewInfo.ReviewNumber
+        PoReviewSignal      = [string]$reviewInfo.ReviewSignal
+        PoReviewText        = [string]$reviewInfo.ReviewText
+        PoReviewAttention   = [string]$reviewInfo.ReviewAttention
+        PoReviewCommentId   = [long]$reviewInfo.ReviewCommentId
+        ReviewedThroughCommentId = [long]$reviewInfo.ReviewedThroughCommentId
+        NewCommentsSincePoReview = [int]$reviewInfo.NewCommentsSinceReview
     }
 }
 
@@ -686,6 +795,20 @@ foreach ($r in $active) {
         if ([string]::IsNullOrWhiteSpace($r.Estimate)) {
             Add-Attention $r "🔴" "Klar til prioritering, men mangler estimat"
         }
+
+        if (-not $r.HasPoReview) {
+            Add-Attention $r "🟡" "Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen"
+        }
+        elseif ($r.PoReviewSignal -eq "🔴") {
+            Add-Attention $r "🔴" "PO-review kræver afklaring før prioritering"
+        }
+        elseif ($r.PoReviewSignal -eq "🟡") {
+            Add-Attention $r "🟡" "PO-review har opmærksomhedspunkter"
+        }
+
+        if ($r.HasPoReview -and $r.NewCommentsSincePoReview -gt 0) {
+            Add-Attention $r "⚠️" "$($r.NewCommentsSincePoReview) ny(e) kommentar(er) siden seneste PO-review – relevans for opfølgende review bør vurderes"
+        }
     }
 
     if (
@@ -798,6 +921,26 @@ $readyMissingPriorityRows = @(
 
 $readyMissingEstimateRows = @(
     $readyRowsGlobal | Where-Object { [string]::IsNullOrWhiteSpace($_.Estimate) }
+)
+
+$readyReviewedRows = @(
+    $readyRowsGlobal | Where-Object { $_.HasPoReview }
+)
+
+$readyMissingReviewRows = @(
+    $readyRowsGlobal | Where-Object { -not $_.HasPoReview }
+)
+
+$readyReviewRedRows = @(
+    $readyRowsGlobal | Where-Object { $_.HasPoReview -and $_.PoReviewSignal -eq "🔴" }
+)
+
+$readyReviewYellowRows = @(
+    $readyRowsGlobal | Where-Object { $_.HasPoReview -and $_.PoReviewSignal -eq "🟡" }
+)
+
+$readyReviewNewCommentsRows = @(
+    $readyRowsGlobal | Where-Object { $_.HasPoReview -and $_.NewCommentsSincePoReview -gt 0 }
 )
 
 $orderedMissingReleaseRows = @(
@@ -930,6 +1073,9 @@ $md.Add("| 🔴 | Lukket GitHub-issue i aktiv Project-status | $($closedActiveRo
 $md.Add("| 🔵 | Klar til prioritering | $($readyRowsGlobal.Count) |")
 $md.Add("| 🔴 | Klar til prioritering uden prioritet | $($readyMissingPriorityRows.Count) |")
 $md.Add("| 🔴 | Klar til prioritering uden estimat | $($readyMissingEstimateRows.Count) |")
+$md.Add("| 🟡 | Klar til prioritering uden PO-review | $($readyMissingReviewRows.Count) |")
+$md.Add("| 🔴 | PO-review kræver afklaring | $($readyReviewRedRows.Count) |")
+$md.Add("| ⚠️ | Reviewede issues med nye kommentarer | $($readyReviewNewCommentsRows.Count) |")
 $md.Add("| 🟡 | Bestilt/igangværende uden planlagt release | $($orderedMissingReleaseRows.Count) |")
 $md.Add("| ℹ️ | Bestilt/igangværende uden assignee | $($orderedMissingAssigneeRows.Count) |")
 $md.Add("| 🟡 | Test/review uden opdatering i mindst $TestReviewInactiveDays dage | $($testReviewStaleRows.Count) |")
@@ -953,6 +1099,15 @@ if ($readyMissingPriorityRows.Count -gt 0) {
 }
 if ($readyMissingEstimateRows.Count -gt 0) {
     $nextActions += "Få estimat på **$($readyMissingEstimateRows.Count)** issue(s) i **Klar til prioritering**."
+}
+if ($readyMissingReviewRows.Count -gt 0) {
+    $nextActions += "Gennemfør PO-review af løsningsbeskrivelsen på **$($readyMissingReviewRows.Count)** issue(s) i **Klar til prioritering**."
+}
+if ($readyReviewRedRows.Count -gt 0) {
+    $nextActions += "Afklar **$($readyReviewRedRows.Count)** issue(s), hvor PO-reviewet er rødt, før koordinationsgruppens prioritering."
+}
+if ($readyReviewNewCommentsRows.Count -gt 0) {
+    $nextActions += "Vurder nye kommentarer på **$($readyReviewNewCommentsRows.Count)** allerede reviewet/reviewede issue(s) og afgør, om der er behov for opfølgende review."
 }
 if ($orderedMissingReleaseRows.Count -gt 0) {
     $nextActions += "Fastlæg planlagt release på **$($orderedMissingReleaseRows.Count)** bestilt/igangværende issue(s)."
@@ -1142,7 +1297,7 @@ $md.Add("_Observeret tid i status tælles fra første registrering i historikfil
 
 $md.Add("")
 
-# 3. Klar til prioritering
+# 4. Klar til prioritering
 $md.Add("## 4. Klar til prioritering")
 $md.Add("")
 
@@ -1166,8 +1321,62 @@ else {
 
 $md.Add("")
 
-# 4. Release-overblik
-$md.Add("## 5. Release-overblik – $currentReleaseName")
+# 5. Review af løsningsbeskrivelser
+$md.Add("## 5. Review af løsningsbeskrivelser")
+$md.Add("")
+$md.Add("> PO-reviewet er et kvalitetslag oven på det eksisterende flow. Reviewet baseres på issue, løsningsbeskrivelse og eksisterende kommentarer på reviewtidspunktet.")
+$md.Add("")
+$md.Add("| Nøgletal | Antal |")
+$md.Add("| --- | ---: |")
+$md.Add("| Klar til prioritering | $($readyRowsGlobal.Count) |")
+$md.Add("| Reviewet | $($readyReviewedRows.Count) |")
+$md.Add("| Mangler PO-review | $($readyMissingReviewRows.Count) |")
+$md.Add("| Review med opmærksomhedspunkter | $($readyReviewYellowRows.Count) |")
+$md.Add("| Review kræver afklaring | $($readyReviewRedRows.Count) |")
+$md.Add("| Reviewet med nye kommentarer siden seneste review | $($readyReviewNewCommentsRows.Count) |")
+$md.Add("")
+
+if ($readyRowsGlobal.Count -eq 0) {
+    $md.Add("Ingen issues er aktuelt i **Klar til prioritering**.")
+}
+else {
+    $md.Add("| Issue | Estimat | PO-review | Opmærksomhed | Nye kommentarer siden review |")
+    $md.Add("| --- | ---: | --- | --- | ---: |")
+
+    foreach ($r in @($readyRowsGlobal | Sort-Object PriorityRank, @{Expression={$_.AgeDays};Descending=$true})) {
+        if (-not $r.HasPoReview) {
+            $reviewText = "Ikke reviewet"
+            $attentionText = "–"
+            $newCommentsText = "–"
+        }
+        else {
+            $reviewText = if ([string]::IsNullOrWhiteSpace($r.PoReviewSignal)) {
+                "Review $($r.PoReviewNumber)"
+            }
+            else {
+                "$($r.PoReviewSignal) Review $($r.PoReviewNumber)"
+            }
+
+            $attentionText = if ([string]::IsNullOrWhiteSpace($r.PoReviewAttention)) {
+                "–"
+            }
+            else {
+                $r.PoReviewAttention
+            }
+
+            $newCommentsText = [string]$r.NewCommentsSincePoReview
+        }
+
+        $md.Add("| $(Issue-Link $r.Number $r.Title $r.Url) | $(Escape-Md $r.Estimate) | $(Escape-Md $reviewText) | $(Escape-Md $attentionText) | $(Escape-Md $newCommentsText) |")
+    }
+}
+
+$md.Add("")
+$md.Add("> **Nye kommentarer siden review:** Kendte automatiske proceskommentarer tælles ikke med. Et nyt kommentarspor er kun et signal om, at PO bør vurdere relevansen; det udløser ikke automatisk et nyt review.")
+$md.Add("")
+
+# 6. Release-overblik
+$md.Add("## 6. Release-overblik – $currentReleaseName")
 $md.Add("")
 
 $currentReleaseRows = @(
@@ -1254,8 +1463,8 @@ else {
 
 $md.Add("")
 
-# 5. Hele pipeline
-$md.Add("## 6. Hele pipeline – Fra idé til færdig løsning")
+# 7. Hele pipeline
+$md.Add("## 7. Hele pipeline – Fra idé til færdig løsning")
 $md.Add("")
 $md.Add("| Status | Antal |")
 $md.Add("| --- | ---: |")
@@ -1414,8 +1623,8 @@ foreach ($status in $statusOrder) {
     $md.Add("")
 }
 
-# 6. Datakvalitet
-$md.Add("## 7. Proces- og datakvalitet")
+# 8. Datakvalitet
+$md.Add("## 8. Proces- og datakvalitet")
 $md.Add("")
 
 $dataQuality = @()
@@ -1436,6 +1645,14 @@ foreach ($r in $active) {
 
     if ($r.Status -eq "Klar til prioritering" -and [string]::IsNullOrWhiteSpace($r.Estimate)) {
         $problems += "Mangler estimat"
+    }
+
+    if ($r.Status -eq "Klar til prioritering" -and -not $r.HasPoReview) {
+        $problems += "Mangler PO-review af løsningsbeskrivelsen"
+    }
+
+    if ($r.Status -eq "Klar til prioritering" -and $r.HasPoReview -and $r.NewCommentsSincePoReview -gt 0) {
+        $problems += "Nye kommentarer siden seneste PO-review bør vurderes"
     }
 
     if ($r.Status -in @("Bestilt hos leverandør","Igangværende opgaver","Løsninger i test","Løsninger i review") -and [string]::IsNullOrWhiteSpace($r.Release)) {
@@ -1474,7 +1691,7 @@ else {
 $md.Add("")
 $md.Add("---")
 $md.Add("")
-$md.Add("_Denne fil er automatisk genereret fra GitHub Project **Fra idé til færdig løsning**. GitHub Project er den autoritative datakilde; `data/po-overblik-history.json` bruges alene til afledt status-historik. Kommunikationssignaler er indikatorer og skal vurderes af PO._")
+$md.Add("_Denne fil er automatisk genereret fra GitHub Project **Fra idé til færdig løsning** og issue-kommentarer. GitHub Project er den autoritative datakilde; `data/po-overblik-history.json` bruges alene til afledt status-historik. PO-review identificeres via skjulte reviewmarkører i issue-kommentarerne. Kommunikations- og reviewsignaler er indikatorer og skal vurderes af PO._")
 
 # ---------------------------
 # Gem
