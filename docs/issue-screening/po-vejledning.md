@@ -204,8 +204,8 @@ Kontrollér især:
 - relevans og 🟢 / 🟡 / 🔴 pr. kriterium
 - at opmærksomhedspunkterne er dokumenterede og ikke spekulative
 - eventuelle afklaringsspørgsmål
-- `@mention` af løsningsforfatteren
-- om kontaktpersonen kun nævnes, når input fra kontaktpersonen er relevant
+- at løsningsforfatteren kun `@mention`es, hvis reviewet indeholder afklarende spørgsmål
+- at kontaktpersonen kun `@mention`es, hvis et afklarende spørgsmål kræver kontaktpersonens input
 - estimatet
 - hvilke issues der springes over
 
