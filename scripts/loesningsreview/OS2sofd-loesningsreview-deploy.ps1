@@ -223,39 +223,9 @@ else {
 }
 Add-Line $lines ""
 
-$mentions = New-Object 'System.Collections.Generic.List[string]'
-
-if (-not [string]::IsNullOrWhiteSpace($solutionAuthor)) {
-    [void]$mentions.Add("@$solutionAuthor")
-}
-
-if (
-    $mentionContact -and
-    -not [string]::IsNullOrWhiteSpace($contactGithub) -and
-    $contactGithub -ne $solutionAuthor
-) {
-    [void]$mentions.Add("@$contactGithub")
-}
-elseif (
-    $null -eq $result.mention_contact -and
-    $null -eq $result.mention_contact_github -and
-    $result.mention_issue_author -eq $true -and
-    -not [string]::IsNullOrWhiteSpace($issueAuthor) -and
-    $issueAuthor -ne $solutionAuthor
-) {
-    # Kun bagudkompatibilitet. Nye reviews skal bruge kontaktpersonen.
-    [void]$mentions.Add("@$issueAuthor")
-}
-
-if ($mentions.Count -gt 0) {
-    if ($reviewNumber -gt 1) {
-        Add-Line $lines (($mentions -join " ") + " – opfølgende review på baggrund af nye relevante oplysninger.")
-    }
-    else {
-        Add-Line $lines (($mentions -join " ") + " – review af den tilføjede løsningsbeskrivelse.")
-    }
-    Add-Line $lines ""
-}
+# Ingen @mentions i reviewets indledning.
+# Løsningsbeskriver og eventuel kontaktperson notificeres kun,
+# hvis reviewet indeholder konkrete afklarende spørgsmål.
 
 if (-not [string]::IsNullOrWhiteSpace([string]$result.change_character)) {
     Add-Line $lines ("**Ændringens karakter:** " + [string]$result.change_character)
@@ -291,6 +261,30 @@ if ($questions.Count -gt 0) {
     Add-Line $lines "### Afklaring"
     Add-Line $lines ""
 
+    $questionMentions = New-Object 'System.Collections.Generic.List[string]'
+
+    if (-not [string]::IsNullOrWhiteSpace($solutionAuthor)) {
+        [void]$questionMentions.Add("@$solutionAuthor")
+    }
+
+    if (
+        $mentionContact -and
+        -not [string]::IsNullOrWhiteSpace($contactGithub) -and
+        $contactGithub -ne $solutionAuthor
+    ) {
+        [void]$questionMentions.Add("@$contactGithub")
+    }
+    elseif (
+        $null -eq $result.mention_contact -and
+        $null -eq $result.mention_contact_github -and
+        $result.mention_issue_author -eq $true -and
+        -not [string]::IsNullOrWhiteSpace($issueAuthor) -and
+        $issueAuthor -ne $solutionAuthor
+    ) {
+        # Kun bagudkompatibilitet. Nye reviews skal bruge kontaktpersonen.
+        [void]$questionMentions.Add("@$issueAuthor")
+    }
+
     if (
         $mentionContact -and
         [string]::IsNullOrWhiteSpace($contactGithub) -and
@@ -300,8 +294,11 @@ if ($questions.Count -gt 0) {
         Add-Line $lines ""
     }
 
-    if (-not [string]::IsNullOrWhiteSpace($solutionAuthor)) {
-        Add-Line $lines "@$solutionAuthor Kan du kort supplere:"
+    if ($questionMentions.Count -gt 1) {
+        Add-Line $lines (($questionMentions -join " ") + " Kan I kort supplere:")
+    }
+    elseif ($questionMentions.Count -eq 1) {
+        Add-Line $lines (($questionMentions -join " ") + " Kan du kort supplere:")
     }
     else {
         Add-Line $lines "Kan du kort supplere:"
