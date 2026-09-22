@@ -6,25 +6,31 @@ Denne vejledning er den korte arbejdsgang for Product Owner.
 
 ## Før du starter
 
-PowerShell er sat til `RemoteSigned` for den aktuelle bruger. Derfor skal denne kommando normalt **ikke** længere køres i hver session:
-
-```powershell
-Set-ExecutionPolicy -Scope Process Bypass
-```
-
-Hvis en ny downloadet `.ps1`-fil er blokeret af Windows, kan alle scripts i arbejds­mappen frigives med:
-
-```powershell
-Get-ChildItem *.ps1 | Unblock-File
-```
-
-Gå derefter til den faste arbejdsmappe:
+Fra en frisk PowerShell-session:
 
 ```powershell
 cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
+Get-ChildItem *.ps1 | Unblock-File
 ```
 
+`Set-ExecutionPolicy -Scope Process Bypass` skal normalt **ikke** længere køres. PowerShell er sat til `RemoteSigned` for den aktuelle bruger.
+
 Scriptsene håndterer selv UTF-8/tegnsætning.
+
+### Kontrollér GraphQL-kvote før større Apply-kørsler
+
+GitHub Projects bruger GraphQL. REST-kaldet `gh api rate_limit` kan vise en misvisende værdi for GraphQL-kvoten og skal derfor ikke bruges som kontrol før batch-Apply.
+
+Brug i stedet GraphQLs egen `rateLimit`:
+
+```powershell
+$g = gh api graphql -f query='query { rateLimit { limit remaining used resetAt } }' | ConvertFrom-Json
+$g.data.rateLimit
+```
+
+Kontrollér især `remaining` og `resetAt`.
+
+Batch-deploy-scriptet laver desuden selv en GraphQL-preflight før `Apply` og stopper, før noget skrives, hvis kvoten er for lav.
 
 ---
 
@@ -135,87 +141,103 @@ Når opretter har svaret, skal issuet screenes igen.
 
 ---
 
-## Når der foreligger en løsningsbeskrivelse
+## Når der foreligger løsningsbeskrivelser
 
-Når leverandøren har tilføjet en løsningsbeskrivelse og issuet står i **Klar til prioritering**, gennemføres PO-review efter `po-review-loesningsbeskrivelser-v1.md`.
+Når issues står i **Klar til prioritering**, gennemføres PO-review efter `po-review-loesningsbeskrivelser-v1.md`.
 
 Reviewet indfører ikke en ny status.
 
-### 1. Opret review-input
+### Standardproces – find alle aktuelle reviewbehov
 
-Kør fx:
+Kør:
 
 ```powershell
-.\OS2sofd-find-loesningsreview.ps1 -IssueNumber 105
+.\OS2sofd-find-loesningsreview-behov.ps1
 ```
 
-Scriptet:
+Scriptet gennemgår alle issues i **Klar til prioritering** og opdeler dem i:
 
-- henter det oprindelige issue
-- identificerer den sandsynlige løsningsbeskrivelse
-- medtager alle issue-kommentarer
-- finder forfatteren til løsningsbeskrivelsen
-- finder kontaktpersonen i ændringsønsket og forsøger sikkert at identificere kontaktens GitHub-bruger
-- udlæser og normaliserer estimat, hvis det kan findes entydigt
-- registrerer tidligere PO-reviews og nye kommentarer siden seneste review
+- mangler første PO-review
+- mulige opfølgende reviews pga. nye relevante kommentarer
+- ingen handling nødvendig
 
-Hvis issuet allerede er reviewet og der ikke er kommet nye kommentarer, stopper scriptet uden at oprette et nyt review-input.
+Automatiske proceskommentarer som screening, tidligere PO-review og KG-notifikation tæller ikke som nyt fagligt reviewgrundlag.
 
-### 2. Upload review-input til ChatGPT
+Scriptet opretter én samlet fil:
+
+`OS2sofd-loesningsreview-input.json`
+
+### Upload samlet review-input til ChatGPT
 
 Upload:
 
-`OS2sofd-loesningsreview-input-<issue>.json`
+`OS2sofd-loesningsreview-input.json`
 
 Reviewet gennemføres efter de syv kriterier i `po-review-loesningsbeskrivelser-v1.md`.
 
 Resultatet gemmes som:
 
-`OS2sofd-loesningsreview-resultat-<issue>.json`
+`OS2sofd-loesningsreview-resultat.json`
 
-Brug samme filnavn igen ved senere opfølgende review. Reviewnummeret ligger i selve resultatfilen og i GitHub-kommentarens skjulte markør.
+Resultatfilen kan indeholde både deploybare reviews og sager, der skal springes over, fx hvis der endnu ikke findes en reel leverandør-løsningsbeskrivelse.
 
-### 3. Kontrollér review med DryRun
+### Kontrollér hele batchen med DryRun
 
 Kør:
 
 ```powershell
-.\OS2sofd-loesningsreview-deploy.ps1 `
-  -ResultPath ".\OS2sofd-loesningsreview-resultat-105.json" `
-  -Mode DryRun
+.\OS2sofd-loesningsreview-deploy-batch.ps1 -Mode DryRun
 ```
+
+DryRun:
+
+- gennemgår alle deploybare reviews
+- viser reviewkommentar og samlet vurdering pr. issue
+- viser mål-estimat
+- springer markerede ikke-deploybare sager over
+- skriver intet til GitHub
+- bruger ikke GraphQL til estimatkontrol
 
 Kontrollér især:
 
 - ændringens karakter
 - relevans og 🟢 / 🟡 / 🔴 pr. kriterium
-- at opmærksomhedspunkterne er reelle og ikke spekulative
+- at opmærksomhedspunkterne er dokumenterede og ikke spekulative
 - eventuelle afklaringsspørgsmål
 - `@mention` af løsningsforfatteren
-- om kontaktpersonen kun nævnes, når dennes input er relevant
+- om kontaktpersonen kun nævnes, når input fra kontaktpersonen er relevant
 - estimatet
+- hvilke issues der springes over
 
-DryRun ændrer ikke GitHub.
+### Gennemfør hele batchen
 
-### 4. Gennemfør reviewet
-
-Hvis DryRun ser korrekt ud:
+Før `Apply` kan GraphQL-kvoten kontrolleres manuelt:
 
 ```powershell
-.\OS2sofd-loesningsreview-deploy.ps1 `
-  -ResultPath ".\OS2sofd-loesningsreview-resultat-105.json" `
-  -Mode Apply
+$g = gh api graphql -f query='query { rateLimit { limit remaining used resetAt } }' | ConvertFrom-Json
+$g.data.rateLimit
 ```
+
+Kør derefter:
+
+```powershell
+.\OS2sofd-loesningsreview-deploy-batch.ps1 -Mode Apply
+```
+
+Batch-scriptet laver selv preflight og stopper **før noget skrives**, hvis GraphQL-kvoten er for lav.
 
 Ved `Apply`:
 
 - Project-feltet **Estimat** udfyldes eller opdateres automatisk
-- reviewkommentaren oprettes på issuet
-- et eksisterende review overskrives ikke
+- reviewkommentaren oprettes på hvert deploybart issue
+- tidligere reviewkommentarer overskrives ikke
+- ikke-deploybare sager springes over
 
-### 5. Hvad sker der bagefter?
+Hvis batchen stopper midt i en Apply-kørsel, kan den samme resultatfil køres igen efter rettelse. Enkeltsags-deployet beskytter mod dublet-reviewkommentarer.
 
-Den særskilte notifikationsautomatik vurderer issuet.
+### Notifikation til koordinationsgruppen
+
+Efter Apply køres workflowet **Notificer Klar til prioritering**.
 
 Koordinationsgruppen notificeres kun, når:
 
@@ -224,31 +246,44 @@ Koordinationsgruppen notificeres kun, når:
 - seneste PO-review er 🟢 eller 🟡
 - koordinationsgruppen ikke allerede er notificeret
 
-Et 🔴 PO-review stopper automatisk KG-notifikationen. PO afgør derefter, om sagen skal afklares i samme status eller flyttes tilbage til **Afventer løsningsbeskrivelse**.
+Et 🔴 review stopper automatisk KG-notifikationen.
 
-Et 🟡 review er ikke blokerende.
+### Opfølgende review
 
-### 6. Nye kommentarer efter et review
+Ved næste kørsel af:
 
-Et issue reviewes ikke igen alene, fordi processen kører igen.
+```powershell
+.\OS2sofd-find-loesningsreview-behov.ps1
+```
 
-Hvis der kommer nye kommentarer efter seneste review:
+medtages et allerede reviewet issue kun som opfølgende kandidat, hvis der er kommet nye kommentarer efter seneste review.
 
-- input-generatoren registrerer dem
-- PO/AI vurderer, om de er relevante for beslutningsgrundlaget
-- kun relevante nye oplysninger giver et opfølgende review
-- opfølgende review skrives som en **ny GitHub-kommentar**
-- gamle reviews redigeres ikke
+Kun fagligt relevante nye oplysninger skal føre til et nyt review. Et opfølgende review skrives som en **ny GitHub-kommentar**, så historikken bevares.
 
-Automatiske proceskommentarer skal ikke i sig selv udløse nyt review.
+### Enkeltsagskørsel ved behov
 
-### 7. PO-overblikket
+Hvis PO ønsker at behandle ét bestemt issue uden batch, kan den eksisterende enkeltsagsproces fortsat bruges:
+
+```powershell
+.\OS2sofd-find-loesningsreview.ps1 -IssueNumber 105
+```
+
+og efter review:
+
+```powershell
+.\OS2sofd-loesningsreview-deploy.ps1 `
+  -ResultPath ".\OS2sofd-loesningsreview-resultat-105.json" `
+  -Mode DryRun
+```
+
+Efter kontrol ændres `DryRun` til `Apply`.
+
+### PO-overblikket
 
 `docs/po-overblik.md` indeholder et særskilt afsnit **Review af løsningsbeskrivelser** med bl.a.:
 
 - antal issues i **Klar til prioritering**
-- antal reviewede issues
-- issues der mangler PO-review
+- manglende PO-review
 - gule/røde reviews
 - estimat
 - opmærksomhedspunkter
@@ -352,17 +387,18 @@ Get-ExecutionPolicy -List
 
 `CurrentUser` bør normalt stå som `RemoteSigned`.
 
-### API-rate-limit
+### GraphQL-rate-limit
 
-Kontrollér GitHub-kvoten:
+GitHub Projects bruger GraphQL. Kontrollér derfor kvoten direkte via GraphQL:
 
 ```powershell
-$rl = gh api rate_limit | ConvertFrom-Json
-$rl.resources.graphql | Format-List limit,remaining,used
-[DateTimeOffset]::FromUnixTimeSeconds($rl.resources.graphql.reset).ToLocalTime()
+$g = gh api graphql -f query='query { rateLimit { limit remaining used resetAt } }' | ConvertFrom-Json
+$g.data.rateLimit
 ```
 
-Hvis kvoten er opbrugt, vent til reset og kør igen.
+Hvis `remaining` er lav, vent til `resetAt` før en større `Apply`.
+
+Brug ikke `gh api rate_limit` som eneste kontrol for Project-batchkørsler, da den kan vise en anden eller forældet GraphQL-værdi.
 
 ### Er du i tvivl?
 
