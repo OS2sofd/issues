@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-21T22:13:46.8059005+00:00",
+  "updatedAt": "2026-09-22T11:35:11.8283173+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -49,8 +49,10 @@
       "number": 108,
       "title": "Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.",
       "url": "https://github.com/OS2sofd/issues/issues/108",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-94": {
       "number": 94,
@@ -128,8 +130,10 @@
       "number": 58,
       "title": "OS2sofd - ilm - udfyld UPN ved oprettelse af konsulentkonto",
       "url": "https://github.com/OS2sofd/issues/issues/58",
-      "status": "Klar til prioritering",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Afsluttede løsninger",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-56": {
       "number": 56,
@@ -440,10 +444,10 @@
       "number": 59,
       "title": "OS2sofd - ilm: udfyld displayName ved oprettelse af konsulent",
       "url": "https://github.com/OS2sofd/issues/issues/59",
-      "status": "Klar til prioritering",
+      "status": "Afsluttede løsninger",
       "notificationSent": true,
       "notificationSentAt": "2026-09-21T14:08:55.7429553+00:00",
-      "lastObserved": "2026-09-21T14:08:55.7429553+00:00"
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-60": {
       "number": 60,
@@ -576,22 +580,28 @@
       "number": 79,
       "title": "Flere steps i godkendelsesflow i OS2Rollekatalog Anmod/Godkend",
       "url": "https://github.com/OS2sofd/issues/issues/79",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-80": {
       "number": 80,
       "title": "ÆndringsønskeUdvidet information ved anmodning om rolle i OS2Rolekatalog Anmod/Godkend",
       "url": "https://github.com/OS2sofd/issues/issues/80",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-81": {
       "number": 81,
       "title": "At kunne ændre afsendernavn på mails fra Rollekatalog",
       "url": "https://github.com/OS2sofd/issues/issues/81",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-82": {
       "number": 82,
@@ -640,22 +650,28 @@
       "number": 87,
       "title": "Begrænse en systemansvarlig's view af it-systemer i OS2Rollekatalog",
       "url": "https://github.com/OS2sofd/issues/issues/87",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-88": {
       "number": 88,
       "title": "Ny kolonne i rapporten 'Historiske rolleanmodninger', så man kan se hvilket IT-System de forskellige roller er tilknyttet",
       "url": "https://github.com/OS2sofd/issues/issues/88",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-89": {
       "number": 89,
       "title": "Udvide 'Status' typer for tildeling af rettigheder med 'Tildelt ved godkendt anmodning'.",
       "url": "https://github.com/OS2sofd/issues/issues/89",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-90": {
       "number": 90,
@@ -677,8 +693,10 @@
       "number": 92,
       "title": "Konfigurationsindstilling: Jobfunktionsroller og Rollebuketter listes samlet",
       "url": "https://github.com/OS2sofd/issues/issues/92",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T10:55:26.0055683+00:00"
+      "status": "Won't fix",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
     },
     "issue-93": {
       "number": 93,
