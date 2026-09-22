@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-22T11:35:11.8283173+00:00",
+  "updatedAt": "2026-09-22T15:42:24.6347792+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -400,10 +400,10 @@
       "number": 101,
       "title": "OS2ILM: Tildeling af leder via Virksomhed",
       "url": "https://github.com/OS2sofd/issues/issues/101",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-21T22:13:45.7559749+00:00"
+      "lastObserved": "2026-09-22T15:42:23.8675417+00:00"
     },
     "issue-48": {
       "number": 48,
@@ -460,8 +460,10 @@
       "number": 61,
       "title": "Vil gerne selv kunne styre username, og navngivningen generelt i ILM",
       "url": "https://github.com/OS2sofd/issues/issues/61",
-      "status": "Igangværende opgaver",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Afsluttede løsninger",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T15:42:23.8675417+00:00"
     },
     "issue-62": {
       "number": 62,
@@ -775,15 +777,19 @@
       "number": 106,
       "title": "OS2ILM: Det skal være muligt for en administrator at slette en konsulent helt.",
       "url": "https://github.com/OS2sofd/issues/issues/106",
-      "status": "Igangværende opgaver",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Afsluttede løsninger",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T15:42:23.8675417+00:00"
     },
     "issue-107": {
       "number": 107,
       "title": "OS2ILM: Manglende e-mailnotifikationer ved konsulentgodkendelse",
       "url": "https://github.com/OS2sofd/issues/issues/107",
-      "status": "Igangværende opgaver",
-      "lastObserved": "2026-09-15T11:41:40.1131163+00:00"
+      "status": "Afsluttede løsninger",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-22T15:42:23.8675417+00:00"
     },
     "issue-109": {
       "number": 109,
