@@ -1,14 +1,16 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-22T15:42:24.6347792+00:00",
+  "updatedAt": "2026-09-23T11:32:19.6023169+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
       "title": "OS2sofd Lederside - Auditlogning af ændringer skal følge SOFD Core praksis",
       "url": "https://github.com/OS2sofd/issues/issues/53",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Igangværende opgaver",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-23T11:32:18.8417254+00:00"
     },
     "issue-50": {
       "number": 50,
@@ -877,6 +879,15 @@
       "url": "https://github.com/OS2sofd/issues/issues/123",
       "status": "Nye ændringsønsker",
       "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+    },
+    "issue-124": {
+      "number": 124,
+      "title": "OS2ILM - Ændring til CMS, mailskabeloner",
+      "url": "https://github.com/OS2sofd/issues/issues/124",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-23T11:32:18.8417254+00:00"
     }
   }
 }
