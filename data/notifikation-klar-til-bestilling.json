@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-23T15:34:24.6356799+00:00",
+  "updatedAt": "2026-09-24T11:42:30.8609845+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -16,10 +16,10 @@
       "number": 50,
       "title": "Mulighed for at opsætte grænser for varigheden af OS2sofd tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/50",
-      "status": "Igangværende opgaver",
+      "status": "Løsninger i test",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-23T15:34:23.8896967+00:00"
+      "lastObserved": "2026-09-24T11:42:30.0092744+00:00"
     },
     "issue-100": {
       "number": 100,
@@ -406,10 +406,10 @@
       "number": 101,
       "title": "OS2ILM: Tildeling af leder via Virksomhed",
       "url": "https://github.com/OS2sofd/issues/issues/101",
-      "status": "Bestilt hos leverandør",
+      "status": "Igangværende opgaver",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-22T15:42:23.8675417+00:00"
+      "lastObserved": "2026-09-24T11:42:30.0092744+00:00"
     },
     "issue-48": {
       "number": 48,
@@ -892,6 +892,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-09-23T11:32:18.8417254+00:00"
+    },
+    "issue-125": {
+      "number": 125,
+      "title": "Brugertjek: Fastfrys søg knappen",
+      "url": "https://github.com/OS2sofd/issues/issues/125",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-24T11:42:30.0092744+00:00"
     }
   }
 }
