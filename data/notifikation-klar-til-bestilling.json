@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-25T07:59:01.9075268+00:00",
+  "updatedAt": "2026-09-25T09:44:01.8802124+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -801,8 +801,10 @@
       "number": 109,
       "title": "Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/109",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T09:44:00.9846661+00:00"
     },
     "issue-110": {
       "number": 110,
