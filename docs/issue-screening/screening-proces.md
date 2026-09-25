@@ -1,452 +1,303 @@
-# OS2sofd – proces for screening af ændringsønsker
+# PO-vejledning – screening af nye OS2sofd-ændringsønsker
 
-## Formål
-
-Denne proces beskriver, hvordan nye ændringsønsker i OS2sofd håndteres fra de oprettes i GitHub, til de enten:
-
-- går videre til **Afventer løsningsbeskrivelse**, eller
-- returneres til opretter med spørgsmål til afklaring.
-
-Målet er at sikre en ensartet, gennemsigtig og sporbar behandling af ændringsønsker.
+Denne vejledning er den korte arbejdsgang for Product Owner.
 
 ---
 
-## Overordnet proces
+## Før du starter – hver ny PowerShell-session
 
-Processen består aktuelt af to manuelle trin og én automatisk GitHub-opdatering:
-
-1. Nye ændringsønsker findes og eksporteres fra GitHub.
-2. Ændringsønskerne screenes med AI efter den fastlagte screeningsmodel.
-3. Resultatet anvendes af et deploy-script, som opdaterer GitHub.
-
-### Faste filnavne
-
-Eksport fra GitHub:
-
-`OS2sofd-nye-aendringsoensker.json`
-
-Resultat efter screening:
-
-`OS2sofd-screening-resultat-aktuel.json`
-
-De faste filnavne betyder, at PO ikke skal ændre parametre eller issue-numre mellem kørsler.
-
----
-
-## Trin 1 – Find nye ændringsønsker
-
-Kør:
-
-```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-find-nye-aendringsoensker.ps1"
-```
-
-Scriptet finder issues i Project-status:
-
-**Nye ændringsønsker**
-
-og opretter filen:
-
-`Downloads\OS2sofd-nye-aendringsoensker.json`
-
-Hvis der ikke er nye ændringsønsker, skal der ikke gennemføres screening.
-
----
-
-## Trin 2 – Screening
-
-Filen `OS2sofd-nye-aendringsoensker.json` uploades til ChatGPT.
-
-Screeningen vurderer otte kriterier. Kriterierne skal ikke forstås som en kravspecifikation. Formålet er alene at vurdere, om ændringsønsket er beskrevet godt nok til at kunne gå videre til teknisk afklaring, løsningsforslag og estimering.
-
-### Vurderingsskala
-
-- 🟢 **Tilstrækkeligt** – oplysningerne er gode nok til, at ændringsønsket kan gå videre.
-- 🟡 **Kræver afklaring** – der er usikkerheder eller mangler, men de behøver ikke nødvendigvis blokere for næste trin.
-- 🔴 **Utilstrækkeligt** – der mangler så centrale oplysninger, at behovet eller den ønskede ændring ikke kan forstås godt nok.
-
-Et eller flere gule kriterier betyder derfor **ikke automatisk**, at ændringsønsket skal returneres til opretter.
-
-### De enkelte kriterier
-
-#### 1. Forretningsbehov
-
-**Hvad vurderes?**  
-Om det fremgår, hvilket problem, behov eller hvilken udfordring der findes i dag.
-
-Screeningen skal kunne forstå **hvorfor** ændringen ønskes. Det er ikke nok alene at skrive, hvad systemet skal gøre anderledes.
-
-Eksempler på et tydeligt forretningsbehov:
-
-- en arbejdsgang kræver unødvendigt manuelt arbejde
-- bestemte oplysninger kan ikke anvendes af andre systemer
-- brugere eller administratorer mangler mulighed for at udføre en konkret opgave
-- den nuværende løsning giver fejl, usikkerhed eller uhensigtsmæssige arbejdsgange
-
-🟢 når problemet eller behovet kan forstås.  
-🟡 når behovet kan anes, men er upræcist beskrevet.  
-🔴 når ændringsønsket primært beskriver en løsning uden at gøre det forståeligt, hvilket problem der skal løses.
-
----
-
-#### 2. Forretningsværdi
-
-**Hvad vurderes?**  
-Om det fremgår, hvilken nytte ændringen forventes at skabe.
-
-Forretningsværdi kan fx være:
-
-- mindre manuelt arbejde
-- bedre datakvalitet
-- færre fejl
-- højere sikkerhed
-- enklere administration
-- bedre brugeroplevelse
-- mulighed for en arbejdsgang eller integration, som ikke fungerer i dag
-
-Der kræves ikke en økonomisk business case eller dokumenterede gevinster. Det er tilstrækkeligt, at den forventede værdi kan forstås.
-
-🟢 når værdien er tydelig eller kan udledes direkte af behovet.  
-🟡 når værdien virker sandsynlig, men ikke er særlig tydeligt beskrevet.  
-🔴 når det ikke er muligt at forstå, hvorfor ændringen vil være nyttig.
-
----
-
-#### 3. Ønsket ændring
-
-**Hvad vurderes?**  
-Om det er forståeligt, hvad opretter ønsker ændret i OS2sofd eller en tilknyttet integration/funktion.
-
-Der skal være en rimelig sammenhæng mellem det beskrevne problem og den ønskede ændring.
-
-Der kræves **ikke** en teknisk løsningsbeskrivelse. Opretter behøver fx ikke beskrive:
-
-- API-endpoints
-- datamappings
-- databasestruktur
-- valideringsregler
-- tekniske undtagelser
-- konkret implementering
-
-🟢 når udvikleren kan forstå retningen for den ønskede ændring.  
-🟡 når retningen er forståelig, men enkelte dele er uklare.  
-🔴 når det ikke kan afgøres, hvad der faktisk ønskes ændret.
-
----
-
-#### 4. Behov vs. løsning
-
-**Hvad vurderes?**  
-Om ændringsønsket giver plads til teknisk afklaring og ikke låser sig unødigt til én bestemt løsning.
-
-Opretter må gerne foreslå en konkret løsning. Et løsningsforslag er ofte nyttigt. Screeningen skal blot skelne mellem:
-
-- **behovet** – det der skal kunne lade sig gøre
-- **løsningsforslaget** – én mulig måde at gøre det på
-
-Et meget detaljeret løsningsforslag må ikke i sig selv føre til en dårlig vurdering, hvis det underliggende behov er forståeligt.
-
-🟢 når behovet kan identificeres, også selv om der foreslås en løsning.  
-🟡 når behov og løsning er blandet sammen, men behovet stadig kan udledes.  
-🔴 når beskrivelsen alene angiver en teknisk ændring, og det ikke er muligt at forstå formålet med den.
-
----
-
-#### 5. Sammenhæng
-
-**Hvad vurderes?**  
-Om ændringsønsket indeholder nok kontekst til at forstå, hvor problemet opstår og hvilke dele af OS2sofd eller den omkringliggende løsning det vedrører.
-
-Relevant sammenhæng kan fx være:
-
-- berørt modul
-- integration
-- brugergruppe
-- arbejdsgang
-- datakilde
-- konkret eksempel
-- afhængighed til et andet system eller ændringsønske
-
-Der kræves ikke komplet systemdokumentation.
-
-🟢 når ændringsønsket kan placeres i en forståelig sammenhæng.  
-🟡 når konteksten er begrænset, men behov og ændring stadig kan forstås.  
-🔴 når det er uklart, hvor eller i hvilken arbejdsgang problemet opstår.
-
----
-
-#### 6. Klarhed / afklaringsgrad
-
-**Hvad vurderes?**  
-Om beskrivelsen samlet set er konkret og entydig nok til, at en udvikler kan begynde den næste dialog.
-
-Dette kriterium er **ikke** et mål for, om alle detaljer allerede er afklaret.
-
-Spørgsmål som fx følgende hører normalt til den efterfølgende tekniske afklaring:
-
-- præcis feltmapping
-- håndtering af tomme værdier
-- overwrite-regler
-- API-adfærd
-- tekniske undtagelser
-- konfiguration
-- detaljer i eksisterende kode
-
-🟢 når en udvikler kan begynde afklaringen uden først at få genforklaret selve behovet.  
-🟡 når der er enkelte uklarheder, som kan tages i den efterfølgende dialog.  
-🔴 når behovet eller ønsket er så uklart, at opretter først må forklare det grundlæggende igen.
-
----
-
-#### 7. Omfang / afgrænsning
-
-**Hvad vurderes?**  
-Om det er muligt nogenlunde at forstå, hvad ændringsønsket omfatter – og hvad den centrale opgave er.
-
-Det handler ikke om at kende antal udviklingstimer eller have et færdigt estimat. Formålet er at opdage ønsker, der fx:
-
-- indeholder flere forskellige behov i samme issue
-- er så brede, at de bør opdeles
-- reelt beskriver et større projekt frem for én ændring
-
-🟢 når den centrale ændring er tilstrækkeligt afgrænset.  
-🟡 når ønsket kan gå videre, men muligvis bør opdeles eller afgrænses under løsningsarbejdet.  
-🔴 når det ikke er muligt at identificere en meningsfuld opgave uden først at få ønsket opdelt eller beskrevet nærmere.
-
----
-
-#### 8. Prioriteringsgrundlag
-
-**Hvad vurderes?**  
-Om den oplyste prioritet virker rimeligt underbygget af beskrivelsen.
-
-Der vurderes fx på:
-
-- konsekvensen af problemet
-- hvor mange der berøres
-- driftsmæssig eller sikkerhedsmæssig betydning
-- tidsmæssige afhængigheder
-- manuelt merarbejde
-- om en anden leverance er afhængig af ændringen
-
-Ved **Høj** eller **Kritisk** forventes en tydeligere begrundelse end ved **Lav** eller **Mellem**.
-
-🟢 når den oplyste prioritet virker forståelig og rimelig ud fra beskrivelsen.  
-🟡 når prioriteten kan være rigtig, men grundlaget er usikkert.  
-🔴 når den oplyste prioritet ikke hænger sammen med det beskrevne behov eller mangler nødvendig begrundelse.
-
-Prioriteringsgrundlaget har en særlig rolle: kun ved 🟢 overføres den oplyste prioritet automatisk til GitHub Project.
-
-### Kalibreringsprincip
-
-Et ændringsønske er klart, når:
-
-> behovet og den ønskede ændring er forståelige nok til, at en udvikler kan begynde teknisk afklaring, løsningsforslag og estimering.
-
-Screeningen må derfor ikke kræve, at teknisk løsning, mappings, API-adfærd, undtagelser eller detaljer om implementeringen allerede er afklaret.
-
-### Hvilke spørgsmål stilles hvornår?
-
-Screeningen skelner mellem tre typer spørgsmål:
-
-1. **Blokerende spørgsmål til opretter nu**  
-   Kun spørgsmål der er nødvendige for at forstå selve behovet eller den ønskede ændring.
-
-2. **Ikke-blokerende afklaringer senere**  
-   Spørgsmål der kan tages mellem udvikler og opretter under løsningsbeskrivelse og estimering.
-
-3. **Tekniske løsningsspørgsmål**  
-   Hører normalt ikke til screeningen og skal som udgangspunkt ikke sendes tilbage til opretter på dette trin.
-
----
-
-## Samlet vurdering
-
-Der anvendes kun to samlede udfald:
-
-### Klar til afklaring
-
-Bruges når behov og ønsket ændring er tilstrækkeligt forståelige.
-
-Issuet flyttes til:
-
-**Afventer løsningsbeskrivelse**
-
-### Returnér til opretter
-
-Bruges kun når behovet eller den ønskede ændring ikke kan forstås tilstrækkeligt.
-
-Issuet bliver i:
-
-**Screening**
-
-Opretter får konkrete spørgsmål i almindeligt, ikke-teknisk sprog.
-
----
-
-## Prioritet
-
-Prioritet overføres kun automatisk til GitHub Project, hvis:
-
-**Prioriteringsgrundlag = 🟢 Tilstrækkeligt**
-
-Hvis prioriteringsgrundlaget ikke er grønt:
-
-- prioriteten sættes ikke automatisk
-- PO får en særskilt kommentar om manuel vurdering
-
-Undtagelse:
-
-Hvis et issue **returneres til opretter**, behandles prioriteten ikke endnu. Den tages først op, når de nødvendige afklaringer foreligger.
-
----
-
-## Kategorisering og labels
-
-Der anvendes normalt:
-
-- én primær faglig label
-- højst én sekundær faglig label
-
-Flere faglige labels kan anvendes, når de beskriver forskellige relevante dimensioner af ønsket, fx et funktionelt område og en UI-ændring. Et Brugertjek-ønske om ændring af brugergrænsefladen kan derfor fx få både `brugertjek` og `ui`.
-
-### Regler for valg af labels
-
-1. **Kun eksisterende repo-labels må anvendes automatisk.**
-2. Hver foreslået label vurderes **enkeltvis** mod den eksisterende label-taksonomi.
-3. Hvis én foreslået label ikke findes, fjernes eller erstattes **kun denne label**. Andre korrekte labels bevares.
-4. Eksisterende lignende issues bruges aktivt som reference for kategorisering.
-5. En specifik eksisterende label foretrækkes frem for den generelle label `funktionelle forbedringer`.
-6. Hvis ingen eksisterende label passer, må screeningen godt gå videre uden faglig label. Der oprettes ikke automatisk en ny label.
-7. En manglende label i DryRun betyder derfor ikke, at hele kategoriseringen skal fjernes. Først undersøges, om en eksisterende label dækker området.
-
-### Nye labels
-
-Nye repo-labels oprettes aldrig automatisk som del af screeningen.
-
-Hvis et reelt nyt kategoribehov opdages, skal PO vurdere det særskilt og eventuelt oprette labelen manuelt. Formålet er at undgå næsten ens labels og holde taksonomien stabil.
-
-Proceslabels som fx:
-
-- `duplicate`
-- `særligt store opgaver`
-- `wontfix`
-- `ændringsønske`
-
-betragtes ikke som faglige kategorier.
-
-`ændringsønske` fjernes automatisk, når screeningen er gennemført.
-
-`wontfix` må ikke sættes automatisk.
-
----
-
-## GitHub-opdatering
-
-Når screeningsresultatet er gemt som:
-
-`OS2sofd-screening-resultat-aktuel.json`
-
-køres først en DryRun:
-
-```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode DryRun
-```
-
-Hvis resultatet ser korrekt ud, køres:
-
-```powershell
-& "$env:USERPROFILE\Downloads\OS2sofd-screening-deploy-v17-fast-filnavn.ps1" `
-  -Mode Apply
-```
-
-Deploy-scriptet håndterer:
-
-- screeningskommentar
-- relevante labels
-- fjernelse af `ændringsønske`
-- status i GitHub Project
-- prioritet efter gældende regler
-- Kontakt
-- Kommune
-- JIRA-Id
-- ping til opretter
-- ping til leverandørteam ved klare ændringsønsker
-
----
-
-## Pings
-
-### Klar til afklaring
-
-Opretter pinges.
-
-Leverandørteamet pinges:
-
-`@OS2sofd/leverandor-digital-identity`
-
-Leverandøren kan derefter tage den nødvendige dialog med opretter om løsning og estimat.
-
-### Returnér til opretter
-
-Kun opretter pinges.
-
-Leverandøren pinges ikke.
-
-PO pinges ikke om prioritet på dette trin.
-
----
-
-## Projektfelter
-
-Følgende felter udfyldes automatisk fra issue-formularen, hvis feltet i Project er tomt:
-
-- **Kontakt** ← `Navn`
-- **Kommune** ← `Kommune`
-- **JIRA-Id** ← `JIRA ID (hvis relevant)`
-
-Eksisterende værdier overskrives ikke.
-
-`No response` eller tomme værdier overføres ikke.
-
----
-
-## Sporbarhed
-
-Screeningskommentarer anvendes som dokumentation for vurderingen.
-
-Eksisterende kommentarer slettes som udgangspunkt ikke.
-
-Hvis en automatiseret kommentar viser sig at være forkert, bør den som udgangspunkt redigeres med en tydelig rettelse frem for at blive slettet.
-
----
-
-## Teknisk forudsætning
-
-PO-computeren skal have:
-
-- GitHub CLI (`gh`)
-- adgang til repo og GitHub Project
-- nødvendige GitHub scopes
-- PowerShell
-
-Hvis PowerShell blokerer scripts i en ny session:
+Når et nyt PowerShell-vindue åbnes, skal scriptkørsel først tillades for den aktuelle session:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
 ```
 
-Dette gælder kun den aktuelle PowerShell-session.
+Kommandoen kræver ikke administratorrettigheder og gælder kun det aktuelle PowerShell-vindue. Når vinduet lukkes, nulstilles indstillingen. Den skal derfor køres igen næste gang et nyt PowerShell-vindue åbnes.
+
+Scriptsene håndterer selv UTF-8/tegnsætning, så der er ikke behov for yderligere initialisering.
+
+Gå derefter til den faste arbejdsmappe:
+
+```powershell
+cd "C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening"
+```
 
 ---
 
-## Kendt begrænsning
+## Når nye ændringsønsker skal behandles
 
-AI-screeningen sker endnu ikke direkte fra PowerShell-scriptet.
+### 1. Find nye ændringsønsker
 
-Den aktuelle proces er derfor:
+Kør:
 
-**GitHub → eksportfil → AI-screening → resultatfil → GitHub**
+```powershell
+.\OS2sofd-find-nye-aendringsoensker.ps1
+```
 
-En senere automatisering kan koble en LLM/API direkte på processen, men det bør først ske, når den nuværende screeningsmodel er stabil og dokumenteret.
+Scriptet genererer:
+
+`OS2sofd-nye-aendringsoensker.json`
+
+Kontrollér, at scriptet viser det forventede antal nye ændringsønsker.
+
+---
+
+### 2. Upload filen til ChatGPT
+
+Upload:
+
+`OS2sofd-nye-aendringsoensker.json`
+
+Bed om screening efter den aftalte OS2sofd-model.
+
+Resultatet gemmes med dato, fx:
+
+`OS2sofd-screening-resultat-20260918.json`
+
+Den daterede fil beholdes som arkiv.
+
+Kopiér derefter filen til det aktive filnavn, som deploy-scriptet læser:
+
+```powershell
+Copy-Item ".\OS2sofd-screening-resultat-20260918.json" ".\OS2sofd-screening-resultat-aktuel.json"
+```
+
+---
+
+### 3. Kontrollér med DryRun
+
+Kør:
+
+```powershell
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode DryRun
+```
+
+Kontrollér især:
+
+- issue-nummer og titel
+- ny status
+- prioritet
+- Kontakt
+- Kommune
+- JIRA-Id
+
+DryRun ændrer ikke noget i GitHub.
+
+---
+
+### 4. Gennemfør opdateringen
+
+Hvis DryRun ser korrekt ud:
+
+```powershell
+.\OS2sofd-screening-deploy-v17-fast-filnavn.ps1 -Mode Apply
+```
+
+Scriptet opdaterer derefter GitHub.
+
+---
+
+## Hvad sker der ved "Klar til afklaring"?
+
+Issuet:
+
+- flyttes til **Afventer løsningsbeskrivelse**
+- får screeningskommentar
+- får relevante labels
+- mister label `ændringsønske`
+- får Project-felter udfyldt
+- får prioritet sat, hvis prioriteringsgrundlaget er grønt
+- pinger opretter
+- pinger leverandørteamet
+
+PO skal normalt ikke gøre mere på dette trin.
+
+---
+
+## Hvad sker der ved "Returnér til opretter"?
+
+Issuet:
+
+- bliver i **Screening**
+- får en screeningskommentar
+- får konkrete spørgsmål til opretter
+- pinger kun opretter
+- får relevante labels
+- mister label `ændringsønske`
+
+Prioritet behandles ikke endnu.
+
+Når opretter har svaret, skal issuet screenes igen.
+
+---
+
+## Senere i processen
+
+Når et issue senere flyttes til **Klar til prioritering**, notificeres koordinationsgruppen via en særskilt GitHub-automatisering. Det er ikke en del af screening-deploy-scriptet.
+
+---
+
+## Kort fortolkning af screeningskriterierne
+
+PO behøver ikke selv gennemføre hele vurderingen manuelt, men bør kende betydningen af kriterierne:
+
+| Kriterium | Det centrale spørgsmål |
+| --- | --- |
+| Forretningsbehov | Er det forståeligt, hvilket problem eller behov der findes i dag? |
+| Forretningsværdi | Er det forståeligt, hvilken nytte ændringen forventes at skabe? |
+| Ønsket ændring | Er det forståeligt, hvad opretter ønsker ændret? |
+| Behov vs. løsning | Kan behovet skelnes fra et eventuelt foreslået teknisk løsningsforslag? |
+| Sammenhæng | Er der nok kontekst til at forstå, hvor og hvornår behovet opstår? |
+| Klarhed / afklaringsgrad | Kan en udvikler begynde den tekniske afklaring uden først at få behovet genforklaret? |
+| Omfang / afgrænsning | Er den centrale opgave tilstrækkeligt afgrænset til at kunne behandles? |
+| Prioriteringsgrundlag | Virker den oplyste prioritet rimeligt underbygget? |
+
+Et gult kriterium er ikke i sig selv grund til at returnere et ændringsønske. Den afgørende test er, om behovet og den ønskede ændring er forståelige nok til, at udvikleren kan gå videre med afklaring, løsningsforslag og estimat.
+
+Den fulde definition af kriterierne findes i `screening-proces.md`.
+
+---
+
+## Acceptkriterier – hvem gør hvad?
+
+Færdige acceptkriterier er ikke et krav for at bestå screeningen.
+
+- **Opretter** beskriver behovet og gerne, hvordan man vil kunne se, at ændringen virker.
+- **PO** formulerer de forretningsmæssige acceptkriterier.
+- **Leverandøren** kvalificerer dem teknisk og kan supplere med tekniske testkriterier.
+- De forretningsmæssige acceptkriterier bør være på plads, inden sagen går videre fra løsningsbeskrivelse til prioritering/bestilling.
+
+---
+
+## Hvornår skal PO reagere manuelt?
+
+PO skal reagere, hvis:
+
+- scriptet viser fejl
+- prioriteringsgrundlaget ikke er grønt på et ellers klart issue
+- en mulig dublet kræver vurdering
+- en opgave ser ud til at være usædvanligt stor
+- et returneret issue er blevet suppleret af opretter
+- en label eller status ikke virker korrekt
+- DryRun melder, at en foreslået repo-label mangler
+
+---
+
+## Vigtige principper
+
+1. Screeningen vurderer **ændringsønsket**, ikke personen der har oprettet det.
+2. Der kræves ikke en færdig teknisk løsning før et issue kan gå videre.
+3. Spørg kun opretter om oplysninger, der er nødvendige for at forstå behovet eller den ønskede ændring.
+4. Tekniske løsningsspørgsmål hører normalt til dialogen med udvikleren.
+5. Eksisterende kommentarer slettes som udgangspunkt ikke.
+6. `wontfix` sættes aldrig automatisk.
+
+---
+
+## PO-overblik – sådan bruges det
+
+`docs/po-overblik.md` er PO'ens daglige styringsdashboard. Overblikket skal ikke fungere som en fuld rapport på første skærm.
+
+Den øverste del viser kun:
+
+- konkrete PO-handlinger
+- aktuel levering
+- vigtigste flow-/flaskehals
+- backlog-sundhed
+
+Detaljer og analysedata ligger nedenunder og er foldet sammen som standard.
+
+### Hvad løftes til PO-fokus?
+
+Et issue løftes til toppen, når der er et konkret handlingsbehov, fx:
+
+- rødt PO-review
+- Kritisk/Høj uden opdatering i den aftalte periode
+- manglende prioritet, estimat eller PO-review
+- manglende planlagt release eller assignee
+- test/review der står stille
+- udløbet planlagt release
+- lukket GitHub-issue i aktiv Project-status
+
+### Hvad er kun et styringssignal?
+
+Følgende vises i overblikket, men er ikke automatisk en PO-handling:
+
+- høj alder
+- antal issues i `Klar til prioritering`
+- stor kø i en bestemt status
+
+Et gammelt issue løftes derfor ikke til PO-fokus alene på grund af alder. Tilsvarende er `Klar til prioritering` en normal processtatus og ikke i sig selv et problem.
+
+Den detaljerede model og vedligeholdelsesreglerne findes i `docs/po-overblik/README.md`.
+
+---
+
+## Hvis noget går galt
+
+### "Kan ikke finde deployment-filen"
+
+Kontrollér, at denne fil findes i den faste arbejdsmappe:
+
+`C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening\OS2sofd-screening-resultat-aktuel.json`
+
+Deploy-scriptet læser som standard resultatfilen fra samme mappe som scriptet.
+
+### "Manglende repo-labels"
+
+Hvis DryRun stopper med fx:
+
+`STOP/FEJL: Manglende repo-labels: ...`
+
+skal `Apply` ikke køres.
+
+Gør derefter følgende:
+
+1. Kontrollér den konkrete manglende label mod repoets eksisterende labels.
+2. Se på lignende eksisterende issues og genbrug deres kategorisering, når den passer.
+3. Fjern eller erstat kun den label, der faktisk mangler.
+4. Bevar andre foreslåede labels, som findes og er fagligt relevante.
+5. Kør DryRun igen.
+
+En manglende label er altså **ikke** grund til at fjerne hele kategoriseringen.
+
+Eksempel: Hvis et Brugertjek-ønske vedrører brugergrænsefladen, kan både `brugertjek` og `ui` være relevante. Hvis en tredje foreslået label ikke findes, fjernes kun den tredje.
+
+Nye repo-labels oprettes aldrig automatisk. Hvis et reelt nyt kategoribehov opdages, vurderes det særskilt af PO.
+
+### Scriptet må ikke køres
+
+Kør:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+```
+
+### API-rate-limit
+
+Kontrollér GitHub-kvoten:
+
+```powershell
+$rl = gh api rate_limit | ConvertFrom-Json
+$rl.resources.graphql | Format-List limit,remaining,used
+[DateTimeOffset]::FromUnixTimeSeconds($rl.resources.graphql.reset).ToLocalTime()
+```
+
+Hvis kvoten er opbrugt, vent til reset og kør igen.
+
+### Er du i tvivl?
+
+Kør altid `-Mode DryRun` først. DryRun ændrer ikke GitHub.
+
+
+---
+
+## Relateret kørevejledning
+
+Den samlede lokale kørevejledning findes i:
+
+`docs/issue-screening/koerevejledning-screening.md`
+
+Den faste lokale arbejdsmappe er:
+
+`C:\Users\ehp\OneDrive - Syddjurs Kommune\Dokumenter\GitHub\Issues\issue-screening`
