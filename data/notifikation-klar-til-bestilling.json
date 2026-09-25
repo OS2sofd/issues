@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-25T11:48:15.1124117+00:00",
+  "updatedAt": "2026-09-25T17:08:35.1672755+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -372,8 +372,10 @@
       "number": 30,
       "title": "OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale",
       "url": "https://github.com/OS2sofd/issues/issues/30",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
     },
     "issue-32": {
       "number": 32,
@@ -701,8 +703,10 @@
       "number": 90,
       "title": "At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek",
       "url": "https://github.com/OS2sofd/issues/issues/90",
-      "status": "Screening",
-      "lastObserved": "2026-09-19T14:23:32.7198785+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
     },
     "issue-91": {
       "number": 91,
@@ -792,8 +796,10 @@
       "number": 104,
       "title": "OS2ILM: Placering af medarbejdere i OU",
       "url": "https://github.com/OS2sofd/issues/issues/104",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
     },
     "issue-106": {
       "number": 106,
@@ -903,19 +909,19 @@
       "number": 123,
       "title": "OS2ILM - Tilknytning af allerede oprettede brugere",
       "url": "https://github.com/OS2sofd/issues/issues/123",
-      "status": "Afventer løsningsbeskrivelse",
+      "status": "Screening",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
+      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
     },
     "issue-124": {
       "number": 124,
       "title": "OS2ILM - Ændring til CMS, mailskabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/124",
-      "status": "Afventer løsningsbeskrivelse",
+      "status": "Klar til prioritering",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
+      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
     },
     "issue-125": {
       "number": 125,
