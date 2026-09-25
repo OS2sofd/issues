@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-24T11:42:30.8609845+00:00",
+  "updatedAt": "2026-09-25T07:59:01.9075268+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -56,9 +56,9 @@
       "title": "Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.",
       "url": "https://github.com/OS2sofd/issues/issues/108",
       "status": "Klar til prioritering",
-      "notificationSent": false,
-      "notificationSentAt": null,
-      "lastObserved": "2026-09-22T11:35:10.8440076+00:00"
+      "notificationSent": true,
+      "notificationSentAt": "2026-09-25T07:59:00.3007559+00:00",
+      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
     },
     "issue-94": {
       "number": 94,
@@ -874,33 +874,37 @@
       "number": 122,
       "title": "Mulighed for at angive leder på institutioner",
       "url": "https://github.com/OS2sofd/issues/issues/122",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
     },
     "issue-123": {
       "number": 123,
       "title": "OS2ILM - Tilknytning af allerede oprettede brugere",
       "url": "https://github.com/OS2sofd/issues/issues/123",
-      "status": "Nye ændringsønsker",
-      "lastObserved": "2026-09-21T12:44:35.4500213+00:00"
+      "status": "Afventer løsningsbeskrivelse",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
     },
     "issue-124": {
       "number": 124,
       "title": "OS2ILM - Ændring til CMS, mailskabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/124",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-23T11:32:18.8417254+00:00"
+      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
     },
     "issue-125": {
       "number": 125,
       "title": "Brugertjek: Fastfrys søg knappen",
       "url": "https://github.com/OS2sofd/issues/issues/125",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-24T11:42:30.0092744+00:00"
+      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
     }
   }
 }
