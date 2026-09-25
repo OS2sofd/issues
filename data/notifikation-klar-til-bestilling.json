@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-25T09:44:01.8802124+00:00",
+  "updatedAt": "2026-09-25T11:48:15.1124117+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -240,15 +240,19 @@
       "number": 12,
       "title": "Forstå forskel på Ansatte, Eksterne, Byrøddet, Konsulenter, Vikarer, m.m. typer af AD konti",
       "url": "https://github.com/OS2sofd/issues/issues/12",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-13": {
       "number": 13,
       "title": "SofdCoreADReplicator - Handlinger ved grupper",
       "url": "https://github.com/OS2sofd/issues/issues/13",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-15": {
       "number": 15,
@@ -286,15 +290,19 @@
       "number": 19,
       "title": "SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen \"Medarbejder\" når man kører med sync fra et lønsystem",
       "url": "https://github.com/OS2sofd/issues/issues/19",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-21": {
       "number": 21,
       "title": "SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre",
       "url": "https://github.com/OS2sofd/issues/issues/21",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-22": {
       "number": 22,
@@ -307,8 +315,10 @@
       "number": 23,
       "title": "Samlet overblik over diverse opmærkninger/fravalg af enheder",
       "url": "https://github.com/OS2sofd/issues/issues/23",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-24": {
       "number": 24,
@@ -369,8 +379,10 @@
       "number": 32,
       "title": "Import af SOFD enheder til OS2Vikar modulet",
       "url": "https://github.com/OS2sofd/issues/issues/32",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-34": {
       "number": 34,
@@ -399,8 +411,10 @@
       "number": 37,
       "title": "Tilknytning af stillinger til enheder i Vikar modulet",
       "url": "https://github.com/OS2sofd/issues/issues/37",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-101": {
       "number": 101,
@@ -572,8 +586,10 @@
       "number": 76,
       "title": "Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”",
       "url": "https://github.com/OS2sofd/issues/issues/76",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-78": {
       "number": 78,
@@ -810,8 +826,10 @@
       "number": 110,
       "title": "Frigørelse af kobling mellem it-brugerkonto og tilhørsforhold fra løndata. Tilhørsforhold skal afspejle den administrative organisation i OS2sofd.Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/110",
-      "status": "Afventer løsningsbeskrivelse",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Screening",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-111": {
       "number": 111,
@@ -876,10 +894,10 @@
       "number": 122,
       "title": "Mulighed for at angive leder på institutioner",
       "url": "https://github.com/OS2sofd/issues/issues/122",
-      "status": "Afventer løsningsbeskrivelse",
+      "status": "Klar til prioritering",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
+      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
     },
     "issue-123": {
       "number": 123,
