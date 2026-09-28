@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-25T17:08:35.1672755+00:00",
+  "updatedAt": "2026-09-28T13:50:04.2788794+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -931,6 +931,24 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
+    },
+    "issue-126": {
+      "number": 126,
+      "title": "OS2ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
+      "url": "https://github.com/OS2sofd/issues/issues/126",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-28T13:50:00.2232659+00:00"
+    },
+    "issue-127": {
+      "number": 127,
+      "title": "Overførsel af autorisationskode til FK Organisation",
+      "url": "https://github.com/OS2sofd/issues/issues/127",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-28T13:50:00.2232659+00:00"
     }
   }
 }
