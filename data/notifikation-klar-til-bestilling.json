@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-28T13:50:04.2788794+00:00",
+  "updatedAt": "2026-09-29T12:49:29.5909791+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -238,12 +238,12 @@
     },
     "issue-12": {
       "number": 12,
-      "title": "Forstå forskel på Ansatte, Eksterne, Byrøddet, Konsulenter, Vikarer, m.m. typer af AD konti",
+      "title": "Forstå forskel på Ansatte, Eksterne, Byrødder, Konsulenter, Vikarer, m.m. typer af AD konti",
       "url": "https://github.com/OS2sofd/issues/issues/12",
-      "status": "Screening",
+      "status": "Won't fix",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
+      "lastObserved": "2026-09-29T12:49:25.6334480+00:00"
     },
     "issue-13": {
       "number": 13,
