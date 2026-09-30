@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-29T12:49:29.5909791+00:00",
+  "updatedAt": "2026-09-30T12:31:11.0327819+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -243,7 +243,7 @@
       "status": "Won't fix",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-29T12:49:25.6334480+00:00"
+      "lastObserved": "2026-09-29T12:49:25.633448+00:00"
     },
     "issue-13": {
       "number": 13,
@@ -949,6 +949,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-09-28T13:50:00.2232659+00:00"
+    },
+    "issue-128": {
+      "number": 128,
+      "title": "Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD",
+      "url": "https://github.com/OS2sofd/issues/issues/128",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-09-30T12:31:08.2378458+00:00"
     }
   }
 }
