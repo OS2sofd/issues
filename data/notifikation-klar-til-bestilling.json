@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-09-30T12:31:11.0327819+00:00",
+  "updatedAt": "2026-10-01T13:09:12.8665189+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -958,6 +958,24 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-09-30T12:31:08.2378458+00:00"
+    },
+    "issue-129": {
+      "number": 129,
+      "title": "Muligt at ændre arbejdssted",
+      "url": "https://github.com/OS2sofd/issues/issues/129",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-01T13:09:09.1573665+00:00"
+    },
+    "issue-130": {
+      "number": 130,
+      "title": "Krav til kode for lokale SOFD brugerkonti",
+      "url": "https://github.com/OS2sofd/issues/issues/130",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-01T13:09:09.1573665+00:00"
     }
   }
 }
