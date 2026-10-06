@@ -1,34 +1,34 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-01T13:09:12.8665189+00:00",
+  "updatedAt": "2026-10-06T13:16:13.0621774+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
       "title": "OS2sofd Lederside - Auditlogning af ændringer skal følge SOFD Core praksis",
       "url": "https://github.com/OS2sofd/issues/issues/53",
-      "status": "Løsninger i test",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-23T15:34:23.8896967+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-50": {
       "number": 50,
       "title": "Mulighed for at opsætte grænser for varigheden af OS2sofd tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/50",
-      "status": "Løsninger i test",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-24T11:42:30.0092744+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-100": {
       "number": 100,
       "title": "Brugerkontotyper - tilføjelse til skabelonbaseret navnekonvention",
       "url": "https://github.com/OS2sofd/issues/issues/100",
-      "status": "Løsninger i test",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-23T15:34:23.8896967+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-51": {
       "number": 51,
@@ -55,17 +55,19 @@
       "number": 108,
       "title": "Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.",
       "url": "https://github.com/OS2sofd/issues/issues/108",
-      "status": "Klar til prioritering",
+      "status": "Screening",
       "notificationSent": true,
       "notificationSentAt": "2026-09-25T07:59:00.3007559+00:00",
-      "lastObserved": "2026-09-25T07:59:00.3007559+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-94": {
       "number": 94,
       "title": "Understøttelse af Pre-hire-brugere i snitfladen mellem SOFD og Rollekatalog",
       "url": "https://github.com/OS2sofd/issues/issues/94",
-      "status": "Løsninger i test",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Afsluttede løsninger",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-43": {
       "number": 43,
@@ -215,10 +217,10 @@
       "number": 9,
       "title": "Person tilhørsforhold - Tilføj markering af primært tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/9",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-10": {
       "number": 10,
@@ -491,10 +493,10 @@
       "number": 62,
       "title": "Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper",
       "url": "https://github.com/OS2sofd/issues/issues/62",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-64": {
       "number": 64,
@@ -507,10 +509,10 @@
       "number": 65,
       "title": "NexusSync - automatisk luk af konti udenfor \"nexus organisationen\"",
       "url": "https://github.com/OS2sofd/issues/issues/65",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-66": {
       "number": 66,
@@ -823,10 +825,10 @@
       "number": 109,
       "title": "Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/109",
-      "status": "Klar til prioritering",
+      "status": "Screening",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T09:44:00.9846661+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-110": {
       "number": 110,
@@ -918,10 +920,10 @@
       "number": 124,
       "title": "OS2ILM - Ændring til CMS, mailskabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/124",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     },
     "issue-125": {
       "number": 125,
@@ -976,6 +978,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-01T13:09:09.1573665+00:00"
+    },
+    "issue-131": {
+      "number": 131,
+      "title": "Omlægge til nye webservices på OPUS Medarbejderservice",
+      "url": "https://github.com/OS2sofd/issues/issues/131",
+      "status": "Bestilt hos leverandør",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
     }
   }
 }
