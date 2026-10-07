@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-06T13:16:13.0621774+00:00",
+  "updatedAt": "2026-10-07T13:18:48.8929635+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -732,10 +732,10 @@
       "number": 93,
       "title": "Berigelse af titelfelt for skoleelever med klassetrin",
       "url": "https://github.com/OS2sofd/issues/issues/93",
-      "status": "Klar til prioritering",
+      "status": "Won't fix",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-10-07T13:18:46.5972702+00:00"
     },
     "issue-95": {
       "number": 95,
