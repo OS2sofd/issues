@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-07T13:18:48.8929635+00:00",
+  "updatedAt": "2026-10-09T13:13:16.3385967+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -938,46 +938,46 @@
       "number": 126,
       "title": "OS2ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
       "url": "https://github.com/OS2sofd/issues/issues/126",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-28T13:50:00.2232659+00:00"
+      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
     },
     "issue-127": {
       "number": 127,
       "title": "Overførsel af autorisationskode til FK Organisation",
       "url": "https://github.com/OS2sofd/issues/issues/127",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-28T13:50:00.2232659+00:00"
+      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
     },
     "issue-128": {
       "number": 128,
       "title": "Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD",
       "url": "https://github.com/OS2sofd/issues/issues/128",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-30T12:31:08.2378458+00:00"
+      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
     },
     "issue-129": {
       "number": 129,
       "title": "Muligt at ændre arbejdssted",
       "url": "https://github.com/OS2sofd/issues/issues/129",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-01T13:09:09.1573665+00:00"
+      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
     },
     "issue-130": {
       "number": 130,
       "title": "Krav til kode for lokale SOFD brugerkonti",
       "url": "https://github.com/OS2sofd/issues/issues/130",
-      "status": "Nye ændringsønsker",
+      "status": "Afventer løsningsbeskrivelse",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-01T13:09:09.1573665+00:00"
+      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
     },
     "issue-131": {
       "number": 131,
