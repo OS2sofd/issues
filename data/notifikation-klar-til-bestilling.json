@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-14T17:07:55.9595502+00:00",
+  "updatedAt": "2026-10-15T11:25:02.0808626+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -996,6 +996,24 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-14T17:07:52.7074241+00:00"
+    },
+    "issue-134": {
+      "number": 134,
+      "title": "Person fra WS17 skal have auto-oprettet et tilhørsforhold i SOFD",
+      "url": "https://github.com/OS2sofd/issues/issues/134",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-15T11:24:58.8543221+00:00"
+    },
+    "issue-135": {
+      "number": 135,
+      "title": "DTR-ID oprettes i SOFD og synkroniseres med FK-Org",
+      "url": "https://github.com/OS2sofd/issues/issues/135",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-15T11:24:58.8543221+00:00"
     }
   }
 }
