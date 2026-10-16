@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-15T11:25:02.0808626+00:00",
+  "updatedAt": "2026-10-16T11:19:27.2517734+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -911,10 +911,10 @@
       "number": 123,
       "title": "OS2ILM - Tilknytning af allerede oprettede brugere",
       "url": "https://github.com/OS2sofd/issues/issues/123",
-      "status": "Screening",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T17:08:32.1657642+00:00"
+      "lastObserved": "2026-10-16T11:19:24.8743967+00:00"
     },
     "issue-124": {
       "number": 124,
@@ -938,10 +938,10 @@
       "number": 126,
       "title": "OS2ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
       "url": "https://github.com/OS2sofd/issues/issues/126",
-      "status": "Afventer løsningsbeskrivelse",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-09T13:13:13.8942326+00:00"
+      "lastObserved": "2026-10-16T11:19:24.8743967+00:00"
     },
     "issue-127": {
       "number": 127,
