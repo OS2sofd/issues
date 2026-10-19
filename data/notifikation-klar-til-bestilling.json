@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-16T11:19:27.2517734+00:00",
+  "updatedAt": "2026-10-19T13:08:27.6549706+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1014,6 +1014,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-15T11:24:58.8543221+00:00"
+    },
+    "issue-136": {
+      "number": 136,
+      "title": "OS2ILM - Implementering af flere systemroller",
+      "url": "https://github.com/OS2sofd/issues/issues/136",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-19T13:08:24.9250484+00:00"
     }
   }
 }
