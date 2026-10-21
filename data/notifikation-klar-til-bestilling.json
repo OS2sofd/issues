@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-21T11:44:44.3471919+00:00",
+  "updatedAt": "2026-10-21T16:07:04.6315516+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -834,10 +834,10 @@
       "number": 110,
       "title": "Frigørelse af kobling mellem it-brugerkonto og tilhørsforhold fra løndata. Tilhørsforhold skal afspejle den administrative organisation i OS2sofd.Ændringsønske",
       "url": "https://github.com/OS2sofd/issues/issues/110",
-      "status": "Screening",
+      "status": "Won't fix",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
+      "lastObserved": "2026-10-21T16:07:01.8164243+00:00"
     },
     "issue-111": {
       "number": 111,
