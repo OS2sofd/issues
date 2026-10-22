@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-21T16:07:04.6315516+00:00",
+  "updatedAt": "2026-10-22T11:48:08.4116888+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -34,8 +34,10 @@
       "number": 51,
       "title": "Migrér CVR-integration fra Datafordeler REST til GraphQL",
       "url": "https://github.com/OS2sofd/issues/issues/51",
-      "status": "Bestilt hos leverandør",
-      "lastObserved": "2026-09-11T09:41:26.4309734+00:00"
+      "status": "Igangværende opgaver",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-22T11:48:05.9198606+00:00"
     },
     "issue-7": {
       "number": 7,
@@ -217,10 +219,10 @@
       "number": 9,
       "title": "Person tilhørsforhold - Tilføj markering af primært tilhørsforhold",
       "url": "https://github.com/OS2sofd/issues/issues/9",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i test",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
+      "lastObserved": "2026-10-22T11:48:05.9198606+00:00"
     },
     "issue-10": {
       "number": 10,
@@ -493,10 +495,10 @@
       "number": 62,
       "title": "Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper",
       "url": "https://github.com/OS2sofd/issues/issues/62",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i test",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
+      "lastObserved": "2026-10-22T11:48:05.9198606+00:00"
     },
     "issue-64": {
       "number": 64,
