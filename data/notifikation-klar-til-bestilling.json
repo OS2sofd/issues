@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-22T11:48:08.4116888+00:00",
+  "updatedAt": "2026-10-23T11:34:46.4416754+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1034,6 +1034,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-21T11:44:41.2011358+00:00"
+    },
+    "issue-138": {
+      "number": 138,
+      "title": "Automatisk sætte \"nedarv ikke rettigheder\" på ansættelser af typen 99",
+      "url": "https://github.com/OS2sofd/issues/issues/138",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-23T11:34:43.9895917+00:00"
     }
   }
 }
