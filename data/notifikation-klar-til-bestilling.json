@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-28T13:59:42.9937956+00:00",
+  "updatedAt": "2026-10-29T19:38:55.7275503+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1079,6 +1079,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-28T13:59:40.1393103+00:00"
+    },
+    "issue-143": {
+      "number": 143,
+      "title": "Ændringsønske advis og rapport når OS2sofd synk til FK Org fejler",
+      "url": "https://github.com/OS2sofd/issues/issues/143",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-10-29T19:38:52.8036795+00:00"
     }
   }
 }
