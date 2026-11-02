@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-10-29T19:38:55.7275503+00:00",
+  "updatedAt": "2026-11-02T17:01:49.0185995+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1088,6 +1088,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-10-29T19:38:52.8036795+00:00"
+    },
+    "issue-144": {
+      "number": 144,
+      "title": "OS2vikar: direkte KMD Nexus integration",
+      "url": "https://github.com/OS2sofd/issues/issues/144",
+      "status": "Klar til prioritering",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-02T17:01:46.0704020+00:00"
     }
   }
 }
