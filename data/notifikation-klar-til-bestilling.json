@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-02T17:01:49.0185995+00:00",
+  "updatedAt": "2026-11-05T15:26:10.8317069+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1096,7 +1096,16 @@
       "status": "Klar til prioritering",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-02T17:01:46.0704020+00:00"
+      "lastObserved": "2026-11-02T17:01:46.070402+00:00"
+    },
+    "issue-145": {
+      "number": 145,
+      "title": "Tidsbegrænsning på stedfortrædere + mailskabelon",
+      "url": "https://github.com/OS2sofd/issues/issues/145",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-05T15:26:07.3483289+00:00"
     }
   }
 }
