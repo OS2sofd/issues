@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-05T15:26:10.8317069+00:00",
+  "updatedAt": "2026-11-07T13:58:32.8328002+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -637,19 +637,19 @@
       "number": 82,
       "title": "ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/82",
-      "status": "Klar til prioritering",
+      "status": "Igangværende opgaver",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
     },
     "issue-83": {
       "number": 83,
       "title": "At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/83",
-      "status": "Klar til prioritering",
+      "status": "Igangværende opgaver",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
     },
     "issue-84": {
       "number": 84,
@@ -662,19 +662,19 @@
       "number": 85,
       "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
       "url": "https://github.com/OS2sofd/issues/issues/85",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
     },
     "issue-86": {
       "number": 86,
       "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
       "url": "https://github.com/OS2sofd/issues/issues/86",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
     },
     "issue-87": {
       "number": 87,
