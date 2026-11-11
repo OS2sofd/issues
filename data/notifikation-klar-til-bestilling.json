@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-09T17:27:08.1743575+00:00",
+  "updatedAt": "2026-11-11T15:09:13.5445989+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1124,6 +1124,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-09T17:27:05.4976341+00:00"
+    },
+    "issue-148": {
+      "number": 148,
+      "title": "Automatisk fjern tilknytning mellem konto og tilhørsforhold når tilhørsforhold stopper",
+      "url": "https://github.com/OS2sofd/issues/issues/148",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-11T15:09:10.6993072+00:00"
     }
   }
 }
