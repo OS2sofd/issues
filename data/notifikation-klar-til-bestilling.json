@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-11T15:09:13.5445989+00:00",
+  "updatedAt": "2026-11-13T15:22:02.0524116+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1133,6 +1133,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-11T15:09:10.6993072+00:00"
+    },
+    "issue-149": {
+      "number": 149,
+      "title": "SofdCoreADReplicator - Gruppe til nye brugere uden aktivt tilhørsforhold",
+      "url": "https://github.com/OS2sofd/issues/issues/149",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-13T15:21:59.7313096+00:00"
     }
   }
 }
