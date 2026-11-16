@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-13T15:22:02.0524116+00:00",
+  "updatedAt": "2026-11-16T16:58:45.8941842+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1142,6 +1142,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-13T15:21:59.7313096+00:00"
+    },
+    "issue-150": {
+      "number": 150,
+      "title": "Tildele NemLog-IN roller til flere konti",
+      "url": "https://github.com/OS2sofd/issues/issues/150",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-16T16:58:42.4025811+00:00"
     }
   }
 }
