@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-16T16:58:45.8941842+00:00",
+  "updatedAt": "2026-11-17T16:52:10.1396103+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -662,19 +662,19 @@
       "number": 85,
       "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
       "url": "https://github.com/OS2sofd/issues/issues/85",
-      "status": "Bestilt hos leverandør",
+      "status": "Igangværende opgaver",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
+      "lastObserved": "2026-11-17T16:52:06.6853923+00:00"
     },
     "issue-86": {
       "number": 86,
       "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
       "url": "https://github.com/OS2sofd/issues/issues/86",
-      "status": "Bestilt hos leverandør",
+      "status": "Igangværende opgaver",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
+      "lastObserved": "2026-11-17T16:52:06.6853923+00:00"
     },
     "issue-87": {
       "number": 87,
