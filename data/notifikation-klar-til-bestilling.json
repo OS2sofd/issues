@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-17T16:52:10.1396103+00:00",
+  "updatedAt": "2026-11-18T16:25:33.5265189+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -1151,6 +1151,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-16T16:58:42.4025811+00:00"
+    },
+    "issue-151": {
+      "number": 151,
+      "title": "Pause-markeirng - Gør redigering muligt + Tilføj detaljer til rapport",
+      "url": "https://github.com/OS2sofd/issues/issues/151",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-18T16:25:30.6686431+00:00"
     }
   }
 }
