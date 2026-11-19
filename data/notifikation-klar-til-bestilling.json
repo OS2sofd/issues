@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-18T16:25:33.5265189+00:00",
+  "updatedAt": "2026-11-19T16:31:53.8752740+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -235,10 +235,10 @@
       "number": 11,
       "title": "Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/11",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-12": {
       "number": 12,
@@ -253,10 +253,10 @@
       "number": 13,
       "title": "SofdCoreADReplicator - Handlinger ved grupper",
       "url": "https://github.com/OS2sofd/issues/issues/13",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-15": {
       "number": 15,
@@ -278,10 +278,10 @@
       "number": 17,
       "title": "SOFD GUI: Udvidet overblik over tilhørsforhold og typer",
       "url": "https://github.com/OS2sofd/issues/issues/17",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-18": {
       "number": 18,
@@ -294,19 +294,19 @@
       "number": 19,
       "title": "SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen \"Medarbejder\" når man kører med sync fra et lønsystem",
       "url": "https://github.com/OS2sofd/issues/issues/19",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-21": {
       "number": 21,
       "title": "SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre",
       "url": "https://github.com/OS2sofd/issues/issues/21",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-09-25T11:48:12.9253686+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-22": {
       "number": 22,
@@ -337,10 +337,10 @@
       "number": 25,
       "title": "Brugertjek: Udvidelse af informationer i tilhørforholdstabellen",
       "url": "https://github.com/OS2sofd/issues/issues/25",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-26": {
       "number": 26,
@@ -353,10 +353,10 @@
       "number": 27,
       "title": "Oprettelse af KSP/CICS konti på baggrund af rolletildelinger",
       "url": "https://github.com/OS2sofd/issues/issues/27",
-      "status": "Klar til prioritering",
+      "status": "Bestilt hos leverandør",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-09-21T13:42:34.2529436+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-28": {
       "number": 28,
@@ -637,19 +637,19 @@
       "number": 82,
       "title": "ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/82",
-      "status": "Igangværende opgaver",
+      "status": "Afsluttede løsninger",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-83": {
       "number": 83,
       "title": "At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar",
       "url": "https://github.com/OS2sofd/issues/issues/83",
-      "status": "Igangværende opgaver",
+      "status": "Afsluttede løsninger",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-07T13:58:30.0568066+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-84": {
       "number": 84,
@@ -662,19 +662,19 @@
       "number": 85,
       "title": "Brugernavn generator ved oprettelse af vikar (OS2Vikar)",
       "url": "https://github.com/OS2sofd/issues/issues/85",
-      "status": "Igangværende opgaver",
+      "status": "Afsluttede løsninger",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-17T16:52:06.6853923+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-86": {
       "number": 86,
       "title": "OS2Vikar mulighed for at angive tid ved oprettelse af vikar",
       "url": "https://github.com/OS2sofd/issues/issues/86",
-      "status": "Igangværende opgaver",
+      "status": "Afsluttede løsninger",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-17T16:52:06.6853923+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-87": {
       "number": 87,
@@ -911,21 +911,21 @@
     },
     "issue-123": {
       "number": 123,
-      "title": "OS2ILM - Tilknytning af allerede oprettede brugere",
+      "title": "OS2sofd ILM - Tilknytning af allerede oprettede brugere",
       "url": "https://github.com/OS2sofd/issues/issues/123",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i review",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-16T11:19:24.8743967+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-124": {
       "number": 124,
-      "title": "OS2ILM - Ændring til CMS, mailskabeloner",
+      "title": "OS2sofd ILM - Ændring til CMS, mailskabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/124",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i review",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-06T13:16:09.9946497+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-125": {
       "number": 125,
@@ -938,12 +938,12 @@
     },
     "issue-126": {
       "number": 126,
-      "title": "OS2ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
+      "title": "OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
       "url": "https://github.com/OS2sofd/issues/issues/126",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i review",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-10-16T11:19:24.8743967+00:00"
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     },
     "issue-127": {
       "number": 127,
@@ -1160,6 +1160,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-18T16:25:30.6686431+00:00"
+    },
+    "issue-152": {
+      "number": 152,
+      "title": "Begrænsning af CPR-opslag pr. bruger i OS2sofd og OS2vikar",
+      "url": "https://github.com/OS2sofd/issues/issues/152",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
     }
   }
 }
