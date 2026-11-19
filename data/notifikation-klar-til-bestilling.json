@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-19T16:31:53.8752740+00:00",
+  "updatedAt": "2026-11-19T23:13:53.3995736+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -913,19 +913,19 @@
       "number": 123,
       "title": "OS2sofd ILM - Tilknytning af allerede oprettede brugere",
       "url": "https://github.com/OS2sofd/issues/issues/123",
-      "status": "Løsninger i review",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-19T23:13:51.4788397+00:00"
     },
     "issue-124": {
       "number": 124,
       "title": "OS2sofd ILM - Ændring til CMS, mailskabeloner",
       "url": "https://github.com/OS2sofd/issues/issues/124",
-      "status": "Løsninger i review",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-19T23:13:51.4788397+00:00"
     },
     "issue-125": {
       "number": 125,
@@ -940,10 +940,10 @@
       "number": 126,
       "title": "OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger",
       "url": "https://github.com/OS2sofd/issues/issues/126",
-      "status": "Løsninger i review",
+      "status": "Afsluttede løsninger",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-19T23:13:51.4788397+00:00"
     },
     "issue-127": {
       "number": 127,
