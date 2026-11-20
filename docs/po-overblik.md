@@ -1,6 +1,6 @@
 # PO-overblik – OS2sofd
 
-Senest genereret: **19-11-2026 05:02**  
+Senest genereret: **20-11-2026 04:55**  
 Aktuel release: **4. kvartal 2026**
 
 > **Formål:** Første skærm viser kun det, der kræver PO-handling eller bør påvirke en beslutning nu. Alle detaljer og analysedata findes foldet sammen længere nede.
@@ -9,34 +9,33 @@ Aktuel release: **4. kvartal 2026**
 
 | Signal | Hvad skal PO gøre? | Issues |
 | --- | --- | --- |
-| 🔴 | Afklar røde PO-reviews før prioritering | [#17](https://github.com/OS2sofd/issues/issues/17), [#121](https://github.com/OS2sofd/issues/issues/121), [#91](https://github.com/OS2sofd/issues/issues/91), [#105](https://github.com/OS2sofd/issues/issues/105) |
-| 🔴 | Følg op på Kritisk/Høj uden opdatering i mindst 14 dage | [#51](https://github.com/OS2sofd/issues/issues/51), [#62](https://github.com/OS2sofd/issues/issues/62), [#65](https://github.com/OS2sofd/issues/issues/65), [#108](https://github.com/OS2sofd/issues/issues/108), [#109](https://github.com/OS2sofd/issues/issues/109), [#112](https://github.com/OS2sofd/issues/issues/112), [#123](https://github.com/OS2sofd/issues/issues/123), [#126](https://github.com/OS2sofd/issues/issues/126) |
+| 🔴 | Afklar røde PO-reviews før prioritering | [#121](https://github.com/OS2sofd/issues/issues/121), [#91](https://github.com/OS2sofd/issues/issues/91), [#105](https://github.com/OS2sofd/issues/issues/105) |
+| 🔴 | Følg op på Kritisk/Høj uden opdatering i mindst 14 dage | [#51](https://github.com/OS2sofd/issues/issues/51), [#62](https://github.com/OS2sofd/issues/issues/62), [#65](https://github.com/OS2sofd/issues/issues/65), [#108](https://github.com/OS2sofd/issues/issues/108), [#109](https://github.com/OS2sofd/issues/issues/109), [#112](https://github.com/OS2sofd/issues/issues/112) |
 | 🟠 | Fastlæg manglende prioritet | [#105](https://github.com/OS2sofd/issues/issues/105), [#144](https://github.com/OS2sofd/issues/issues/144) |
-| 🟠 | Få manglende estimat på plads | [#13](https://github.com/OS2sofd/issues/issues/13), [#19](https://github.com/OS2sofd/issues/issues/19), [#21](https://github.com/OS2sofd/issues/issues/21), [#76](https://github.com/OS2sofd/issues/issues/76), [#122](https://github.com/OS2sofd/issues/issues/122), [#32](https://github.com/OS2sofd/issues/issues/32), [#90](https://github.com/OS2sofd/issues/issues/90), [#144](https://github.com/OS2sofd/issues/issues/144) |
-| 🟠 | Gennemfør manglende PO-review | [#13](https://github.com/OS2sofd/issues/issues/13), [#19](https://github.com/OS2sofd/issues/issues/19), [#21](https://github.com/OS2sofd/issues/issues/21), [#76](https://github.com/OS2sofd/issues/issues/76), [#122](https://github.com/OS2sofd/issues/issues/122), [#32](https://github.com/OS2sofd/issues/issues/32), [#90](https://github.com/OS2sofd/issues/issues/90), [#144](https://github.com/OS2sofd/issues/issues/144) |
-| 🟠 | Fastlæg planlagt release | [#108](https://github.com/OS2sofd/issues/issues/108), [#109](https://github.com/OS2sofd/issues/issues/109), [#82](https://github.com/OS2sofd/issues/issues/82), [#83](https://github.com/OS2sofd/issues/issues/83), [#85](https://github.com/OS2sofd/issues/issues/85), [#86](https://github.com/OS2sofd/issues/issues/86) |
-| 🟠 | Vurder/fastlæg assignee | [#65](https://github.com/OS2sofd/issues/issues/65), [#123](https://github.com/OS2sofd/issues/issues/123), [#126](https://github.com/OS2sofd/issues/issues/126), [#82](https://github.com/OS2sofd/issues/issues/82), [#83](https://github.com/OS2sofd/issues/issues/83), [#85](https://github.com/OS2sofd/issues/issues/85), [#86](https://github.com/OS2sofd/issues/issues/86), [#124](https://github.com/OS2sofd/issues/issues/124), [#101](https://github.com/OS2sofd/issues/issues/101), [#131](https://github.com/OS2sofd/issues/issues/131), [#146](https://github.com/OS2sofd/issues/issues/146) |
+| 🟠 | Få manglende estimat på plads | [#76](https://github.com/OS2sofd/issues/issues/76), [#122](https://github.com/OS2sofd/issues/issues/122), [#32](https://github.com/OS2sofd/issues/issues/32), [#90](https://github.com/OS2sofd/issues/issues/90), [#144](https://github.com/OS2sofd/issues/issues/144) |
+| 🟠 | Gennemfør manglende PO-review | [#76](https://github.com/OS2sofd/issues/issues/76), [#122](https://github.com/OS2sofd/issues/issues/122), [#32](https://github.com/OS2sofd/issues/issues/32), [#90](https://github.com/OS2sofd/issues/issues/90), [#144](https://github.com/OS2sofd/issues/issues/144) |
+| 🟠 | Vurder/fastlæg assignee | [#65](https://github.com/OS2sofd/issues/issues/65), [#11](https://github.com/OS2sofd/issues/issues/11), [#13](https://github.com/OS2sofd/issues/issues/13), [#17](https://github.com/OS2sofd/issues/issues/17), [#19](https://github.com/OS2sofd/issues/issues/19), [#21](https://github.com/OS2sofd/issues/issues/21), [#25](https://github.com/OS2sofd/issues/issues/25), [#27](https://github.com/OS2sofd/issues/issues/27), [#101](https://github.com/OS2sofd/issues/issues/101), [#131](https://github.com/OS2sofd/issues/issues/131), [#146](https://github.com/OS2sofd/issues/issues/146) |
 | 🟡 | Følg op på test/review uden opdatering i mindst 14 dage | [#62](https://github.com/OS2sofd/issues/issues/62), [#9](https://github.com/OS2sofd/issues/issues/9) |
 
 ### Aktuel levering
 
 | Status | Antal |
 | --- | ---: |
-| Bestilt hos leverandør | 8 |
-| Igangværende | 6 |
+| Bestilt hos leverandør | 12 |
+| Igangværende | 2 |
 | I test | 2 |
 | I review | 0 |
 
 ### Flow
 
-- 🔴 **Største aktuelle kø:** 26 issues i **Klar til prioritering** (26.5 % af de aktive).
-- 🟡 **26 issues** er klar til prioritering.
-- ℹ️ **98 aktive ændringsønsker** i alt.
+- 🔴 **Største aktuelle kø:** 25 issues i **Afventer løsningsbeskrivelse** (27.2 % af de aktive).
+- 🟡 **19 issues** er klar til prioritering.
+- ℹ️ **92 aktive ændringsønsker** i alt.
 
 ### Backlog-sundhed
 
 - **29** aktive issues er over 6 måneder gamle.
-- **22** ligger mellem 4,5 og 6 måneder.
+- **18** ligger mellem 4,5 og 6 måneder.
 - Alder er et strategisk signal og løftes ikke alene til PO-fokus.
 
 ---
@@ -64,113 +63,105 @@ Alt nedenfor er fortsat tilgængeligt, men er foldet sammen som standard.
 | Signal | Område | Antal |
 | --- | --- | ---: |
 | 🔴 | Udløbet planlagt release | 0 |
-| 🔴 | Kritisk/Høj uden opdatering i mindst 14 dage | 8 |
+| 🔴 | Kritisk/Høj uden opdatering i mindst 14 dage | 6 |
 | 🔴 | Lukket GitHub-issue i aktiv Project-status | 0 |
 | 🔴 | Klar til prioritering uden prioritet | 2 |
-| 🔴 | Klar til prioritering uden estimat | 8 |
-| 🟡 | Klar til prioritering uden PO-review | 8 |
-| 🔴 | PO-review kræver afklaring | 4 |
+| 🔴 | Klar til prioritering uden estimat | 5 |
+| 🟡 | Klar til prioritering uden PO-review | 5 |
+| 🔴 | PO-review kræver afklaring | 3 |
 | ⚠️ | Reviewede issues med nye kommentarer | 1 |
-| 🟡 | Bestilt/igangværende uden planlagt release | 6 |
+| 🟡 | Bestilt/igangværende uden planlagt release | 0 |
 | ℹ️ | Bestilt/igangværende uden assignee | 11 |
 | 🟡 | Test/review uden opdatering i mindst 14 dage | 2 |
-| ⚠️ | Kommunikation bør vurderes | 57 |
+| ⚠️ | Kommunikation bør vurderes | 55 |
 
 ### Foreslåede næste PO-handlinger
 
-- Følg op på **8** Kritisk/Høj-prioriteret issue(s) uden opdatering i mindst 14 dage.
+- Følg op på **6** Kritisk/Høj-prioriteret issue(s) uden opdatering i mindst 14 dage.
 - Fastlæg prioritet på **2** issue(s) i **Klar til prioritering**.
-- Få estimat på **8** issue(s) i **Klar til prioritering**.
-- Gennemfør PO-review af løsningsbeskrivelsen på **8** issue(s) i **Klar til prioritering**.
-- Afklar **4** issue(s), hvor PO-reviewet er rødt, før koordinationsgruppens prioritering.
+- Få estimat på **5** issue(s) i **Klar til prioritering**.
+- Gennemfør PO-review af løsningsbeskrivelsen på **5** issue(s) i **Klar til prioritering**.
+- Afklar **3** issue(s), hvor PO-reviewet er rødt, før koordinationsgruppens prioritering.
 - Vurder nye kommentarer på **1** allerede reviewet/reviewede issue(s) og afgør, om der er behov for opfølgende review.
-- Fastlæg planlagt release på **6** bestilt/igangværende issue(s).
 - Vurder om der bør sættes assignee på **11** bestilt/igangværende issue(s).
-- Vurder individuel statuskommunikation på **57** ældre issue(s).
+- Vurder individuel statuskommunikation på **55** ældre issue(s).
 
 <details>
-<summary>Vis konkrete issues, der kræver PO-opmærksomhed (78)</summary>
+<summary>Vis konkrete issues, der kræver PO-opmærksomhed (71)</summary>
 
 | Signal | Issue | Status | Prioritet | Alder | PO-opmærksomhed |
 | --- | --- | --- | --- | ---: | --- |
-| 🔴 ⚠️ | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | Igangværende opgaver | Kritisk | 202 dage / 6.6 mdr. | Kritisk-prioritet uden registreret opdatering i 69 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🔴 🟡 | [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | Løsninger i test | Høj | 169 dage / 5.6 mdr. | Høj-prioritet uden registreret opdatering i 27 dage; Løsninger i test uden registreret opdatering i 27 dage |
-| 🔴 🟡 ⚠️ | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | Bestilt hos leverandør | Høj | 161 dage / 5.3 mdr. | Høj-prioritet uden registreret opdatering i 42 dage; Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| 🔴 🟡 | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | Bestilt hos leverandør | Høj | 97 dage / 3.2 mdr. | Høj-prioritet uden registreret opdatering i 22 dage; Bestilt hos leverandør, men mangler planlagt release |
-| 🔴 🟡 | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | Bestilt hos leverandør | Høj | 97 dage / 3.2 mdr. | Høj-prioritet uden registreret opdatering i 16 dage; Bestilt hos leverandør, men mangler planlagt release |
-| 🔴 ⚠️ | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | Klar til prioritering | Høj | 90 dage / 3 mdr. | Høj-prioritet uden registreret opdatering i 54 dage; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 🟡 | [#123 – OS2sofd ILM - Tilknytning af allerede oprettede brugere](https://github.com/OS2sofd/issues/issues/123) | Bestilt hos leverandør | Høj | 58 dage / 1.9 mdr. | Høj-prioritet uden registreret opdatering i 29 dage; Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
-| 🔴 🟡 | [#126 – OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger](https://github.com/OS2sofd/issues/issues/126) | Bestilt hos leverandør | Høj | 51 dage / 1.7 mdr. | Høj-prioritet uden registreret opdatering i 29 dage; Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
-| 🔴 ⚠️ | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | Klar til prioritering | Mellem | 243 dage / 8 mdr. | PO-review kræver afklaring før prioritering; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 ⚠️ | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | Klar til prioritering | Mellem | 243 dage / 8 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 ⚠️ | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | Klar til prioritering | Mellem | 243 dage / 8 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 ⚠️ | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | Klar til prioritering | Mellem | 243 dage / 8 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 51 dage gammel |
-| 🔴 ⚠️ | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | Klar til prioritering | Mellem | 149 dage / 4.9 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | Klar til prioritering | Mellem | 62 dage / 2 mdr. | PO-review kræver afklaring før prioritering |
-| 🔴 | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | Klar til prioritering | Mellem | 58 dage / 1.9 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen |
-| 🔴 ⚠️ | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Klar til prioritering | Lav | 237 dage / 7.8 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 ⚠️ | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | Klar til prioritering | Lav | 139 dage / 4.6 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 ⚠️ | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | Klar til prioritering | Lav | 139 dage / 4.6 mdr. | PO-review kræver afklaring før prioritering; 4 ny(e) kommentar(er) siden seneste PO-review – relevans for opfølgende review bør vurderes; Kommunikation bør vurderes: seneste respons til opretter er 51 dage gammel |
-| 🔴 ⚠️ | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | Klar til prioritering | – | 98 dage / 3.2 mdr. | Klar til prioritering, men mangler prioritet; PO-review kræver afklaring før prioritering; Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| 🔴 | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | Klar til prioritering | – | 16 dage / 0.5 mdr. | Klar til prioritering, men mangler prioritet; Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen |
-| 🟡 | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | Løsninger i test | Mellem | 243 dage / 8 mdr. | Løsninger i test uden registreret opdatering i 27 dage |
-| 🟡 ⚠️ | [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | Afventer løsningsbeskrivelse | Mellem | 237 dage / 7.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | Afventer løsningsbeskrivelse | Mellem | 189 dage / 6.2 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 | [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | Igangværende opgaver | Mellem | 140 dage / 4.6 mdr. | Igangværende opgaver, men mangler planlagt release; Igangværende opgaver, men mangler assignee |
-| 🟡 | [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | Igangværende opgaver | Mellem | 140 dage / 4.6 mdr. | Igangværende opgaver, men mangler planlagt release; Igangværende opgaver, men mangler assignee |
-| 🟡 | [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | Igangværende opgaver | Mellem | 139 dage / 4.6 mdr. | Igangværende opgaver, men mangler planlagt release; Igangværende opgaver, men mangler assignee |
-| 🟡 | [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | Igangværende opgaver | Mellem | 139 dage / 4.6 mdr. | Igangværende opgaver, men mangler planlagt release; Igangværende opgaver, men mangler assignee |
-| 🟡 ⚠️ | [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | Afventer løsningsbeskrivelse | Mellem | 120 dage / 3.9 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 | [#124 – OS2sofd ILM - Ændring til CMS, mailskabeloner](https://github.com/OS2sofd/issues/issues/124) | Bestilt hos leverandør | Mellem | 56 dage / 1.8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
-| 🟡 | [#130 – Krav til kode for lokale SOFD brugerkonti](https://github.com/OS2sofd/issues/issues/130) | Afventer løsningsbeskrivelse | Mellem | 48 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 40 dage |
-| 🟡 ⚠️ | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | Afventer løsningsbeskrivelse | Lav | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | Afventer løsningsbeskrivelse | Lav | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | Afventer løsningsbeskrivelse | Lav | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | Afventer løsningsbeskrivelse | Lav | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | Afventer løsningsbeskrivelse | Lav | 237 dage / 7.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | Afventer løsningsbeskrivelse | Lav | 219 dage / 7.2 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | Afventer løsningsbeskrivelse | Lav | 197 dage / 6.5 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | Afventer løsningsbeskrivelse | Lav | 176 dage / 5.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | Afventer løsningsbeskrivelse | Lav | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | Afventer løsningsbeskrivelse | Lav | 153 dage / 5 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | Afventer løsningsbeskrivelse | Lav | 112 dage / 3.7 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 ⚠️ | [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | Afventer løsningsbeskrivelse | Lav | 93 dage / 3.1 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 76 dage; Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| 🟡 | [#125 – Brugertjek: Fastfrys søg knappen](https://github.com/OS2sofd/issues/issues/125) | Afventer løsningsbeskrivelse | Lav | 55 dage / 1.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 54 dage |
-| 🟡 | [#127 – Overførsel af autorisationskode til FK Organisation](https://github.com/OS2sofd/issues/issues/127) | Afventer løsningsbeskrivelse | Lav | 51 dage / 1.7 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 40 dage |
-| 🟡 | [#128 – Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD](https://github.com/OS2sofd/issues/issues/128) | Afventer løsningsbeskrivelse | Lav | 49 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 40 dage |
-| 🟡 | [#129 – Muligt at ændre arbejdssted](https://github.com/OS2sofd/issues/issues/129) | Afventer løsningsbeskrivelse | Lav | 48 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 40 dage |
-| 🟡 ⚠️ | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | Igangværende opgaver | – | 98 dage / 3.2 mdr. | Igangværende opgaver, men mangler assignee; Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
-| 🟡 | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | Bestilt hos leverandør | – | 43 dage / 1.4 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
-| 🟡 | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | Bestilt hos leverandør | – | 9 dage / 0.3 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
-| ⚠️ | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | Screening | Mellem | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| ⚠️ | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | Screening | Mellem | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
-| ⚠️ | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | Klar til prioritering | Mellem | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| ⚠️ | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | Screening | Mellem | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| ⚠️ | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | Klar til prioritering | Mellem | 242 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | Klar til prioritering | Mellem | 242 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| ⚠️ | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | Klar til prioritering | Mellem | 237 dage / 7.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | Screening | Mellem | 189 dage / 6.2 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 65 dage gammel |
-| ⚠️ | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | Klar til prioritering | Mellem | 153 dage / 5 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| ⚠️ | [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | Screening | Mellem | 132 dage / 4.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 64 dage gammel |
-| ⚠️ | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | Klar til prioritering | Mellem | 121 dage / 4 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | Screening | Mellem | 98 dage / 3.2 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 54 dage gammel |
-| ⚠️ | [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | Screening | Mellem | 98 dage / 3.2 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | Klar til prioritering | Lav | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | Klar til prioritering | Lav | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | Screening | Lav | 242 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 35 dage gammel |
-| ⚠️ | [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | Screening | Lav | 236 dage / 7.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 45 dage gammel |
-| ⚠️ | [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | Screening | Lav | 161 dage / 5.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 60 dage gammel |
-| ⚠️ | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | Klar til prioritering | Lav | 145 dage / 4.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | Klar til prioritering | Lav | 125 dage / 4.1 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 57 dage gammel |
-| ⚠️ | [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | Screening | Lav | 98 dage / 3.2 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
-| ⚠️ | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | Screening | – | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
-| ⚠️ | [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | Screening | – | 161 dage / 5.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 60 dage gammel |
-| ⚠️ | [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | Screening | – | 153 dage / 5 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 76 dage gammel |
+| 🔴 ⚠️ | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | Igangværende opgaver | Kritisk | 203 dage / 6.7 mdr. | Kritisk-prioritet uden registreret opdatering i 70 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🔴 🟡 | [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | Løsninger i test | Høj | 170 dage / 5.6 mdr. | Høj-prioritet uden registreret opdatering i 28 dage; Løsninger i test uden registreret opdatering i 28 dage |
+| 🔴 🟡 ⚠️ | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | Bestilt hos leverandør | Høj | 162 dage / 5.3 mdr. | Høj-prioritet uden registreret opdatering i 43 dage; Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| 🔴 🟡 | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | Bestilt hos leverandør | Høj | 98 dage / 3.2 mdr. | Høj-prioritet uden registreret opdatering i 23 dage; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| 🔴 🟡 | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | Bestilt hos leverandør | Høj | 98 dage / 3.2 mdr. | Høj-prioritet uden registreret opdatering i 17 dage; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| 🔴 ⚠️ | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | Klar til prioritering | Høj | 91 dage / 3 mdr. | Høj-prioritet uden registreret opdatering i 55 dage; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🔴 ⚠️ | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | Klar til prioritering | Mellem | 150 dage / 4.9 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🔴 | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | Klar til prioritering | Mellem | 63 dage / 2.1 mdr. | PO-review kræver afklaring før prioritering |
+| 🔴 | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | Klar til prioritering | Mellem | 59 dage / 1.9 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen |
+| 🔴 ⚠️ | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Klar til prioritering | Lav | 238 dage / 7.8 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🔴 ⚠️ | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | Klar til prioritering | Lav | 140 dage / 4.6 mdr. | Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🔴 ⚠️ | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | Klar til prioritering | Lav | 140 dage / 4.6 mdr. | PO-review kræver afklaring før prioritering; 4 ny(e) kommentar(er) siden seneste PO-review – relevans for opfølgende review bør vurderes; Kommunikation bør vurderes: seneste respons til opretter er 52 dage gammel |
+| 🔴 ⚠️ | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | Klar til prioritering | – | 99 dage / 3.3 mdr. | Klar til prioritering, men mangler prioritet; PO-review kræver afklaring før prioritering; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🔴 | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | Klar til prioritering | – | 17 dage / 0.6 mdr. | Klar til prioritering, men mangler prioritet; Klar til prioritering, men mangler estimat; Klar til prioritering, men mangler PO-review af løsningsbeskrivelsen |
+| 🟡 ⚠️ | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | Bestilt hos leverandør | Mellem | 244 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🟡 ⚠️ | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | Bestilt hos leverandør | Mellem | 244 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🟡 ⚠️ | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | Bestilt hos leverandør | Mellem | 244 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 52 dage gammel |
+| 🟡 | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | Løsninger i test | Mellem | 244 dage / 8 mdr. | Løsninger i test uden registreret opdatering i 28 dage |
+| 🟡 ⚠️ | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | Bestilt hos leverandør | Mellem | 244 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| 🟡 | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | Bestilt hos leverandør | Mellem | 244 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| 🟡 | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | Bestilt hos leverandør | Mellem | 243 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| 🟡 ⚠️ | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | Bestilt hos leverandør | Mellem | 243 dage / 8 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende; Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| 🟡 ⚠️ | [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | Afventer løsningsbeskrivelse | Mellem | 238 dage / 7.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | Afventer løsningsbeskrivelse | Mellem | 190 dage / 6.2 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | Afventer løsningsbeskrivelse | Mellem | 121 dage / 4 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 | [#130 – Krav til kode for lokale SOFD brugerkonti](https://github.com/OS2sofd/issues/issues/130) | Afventer løsningsbeskrivelse | Mellem | 49 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 41 dage |
+| 🟡 ⚠️ | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | Afventer løsningsbeskrivelse | Lav | 244 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | Afventer løsningsbeskrivelse | Lav | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | Afventer løsningsbeskrivelse | Lav | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | Afventer løsningsbeskrivelse | Lav | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | Afventer løsningsbeskrivelse | Lav | 238 dage / 7.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | Afventer løsningsbeskrivelse | Lav | 220 dage / 7.2 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | Afventer løsningsbeskrivelse | Lav | 198 dage / 6.5 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | Afventer løsningsbeskrivelse | Lav | 177 dage / 5.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | Afventer løsningsbeskrivelse | Lav | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | Afventer løsningsbeskrivelse | Lav | 154 dage / 5.1 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | Afventer løsningsbeskrivelse | Lav | 113 dage / 3.7 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 ⚠️ | [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | Afventer løsningsbeskrivelse | Lav | 94 dage / 3.1 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 77 dage; Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| 🟡 | [#125 – Brugertjek: Fastfrys søg knappen](https://github.com/OS2sofd/issues/issues/125) | Afventer løsningsbeskrivelse | Lav | 56 dage / 1.8 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 55 dage |
+| 🟡 | [#127 – Overførsel af autorisationskode til FK Organisation](https://github.com/OS2sofd/issues/issues/127) | Afventer løsningsbeskrivelse | Lav | 52 dage / 1.7 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 41 dage |
+| 🟡 | [#128 – Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD](https://github.com/OS2sofd/issues/issues/128) | Afventer løsningsbeskrivelse | Lav | 50 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 41 dage |
+| 🟡 | [#129 – Muligt at ændre arbejdssted](https://github.com/OS2sofd/issues/issues/129) | Afventer løsningsbeskrivelse | Lav | 49 dage / 1.6 mdr. | Afventer løsningsbeskrivelse uden registreret opdatering i 41 dage |
+| 🟡 ⚠️ | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | Igangværende opgaver | – | 99 dage / 3.3 mdr. | Igangværende opgaver, men mangler assignee; Kommunikation bør vurderes: seneste respons til opretter er 59 dage gammel |
+| 🟡 | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | Bestilt hos leverandør | – | 44 dage / 1.4 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| 🟡 | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | Bestilt hos leverandør | – | 10 dage / 0.3 mdr. | Bestilt hos leverandør, men mangler assignee; Planlagt til 4. kvartal 2026, men endnu ikke igangværende |
+| ⚠️ | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | Screening | Mellem | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| ⚠️ | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | Screening | Mellem | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| ⚠️ | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | Screening | Mellem | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 59 dage gammel |
+| ⚠️ | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | Klar til prioritering | Mellem | 238 dage / 7.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | Screening | Mellem | 190 dage / 6.2 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 66 dage gammel |
+| ⚠️ | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | Klar til prioritering | Mellem | 154 dage / 5.1 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| ⚠️ | [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | Screening | Mellem | 133 dage / 4.4 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 65 dage gammel |
+| ⚠️ | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | Klar til prioritering | Mellem | 122 dage / 4 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | Screening | Mellem | 99 dage / 3.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 55 dage gammel |
+| ⚠️ | [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | Screening | Mellem | 99 dage / 3.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | Klar til prioritering | Lav | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | Klar til prioritering | Lav | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | Screening | Lav | 243 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 36 dage gammel |
+| ⚠️ | [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | Screening | Lav | 237 dage / 7.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 46 dage gammel |
+| ⚠️ | [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | Screening | Lav | 162 dage / 5.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 61 dage gammel |
+| ⚠️ | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | Klar til prioritering | Lav | 146 dage / 4.8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | Klar til prioritering | Lav | 126 dage / 4.1 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 58 dage gammel |
+| ⚠️ | [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | Screening | Lav | 99 dage / 3.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 59 dage gammel |
+| ⚠️ | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | Screening | – | 244 dage / 8 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
+| ⚠️ | [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | Screening | – | 162 dage / 5.3 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 61 dage gammel |
+| ⚠️ | [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | Screening | – | 154 dage / 5.1 mdr. | Kommunikation bør vurderes: seneste respons til opretter er 77 dage gammel |
 
 </details>
 
@@ -185,112 +176,106 @@ Alt nedenfor er fortsat tilgængeligt, men er foldet sammen som standard.
 
 | Nøgletal | Antal / værdi |
 | --- | ---: |
-| Aktive ændringsønsker | 98 |
-| Gennemsnitlig alder | 131 dage / 4.3 mdr. |
-| Median alder | 139 dage / 4.6 mdr. |
-| 4,5–6 måneder gamle | 22 |
+| Aktive ændringsønsker | 92 |
+| Gennemsnitlig alder | 132 dage / 4.3 mdr. |
+| Median alder | 140 dage / 4.6 mdr. |
+| 4,5–6 måneder gamle | 18 |
 | Over 6 måneder | 29 |
 | Over 12 måneder | 0 |
-| Kommunikation bør vurderes | 57 |
+| Kommunikation bør vurderes | 55 |
 | Aktive issues med JIRA-reference | 31 |
 
 > ℹ️ **Målegrundlag:** 31 aktive issues har en JIRA-reference. For disse kan GitHub-alderen være lavere end den reelle alder på ændringsønsket.
 
 > 📣 **Generel kommunikation anbefales:** 29 aktive ændringsønsker har en GitHub-alder over 6 måneder. For ønsker med historik før GitHub kan den reelle omløbstid være endnu længere.
 
-> 👤 **Individuel kommunikation:** 57 ældre issues bør vurderes konkret i forhold til, om opretter har fået en tilstrækkelig og aktuel status.
+> 👤 **Individuel kommunikation:** 55 ældre issues bør vurderes konkret i forhold til, om opretter har fået en tilstrækkelig og aktuel status.
 
 ### Kommunikationskø
 
 | Issue | Alder | Status | Prioritet | Seneste respons til opretter |
 | --- | ---: | --- | --- | ---: |
-| [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 243 dage / 8 mdr. | Screening | – | 76 dage siden |
-| [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 51 dage siden |
-| [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 243 dage / 8 mdr. | Screening | Mellem | 58 dage siden |
-| [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | 243 dage / 8 mdr. | Screening | Mellem | 76 dage siden |
-| [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 243 dage / 8 mdr. | Klar til prioritering | Lav | 57 dage siden |
-| [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 243 dage / 8 mdr. | Klar til prioritering | Lav | 57 dage siden |
-| [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 243 dage / 8 mdr. | Screening | Mellem | 54 dage siden |
-| [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 242 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | 242 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | 242 dage / 8 mdr. | Screening | Lav | 35 dage siden |
-| [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 242 dage / 8 mdr. | Klar til prioritering | Mellem | 57 dage siden |
-| [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 237 dage / 7.8 mdr. | Klar til prioritering | Lav | 54 dage siden |
-| [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | 237 dage / 7.8 mdr. | Afventer løsningsbeskrivelse | Mellem | 76 dage siden |
-| [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 237 dage / 7.8 mdr. | Klar til prioritering | Mellem | 57 dage siden |
-| [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | 237 dage / 7.8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | 236 dage / 7.8 mdr. | Screening | Lav | 45 dage siden |
-| [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | 219 dage / 7.2 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 202 dage / 6.6 mdr. | Igangværende opgaver | Kritisk | 76 dage siden |
-| [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | 197 dage / 6.5 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | 189 dage / 6.2 mdr. | Screening | Mellem | 65 dage siden |
-| [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | 189 dage / 6.2 mdr. | Afventer løsningsbeskrivelse | Mellem | 76 dage siden |
-| [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 176 dage / 5.8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 161 dage / 5.3 mdr. | Screening | Lav | 60 dage siden |
-| [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 161 dage / 5.3 mdr. | Screening | – | 60 dage siden |
-| [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 161 dage / 5.3 mdr. | Bestilt hos leverandør | Høj | 57 dage siden |
-| [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 153 dage / 5 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 153 dage / 5 mdr. | Screening | – | 76 dage siden |
-| [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 153 dage / 5 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 149 dage / 4.9 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 145 dage / 4.8 mdr. | Klar til prioritering | Lav | 57 dage siden |
-| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 139 dage / 4.6 mdr. | Klar til prioritering | Lav | 51 dage siden |
-| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 139 dage / 4.6 mdr. | Klar til prioritering | Lav | 54 dage siden |
-| [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | 132 dage / 4.3 mdr. | Screening | Mellem | 64 dage siden |
-| [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 125 dage / 4.1 mdr. | Klar til prioritering | Lav | 57 dage siden |
-| [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 121 dage / 4 mdr. | Klar til prioritering | Mellem | 57 dage siden |
-| [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | 120 dage / 3.9 mdr. | Afventer løsningsbeskrivelse | Mellem | 76 dage siden |
-| [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | 112 dage / 3.7 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 98 dage / 3.2 mdr. | Igangværende opgaver | – | 58 dage siden |
-| [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | 98 dage / 3.2 mdr. | Screening | Mellem | 57 dage siden |
-| [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | 98 dage / 3.2 mdr. | Screening | Lav | 58 dage siden |
-| [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | 98 dage / 3.2 mdr. | Screening | Mellem | 54 dage siden |
-| [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 98 dage / 3.2 mdr. | Klar til prioritering | – | 54 dage siden |
-| [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | 93 dage / 3.1 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 90 dage / 3 mdr. | Klar til prioritering | Høj | 54 dage siden |
+| [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 52 dage siden |
+| [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 244 dage / 8 mdr. | Klar til prioritering | Lav | 58 dage siden |
+| [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 244 dage / 8 mdr. | Klar til prioritering | Lav | 58 dage siden |
+| [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 244 dage / 8 mdr. | Screening | Mellem | 55 dage siden |
+| [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 244 dage / 8 mdr. | Screening | Mellem | 59 dage siden |
+| [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | 244 dage / 8 mdr. | Screening | Mellem | 77 dage siden |
+| [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 244 dage / 8 mdr. | Screening | – | 77 dage siden |
+| [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 244 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 243 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 58 dage siden |
+| [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | 243 dage / 8 mdr. | Screening | Lav | 36 dage siden |
+| [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 238 dage / 7.8 mdr. | Klar til prioritering | Mellem | 58 dage siden |
+| [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 238 dage / 7.8 mdr. | Klar til prioritering | Lav | 55 dage siden |
+| [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | 238 dage / 7.8 mdr. | Afventer løsningsbeskrivelse | Mellem | 77 dage siden |
+| [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | 238 dage / 7.8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | 237 dage / 7.8 mdr. | Screening | Lav | 46 dage siden |
+| [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | 220 dage / 7.2 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 203 dage / 6.7 mdr. | Igangværende opgaver | Kritisk | 77 dage siden |
+| [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | 198 dage / 6.5 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | 190 dage / 6.2 mdr. | Screening | Mellem | 66 dage siden |
+| [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | 190 dage / 6.2 mdr. | Afventer løsningsbeskrivelse | Mellem | 77 dage siden |
+| [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 177 dage / 5.8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 162 dage / 5.3 mdr. | Screening | Lav | 61 dage siden |
+| [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 162 dage / 5.3 mdr. | Bestilt hos leverandør | Høj | 58 dage siden |
+| [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 162 dage / 5.3 mdr. | Screening | – | 61 dage siden |
+| [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 154 dage / 5.1 mdr. | Screening | – | 77 dage siden |
+| [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 154 dage / 5.1 mdr. | Klar til prioritering | Mellem | 55 dage siden |
+| [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 154 dage / 5.1 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 150 dage / 4.9 mdr. | Klar til prioritering | Mellem | 55 dage siden |
+| [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 146 dage / 4.8 mdr. | Klar til prioritering | Lav | 58 dage siden |
+| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 140 dage / 4.6 mdr. | Klar til prioritering | Lav | 52 dage siden |
+| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 140 dage / 4.6 mdr. | Klar til prioritering | Lav | 55 dage siden |
+| [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | 133 dage / 4.4 mdr. | Screening | Mellem | 65 dage siden |
+| [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 126 dage / 4.1 mdr. | Klar til prioritering | Lav | 58 dage siden |
+| [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 122 dage / 4 mdr. | Klar til prioritering | Mellem | 58 dage siden |
+| [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | 121 dage / 4 mdr. | Afventer løsningsbeskrivelse | Mellem | 77 dage siden |
+| [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | 113 dage / 3.7 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 99 dage / 3.3 mdr. | Igangværende opgaver | – | 59 dage siden |
+| [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | 99 dage / 3.3 mdr. | Screening | Mellem | 58 dage siden |
+| [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | 99 dage / 3.3 mdr. | Screening | Lav | 59 dage siden |
+| [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | 99 dage / 3.3 mdr. | Screening | Mellem | 55 dage siden |
+| [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 99 dage / 3.3 mdr. | Klar til prioritering | – | 55 dage siden |
+| [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | 94 dage / 3.1 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
+| [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 91 dage / 3 mdr. | Klar til prioritering | Høj | 55 dage siden |
 
 ### Nærmer sig 6-månedersgrænsen
 
 <details>
-<summary>Vis alle 22 issues mellem 4,5 og 6 måneder</summary>
+<summary>Vis alle 18 issues mellem 4,5 og 6 måneder</summary>
 
 | Issue | Alder | Status | Prioritet | Kommune |
 | --- | ---: | --- | --- | --- |
-| [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 176 dage / 5.8 mdr. | Afventer løsningsbeskrivelse | Lav | Bornholm |
-| [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 169 dage / 5.6 mdr. | Løsninger i test | Høj | Egedal |
-| [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 161 dage / 5.3 mdr. | Screening | – | Kalundborg |
-| [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 161 dage / 5.3 mdr. | Bestilt hos leverandør | Høj | Kalundborg |
-| [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 161 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
-| [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 161 dage / 5.3 mdr. | Screening | Lav | Kalundborg |
-| [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 153 dage / 5 mdr. | Afventer løsningsbeskrivelse | Lav | Tønder |
-| [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 153 dage / 5 mdr. | Screening | – | Tønder |
-| [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 153 dage / 5 mdr. | Klar til prioritering | Mellem | Favrskov |
-| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 149 dage / 4.9 mdr. | Klar til prioritering | Mellem | Vallensbæk |
-| [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 145 dage / 4.8 mdr. | Klar til prioritering | Lav | Tønder |
-| [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | 140 dage / 4.6 mdr. | Igangværende opgaver | Mellem | Lyngby-Taarbæk |
-| [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | 140 dage / 4.6 mdr. | Igangværende opgaver | Mellem | Lyngby-Taarbæk |
-| [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | 139 dage / 4.6 mdr. | Igangværende opgaver | Mellem | Lyngby-Taarbæk |
-| [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | 139 dage / 4.6 mdr. | Igangværende opgaver | Mellem | Lyngby-Taarbæk |
-| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 139 dage / 4.6 mdr. | Klar til prioritering | Lav | Lyngby-Taarbæk |
-| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 139 dage / 4.6 mdr. | Klar til prioritering | Lav | Lyngby-Taarbæk |
+| [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 177 dage / 5.8 mdr. | Afventer løsningsbeskrivelse | Lav | Bornholm |
+| [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 170 dage / 5.6 mdr. | Løsninger i test | Høj | Egedal |
+| [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 162 dage / 5.3 mdr. | Screening | Lav | Kalundborg |
+| [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 162 dage / 5.3 mdr. | Screening | – | Kalundborg |
+| [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 162 dage / 5.3 mdr. | Bestilt hos leverandør | Høj | Kalundborg |
+| [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 162 dage / 5.3 mdr. | Afventer løsningsbeskrivelse | Lav | Kalundborg |
+| [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 154 dage / 5.1 mdr. | Klar til prioritering | Mellem | Favrskov |
+| [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 154 dage / 5.1 mdr. | Screening | – | Tønder |
+| [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 154 dage / 5.1 mdr. | Afventer løsningsbeskrivelse | Lav | Tønder |
+| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 150 dage / 4.9 mdr. | Klar til prioritering | Mellem | Vallensbæk |
+| [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 146 dage / 4.8 mdr. | Klar til prioritering | Lav | Tønder |
+| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 140 dage / 4.6 mdr. | Klar til prioritering | Lav | Lyngby-Taarbæk |
+| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 140 dage / 4.6 mdr. | Klar til prioritering | Lav | Lyngby-Taarbæk |
 
 </details>
 
@@ -298,16 +283,16 @@ Alt nedenfor er fortsat tilgængeligt, men er foldet sammen som standard.
 
 | Signal | Issue | Alder | Status | Prioritet | Senest opdateret |
 | --- | --- | ---: | --- | --- | ---: |
-| 🔴 | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| 🔴 | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 243 dage / 8 mdr. | Screening | Mellem | 54 dage siden |
-| 🔴 | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 243 dage / 8 mdr. | Screening | Mellem | 58 dage siden |
-| 🔴 | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 51 dage siden |
-| 🔴 | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| 🔴 | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 243 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 76 dage siden |
-| 🔴 | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 243 dage / 8 mdr. | Løsninger i test | Mellem | 27 dage siden |
-| 🔴 | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 243 dage / 8 mdr. | Screening | – | 42 dage siden |
-| 🔴 | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
-| 🔴 | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 243 dage / 8 mdr. | Klar til prioritering | Mellem | 54 dage siden |
+| 🔴 | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 244 dage / 8 mdr. | Screening | – | 43 dage siden |
+| 🔴 | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 52 dage siden |
+| 🔴 | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| 🔴 | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 0 dage siden |
+| 🔴 | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| 🔴 | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 244 dage / 8 mdr. | Bestilt hos leverandør | Mellem | 55 dage siden |
+| 🔴 | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 244 dage / 8 mdr. | Screening | Mellem | 55 dage siden |
+| 🔴 | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 244 dage / 8 mdr. | Screening | Mellem | 59 dage siden |
+| 🔴 | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 244 dage / 8 mdr. | Løsninger i test | Mellem | 28 dage siden |
+| 🔴 | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 244 dage / 8 mdr. | Afventer løsningsbeskrivelse | Lav | 77 dage siden |
 
 </details>
 
@@ -316,17 +301,17 @@ Alt nedenfor er fortsat tilgængeligt, men er foldet sammen som standard.
 
 ## 3. Flow og flaskehalse
 
-> Største aktuelle kø er **Klar til prioritering** med 26 issues (26.5 % af de aktive).
+> Største aktuelle kø er **Afventer løsningsbeskrivelse** med 25 issues (27.2 % af de aktive).
 
 | Status | Antal | Andel af aktive | Median GitHub-alder | Median observeret tid i status | Ældste observerede tid i status | 4,5–6 mdr. GitHub-alder | >6 mdr. GitHub-alder |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Nye ændringsønsker | 17 | 17.3 % | 22 dage / 0.7 mdr. | 22 dage / 0.7 mdr. | 35 dage / 1.1 mdr. | 0 | 0 |
-| Screening | 14 | 14.3 % | 175 dage / 5.7 mdr. | 58 dage / 1.9 mdr. | 75 dage / 2.5 mdr. | 3 | 7 |
-| Afventer løsningsbeskrivelse | 25 | 25.5 % | 161 dage / 5.3 mdr. | 75 dage / 2.5 mdr. | 75 dage / 2.5 mdr. | 8 | 9 |
-| Klar til prioritering | 26 | 26.5 % | 147 dage / 4.8 mdr. | 60 dage / 2 mdr. | 75 dage / 2.5 mdr. | 5 | 11 |
-| Bestilt hos leverandør | 8 | 8.2 % | 57 dage / 1.9 mdr. | 33 dage / 1.1 mdr. | 43 dage / 1.4 mdr. | 1 | 0 |
-| Igangværende opgaver | 6 | 6.1 % | 140 dage / 4.6 mdr. | 11 dage / 0.4 mdr. | 55 dage / 1.8 mdr. | 4 | 1 |
-| Løsninger i test | 2 | 2 % | 206 dage / 6.8 mdr. | 27 dage / 0.9 mdr. | 27 dage / 0.9 mdr. | 1 | 1 |
+| Nye ændringsønsker | 18 | 19.6 % | 22 dage / 0.7 mdr. | 22 dage / 0.7 mdr. | 36 dage / 1.2 mdr. | 0 | 0 |
+| Screening | 14 | 15.2 % | 176 dage / 5.8 mdr. | 59 dage / 1.9 mdr. | 76 dage / 2.5 mdr. | 3 | 7 |
+| Afventer løsningsbeskrivelse | 25 | 27.2 % | 162 dage / 5.3 mdr. | 76 dage / 2.5 mdr. | 76 dage / 2.5 mdr. | 8 | 9 |
+| Klar til prioritering | 19 | 20.7 % | 126 dage / 4.1 mdr. | 61 dage / 2 mdr. | 76 dage / 2.5 mdr. | 5 | 4 |
+| Bestilt hos leverandør | 12 | 13 % | 243 dage / 8 mdr. | 0 dage / 0 mdr. | 44 dage / 1.4 mdr. | 1 | 7 |
+| Igangværende opgaver | 2 | 2.2 % | 151 dage / 5 mdr. | 42 dage / 1.4 mdr. | 56 dage / 1.8 mdr. | 0 | 1 |
+| Løsninger i test | 2 | 2.2 % | 207 dage / 6.8 mdr. | 28 dage / 0.9 mdr. | 28 dage / 0.9 mdr. | 1 | 1 |
 
 _Observeret tid i status tælles fra første registrering i historikfilen. For baseline-issues kan den reelle tid i status være længere._
 
@@ -339,32 +324,25 @@ _Observeret tid i status tælles fra første registrering i historikfilen. For b
 
 | Prioritet | Issue | Alder | Tid i status | Labels | Kommune | Estimat | Størrelse | Release |
 | --- | --- | ---: | ---: | --- | --- | ---: | --- | --- |
-| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 90 dage / 3 mdr. | 60 dage / 2 mdr. | api, drift og vedligehold | Ikke kommune | 55.000kr | – | – |
-| Mellem | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 243 dage / 8 mdr. | 58 dage / 1.9 mdr. | mailskabelon/advis, middleware, funktionelle forbedringer | Favrskov | 65.000kr | – | – |
-| Mellem | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 243 dage / 8 mdr. | 54 dage / 1.8 mdr. | drift og vedligehold, middleware | Favrskov | – | – | – |
-| Mellem | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 243 dage / 8 mdr. | 58 dage / 1.9 mdr. | ui, brugere og konti | Favrskov | 12.500kr | – | – |
-| Mellem | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 243 dage / 8 mdr. | 54 dage / 1.8 mdr. | idm, ui | Favrskov | – | – | – |
-| Mellem | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 243 dage / 8 mdr. | 54 dage / 1.8 mdr. | ui, middleware, brugere og konti | Favrskov | – | – | – |
-| Mellem | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 242 dage / 8 mdr. | 65 dage / 2.1 mdr. | brugertjek, datamodel og tilhørsforhold | Bornholm | 2.500kr | – | – |
-| Mellem | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 242 dage / 8 mdr. | 65 dage / 2.1 mdr. | idm, api, brugere og konti | Bornholm | 8.500kr | – | – |
-| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 237 dage / 7.8 mdr. | 65 dage / 2.1 mdr. | stamdata, middleware, datamodel og tilhørsforhold | Sønderborg | 4.500kr | – | – |
-| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 153 dage / 5 mdr. | 58 dage / 1.9 mdr. | middleware, funktionelle forbedringer | Favrskov | 27.500kr | – | – |
-| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 149 dage / 4.9 mdr. | 54 dage / 1.8 mdr. | mailskabelon/advis, funktionelle forbedringer | Vallensbæk | – | – | – |
-| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 121 dage / 4 mdr. | 65 dage / 2.1 mdr. | stamdata, drift og vedligehold | Bornholm | 6.500kr | – | – |
-| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 62 dage / 2 mdr. | 60 dage / 2 mdr. | middleware, AD | Esbjerg | 12.500kr | – | – |
-| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 58 dage / 1.9 mdr. | 54 dage / 1.8 mdr. | – | Hjørring | – | – | – |
-| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 243 dage / 8 mdr. | 64 dage / 2.1 mdr. | stamdata, middleware, datamodel og tilhørsforhold | Bornholm | 4.500kr | – | – |
-| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 243 dage / 8 mdr. | 64 dage / 2.1 mdr. | brugere og konti, datamodel og tilhørsforhold | Sønderborg | 17.500kr | – | – |
-| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 237 dage / 7.8 mdr. | 54 dage / 1.8 mdr. | vikar, middleware | Hjørring | – | – | – |
-| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 145 dage / 4.8 mdr. | 60 dage / 2 mdr. | ui | Tønder | 6.500kr | – | – |
-| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 139 dage / 4.6 mdr. | 60 dage / 2 mdr. | idm, brugertjek | Lyngby-Taarbæk | 8.500kr | – | – |
-| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 139 dage / 4.6 mdr. | 54 dage / 1.8 mdr. | ui, brugertjek | Lyngby-Taarbæk | – | – | – |
-| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 125 dage / 4.1 mdr. | 60 dage / 2 mdr. | log-data, idm | Allerød | 5.500kr | – | – |
-| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 76 dage / 2.5 mdr. | 60 dage / 2 mdr. | idm, middleware | Kalundborg | 9.500kr | – | – |
-| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 64 dage / 2.1 mdr. | 60 dage / 2 mdr. | log-data, idm | Bornholm | 6.500kr | – | – |
-| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 64 dage / 2.1 mdr. | 60 dage / 2 mdr. | idm, ui | Bornholm | 6.500kr | – | – |
-| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 98 dage / 3.2 mdr. | ≥ 75 dage / 2.5 mdr. | ilm | Norddjurs | 2.250kr | – | – |
-| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 16 dage / 0.5 mdr. | ≥ 16 dage / 0.5 mdr. | ændringsønske | – | – | – | – |
+| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 91 dage / 3 mdr. | 61 dage / 2 mdr. | api, drift og vedligehold | Ikke kommune | 55.000kr | – | – |
+| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 238 dage / 7.8 mdr. | 66 dage / 2.2 mdr. | stamdata, middleware, datamodel og tilhørsforhold | Sønderborg | 4.500kr | – | – |
+| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 154 dage / 5.1 mdr. | 59 dage / 1.9 mdr. | middleware, funktionelle forbedringer | Favrskov | 27.500kr | – | – |
+| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 150 dage / 4.9 mdr. | 55 dage / 1.8 mdr. | mailskabelon/advis, funktionelle forbedringer | Vallensbæk | – | – | – |
+| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 122 dage / 4 mdr. | 66 dage / 2.2 mdr. | stamdata, drift og vedligehold | Bornholm | 6.500kr | – | – |
+| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 63 dage / 2.1 mdr. | 61 dage / 2 mdr. | middleware, AD | Esbjerg | 12.500kr | – | – |
+| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 59 dage / 1.9 mdr. | 55 dage / 1.8 mdr. | – | Hjørring | – | – | – |
+| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 244 dage / 8 mdr. | 65 dage / 2.1 mdr. | stamdata, middleware, datamodel og tilhørsforhold | Bornholm | 4.500kr | – | – |
+| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 244 dage / 8 mdr. | 65 dage / 2.1 mdr. | brugere og konti, datamodel og tilhørsforhold | Sønderborg | 17.500kr | – | – |
+| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 238 dage / 7.8 mdr. | 55 dage / 1.8 mdr. | vikar, middleware | Hjørring | – | – | – |
+| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 146 dage / 4.8 mdr. | 61 dage / 2 mdr. | ui | Tønder | 6.500kr | – | – |
+| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 140 dage / 4.6 mdr. | 55 dage / 1.8 mdr. | ui, brugertjek | Lyngby-Taarbæk | – | – | – |
+| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 140 dage / 4.6 mdr. | 61 dage / 2 mdr. | idm, brugertjek | Lyngby-Taarbæk | 8.500kr | – | – |
+| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 126 dage / 4.1 mdr. | 61 dage / 2 mdr. | log-data, idm | Allerød | 5.500kr | – | – |
+| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 77 dage / 2.5 mdr. | 61 dage / 2 mdr. | idm, middleware | Kalundborg | 9.500kr | – | – |
+| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 65 dage / 2.1 mdr. | 61 dage / 2 mdr. | log-data, idm | Bornholm | 6.500kr | – | – |
+| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 65 dage / 2.1 mdr. | 61 dage / 2 mdr. | idm, ui | Bornholm | 6.500kr | – | – |
+| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 99 dage / 3.3 mdr. | ≥ 76 dage / 2.5 mdr. | ilm | Norddjurs | 2.250kr | – | – |
+| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 17 dage / 0.6 mdr. | ≥ 17 dage / 0.6 mdr. | ændringsønske | – | – | – | – |
 
 </details>
 
@@ -377,23 +355,16 @@ _Observeret tid i status tælles fra første registrering i historikfilen. For b
 
 | Nøgletal | Antal |
 | --- | ---: |
-| Klar til prioritering | 26 |
-| Reviewet | 18 |
-| Mangler PO-review | 8 |
-| Review med opmærksomhedspunkter | 6 |
-| Review kræver afklaring | 4 |
+| Klar til prioritering | 19 |
+| Reviewet | 14 |
+| Mangler PO-review | 5 |
+| Review med opmærksomhedspunkter | 4 |
+| Review kræver afklaring | 3 |
 | Reviewet med nye kommentarer siden seneste review | 1 |
 
 | Issue | Estimat | PO-review | Opmærksomhed | Nye kommentarer siden review |
 | --- | ---: | --- | --- | ---: |
 | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 55.000kr | 🟡 Review 1 | Migreringen kræver, at hver kommune får etableret egen adgang og it-system på Datafordeleren; dette kan tage betydelig kalendertid.; Prisen på 55.000kr omfatter både udvikling og migrering af alle tilsluttede kommuner.; Der bør i gennemførelsen være tydelig verificering af, at CPR-opslag virker for den enkelte kommune før den gamle løsning udfases. | 0 |
-| [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 65.000kr | 🟡 Review 2 | LocalExtensions-sporet kan dække behovet, men kommunen skal selv beregne og levere den ønskede aktivitetsinformation; løsningen skaber ikke selv et autoritativt mål for kontobrug.; Ændringen er tværgående, fordi 32 mailparsere berøres. | 0 |
-| [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | – | Ikke reviewet | – | – |
-| [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 12.500kr | 🔴 Review 2 | CSV-download er taget ud af denne løsning, fordi leverandøren henviser til eksisterende eksportfunktionalitet.; Estimatet i den aktuelle løsningsbeskrivelse er 12.500kr og er fortsat betinget af, at SQL View/DataTables kan udvides som antaget.; Der er efterfølgende foreslået en enkel markering af personer med flere tilhørsforhold; det fremgår ikke, om dette indgår i den beskrevne løsning. | 0 |
-| [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | – | Ikke reviewet | – | – |
-| [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | – | Ikke reviewet | – | – |
-| [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 2.500kr | 🟡 Review 1 | Det oprindelige ønske nævner både kildesystem, ekstern-type og leverandør. Løsningsbeskrivelsen beskriver kun Master og EXTERNAL. | 0 |
-| [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 8.500kr | 🟢 Review 2 | – | 0 |
 | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 4.500kr | 🟢 Review 1 | – | 0 |
 | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 27.500kr | 🟡 Review 2 | UUID er nu medtaget som importformat og det tidligere spørgsmål herom er dermed afklaret.; Funktionen til at sende en ny besked til samme modtagere genbruger tidligere telefonnumre og kan derfor også ramme personer, der ikke længere er ansatte.; Direkte AD-gruppemedlemskab indlæses ikke i OS2sofd; behovet dækkes i stedet via OS2rollekatalog eller importerede lister. | 0 |
 | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | – | Ikke reviewet | – | – |
@@ -404,8 +375,8 @@ _Observeret tid i status tælles fra første registrering i historikfilen. For b
 | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 17.500kr | 🟢 Review 1 | – | 0 |
 | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | – | Ikke reviewet | – | – |
 | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 6.500kr | 🟢 Review 1 | – | 0 |
-| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 8.500kr | 🔴 Review 1 | Løsningsbeskrivelsen nævner UUID, tilstand og RID, men ikke de roller og identifikationsmidler som ændringsønsket udtrykkeligt efterspørger.; Der etableres direkte integration til MitID Erhverv og certifikatbaseret adgang. | 4 |
 | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | – | Ikke reviewet | – | – |
+| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 8.500kr | 🔴 Review 1 | Løsningsbeskrivelsen nævner UUID, tilstand og RID, men ikke de roller og identifikationsmidler som ændringsønsket udtrykkeligt efterspørger.; Der etableres direkte integration til MitID Erhverv og certifikatbaseret adgang. | 4 |
 | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 5.500kr | 🟢 Review 1 | – | 0 |
 | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 9.500kr | 🟡 Review 1 | Løsningen er en bevidst bredere arkitekturændring: OS2sofd kan hente MitID Erhverv-data direkte i stedet for via AD/OS2faktor.; Direkte indlæsning kræver certifikat/adgang pr. kommune og ændrer hvilken kilde der er autoritativ. | 0 |
 | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 6.500kr | 🟡 Review 1 | Løsningsforslaget flytter tyngden over i auditloggen. Det oprindelige ønske nævner også oprettelsestidspunkt og ordregrundlag direkte i ordrestatus/detaljevisningen. | 0 |
@@ -424,22 +395,32 @@ _Observeret tid i status tælles fra første registrering i historikfilen. For b
 
 | Status | Antal |
 | --- | ---: |
-| Bestilt hos leverandør | 6 |
+| Bestilt hos leverandør | 12 |
 | Igangværende opgaver | 2 |
 | Løsninger i test | 2 |
+| Afsluttede løsninger | 3 |
 
 | Prioritet | Issue | Alder | Status | Estimat | Assignee |
 | --- | --- | ---: | --- | ---: | --- |
-| Kritisk | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 202 dage / 6.6 mdr. | Igangværende opgaver | 25.000kr | pso-digital-identity |
-| Høj | [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 169 dage / 5.6 mdr. | Løsninger i test | 2.500kr | – |
-| Høj | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 161 dage / 5.3 mdr. | Bestilt hos leverandør | 6.000kr | – |
-| Høj | [#123 – OS2sofd ILM - Tilknytning af allerede oprettede brugere](https://github.com/OS2sofd/issues/issues/123) | 58 dage / 1.9 mdr. | Bestilt hos leverandør | 21.500kr | – |
-| Høj | [#126 – OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger](https://github.com/OS2sofd/issues/issues/126) | 51 dage / 1.7 mdr. | Bestilt hos leverandør | 4.250kr | – |
-| Mellem | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 243 dage / 8 mdr. | Løsninger i test | 2.500kr | – |
-| Mellem | [#124 – OS2sofd ILM - Ændring til CMS, mailskabeloner](https://github.com/OS2sofd/issues/issues/124) | 56 dage / 1.8 mdr. | Bestilt hos leverandør | 10.750kr | – |
-| – | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 98 dage / 3.2 mdr. | Igangværende opgaver | 3.250kr | – |
-| – | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | 43 dage / 1.4 mdr. | Bestilt hos leverandør | 40.000kr | – |
-| – | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | 9 dage / 0.3 mdr. | Bestilt hos leverandør | – | – |
+| Kritisk | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 203 dage / 6.7 mdr. | Igangværende opgaver | 25.000kr | pso-digital-identity |
+| Høj | [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 170 dage / 5.6 mdr. | Løsninger i test | 2.500kr | – |
+| Høj | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 162 dage / 5.3 mdr. | Bestilt hos leverandør | 6.000kr | – |
+| Høj | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | 98 dage / 3.2 mdr. | Bestilt hos leverandør | 85.000kr | pso-digital-identity |
+| Høj | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | 98 dage / 3.2 mdr. | Bestilt hos leverandør | 50.000kr | pso-digital-identity |
+| Høj | [#123 – OS2sofd ILM - Tilknytning af allerede oprettede brugere](https://github.com/OS2sofd/issues/issues/123) | 59 dage / 1.9 mdr. | Afsluttede løsninger | 21.500kr | – |
+| Høj | [#126 – OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger](https://github.com/OS2sofd/issues/issues/126) | 52 dage / 1.7 mdr. | Afsluttede løsninger | 4.250kr | – |
+| Mellem | [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 244 dage / 8 mdr. | Løsninger i test | 2.500kr | – |
+| Mellem | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 244 dage / 8 mdr. | Bestilt hos leverandør | 65.000kr | – |
+| Mellem | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 244 dage / 8 mdr. | Bestilt hos leverandør | 12.500kr | – |
+| Mellem | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 244 dage / 8 mdr. | Bestilt hos leverandør | 7.500kr | – |
+| Mellem | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 244 dage / 8 mdr. | Bestilt hos leverandør | 12.000kr | – |
+| Mellem | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 244 dage / 8 mdr. | Bestilt hos leverandør | 19.500kr | – |
+| Mellem | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 243 dage / 8 mdr. | Bestilt hos leverandør | 2.500kr | – |
+| Mellem | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 243 dage / 8 mdr. | Bestilt hos leverandør | 8.500kr | – |
+| Mellem | [#124 – OS2sofd ILM - Ændring til CMS, mailskabeloner](https://github.com/OS2sofd/issues/issues/124) | 57 dage / 1.9 mdr. | Afsluttede løsninger | 10.750kr | – |
+| – | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 99 dage / 3.3 mdr. | Igangværende opgaver | 3.250kr | – |
+| – | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | 44 dage / 1.4 mdr. | Bestilt hos leverandør | 40.000kr | – |
+| – | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | 10 dage / 0.3 mdr. | Bestilt hos leverandør | – | – |
 
 ### Release-efterslæb
 
@@ -449,38 +430,25 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Prioritet | Issue | Alder | Status | Estimat | Assignee |
 | --- | --- | ---: | --- | ---: | --- |
-| Høj | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | 97 dage / 3.2 mdr. | Bestilt hos leverandør | 50.000kr | pso-digital-identity |
-| Høj | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | 97 dage / 3.2 mdr. | Bestilt hos leverandør | 85.000kr | pso-digital-identity |
-| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 90 dage / 3 mdr. | Klar til prioritering | 55.000kr | – |
-| Mellem | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 243 dage / 8 mdr. | Klar til prioritering | – | – |
-| Mellem | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 243 dage / 8 mdr. | Klar til prioritering | 65.000kr | – |
-| Mellem | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 243 dage / 8 mdr. | Klar til prioritering | – | – |
-| Mellem | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 243 dage / 8 mdr. | Klar til prioritering | 12.500kr | – |
-| Mellem | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 243 dage / 8 mdr. | Klar til prioritering | – | – |
-| Mellem | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 242 dage / 8 mdr. | Klar til prioritering | 8.500kr | – |
-| Mellem | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 242 dage / 8 mdr. | Klar til prioritering | 2.500kr | – |
-| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 237 dage / 7.8 mdr. | Klar til prioritering | 4.500kr | – |
-| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 153 dage / 5 mdr. | Klar til prioritering | 27.500kr | – |
-| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 149 dage / 4.9 mdr. | Klar til prioritering | – | – |
-| Mellem | [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | 140 dage / 4.6 mdr. | Igangværende opgaver | 9.500kr | – |
-| Mellem | [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | 140 dage / 4.6 mdr. | Igangværende opgaver | 3.500kr | – |
-| Mellem | [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | 139 dage / 4.6 mdr. | Igangværende opgaver | 17.500kr | – |
-| Mellem | [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | 139 dage / 4.6 mdr. | Igangværende opgaver | 65.000kr | – |
-| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 121 dage / 4 mdr. | Klar til prioritering | 6.500kr | – |
-| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 62 dage / 2 mdr. | Klar til prioritering | 12.500kr | – |
-| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 58 dage / 1.9 mdr. | Klar til prioritering | – | – |
-| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 243 dage / 8 mdr. | Klar til prioritering | 17.500kr | – |
-| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 243 dage / 8 mdr. | Klar til prioritering | 4.500kr | – |
-| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 237 dage / 7.8 mdr. | Klar til prioritering | – | – |
-| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 145 dage / 4.8 mdr. | Klar til prioritering | 6.500kr | – |
-| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 139 dage / 4.6 mdr. | Klar til prioritering | – | – |
-| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 139 dage / 4.6 mdr. | Klar til prioritering | 8.500kr | – |
-| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 125 dage / 4.1 mdr. | Klar til prioritering | 5.500kr | – |
-| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 76 dage / 2.5 mdr. | Klar til prioritering | 9.500kr | – |
-| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 64 dage / 2.1 mdr. | Klar til prioritering | 6.500kr | – |
-| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 64 dage / 2.1 mdr. | Klar til prioritering | 6.500kr | – |
-| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 98 dage / 3.2 mdr. | Klar til prioritering | 2.250kr | – |
-| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 16 dage / 0.5 mdr. | Klar til prioritering | – | – |
+| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 91 dage / 3 mdr. | Klar til prioritering | 55.000kr | – |
+| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 238 dage / 7.8 mdr. | Klar til prioritering | 4.500kr | – |
+| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 154 dage / 5.1 mdr. | Klar til prioritering | 27.500kr | – |
+| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 150 dage / 4.9 mdr. | Klar til prioritering | – | – |
+| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 122 dage / 4 mdr. | Klar til prioritering | 6.500kr | – |
+| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 63 dage / 2.1 mdr. | Klar til prioritering | 12.500kr | – |
+| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 59 dage / 1.9 mdr. | Klar til prioritering | – | – |
+| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 244 dage / 8 mdr. | Klar til prioritering | 4.500kr | – |
+| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 244 dage / 8 mdr. | Klar til prioritering | 17.500kr | – |
+| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 238 dage / 7.8 mdr. | Klar til prioritering | – | – |
+| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 146 dage / 4.8 mdr. | Klar til prioritering | 6.500kr | – |
+| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 140 dage / 4.6 mdr. | Klar til prioritering | – | – |
+| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 140 dage / 4.6 mdr. | Klar til prioritering | 8.500kr | – |
+| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 126 dage / 4.1 mdr. | Klar til prioritering | 5.500kr | – |
+| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 77 dage / 2.5 mdr. | Klar til prioritering | 9.500kr | – |
+| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 65 dage / 2.1 mdr. | Klar til prioritering | 6.500kr | – |
+| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 65 dage / 2.1 mdr. | Klar til prioritering | 6.500kr | – |
+| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 99 dage / 3.3 mdr. | Klar til prioritering | 2.250kr | – |
+| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 17 dage / 0.6 mdr. | Klar til prioritering | – | – |
 
 </details>
 
@@ -491,41 +459,42 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Status | Antal |
 | --- | ---: |
-| Nye ændringsønsker | 17 |
+| Nye ændringsønsker | 18 |
 | Screening | 14 |
 | Afventer løsningsbeskrivelse | 25 |
-| Klar til prioritering | 26 |
-| Bestilt hos leverandør | 8 |
-| Igangværende opgaver | 6 |
+| Klar til prioritering | 19 |
+| Bestilt hos leverandør | 12 |
+| Igangværende opgaver | 2 |
 | Løsninger i test | 2 |
 | Løsninger i review | 0 |
-| Afsluttede løsninger | 27 |
+| Afsluttede løsninger | 34 |
 | Won't fix | 15 |
 
 ### Nye ændringsønsker
 
 <details>
-<summary>Vis 17 issue(s)</summary>
+<summary>Vis 18 issue(s)</summary>
 
 | Prioritet | Issue | Alder | Kommune | Labels | Senest opdateret |
 | --- | --- | ---: | --- | --- | ---: |
-| – | [#133 – OS2sofd ILM - Understøttelse af OU som basis for indlæsning af AD-grupper](https://github.com/OS2sofd/issues/issues/133) | 35 dage / 1.1 mdr. | – | ændringsønske | 29 dage siden |
-| – | [#134 – Person fra WS17 skal have auto-oprettet et tilhørsforhold i SOFD](https://github.com/OS2sofd/issues/issues/134) | 34 dage / 1.1 mdr. | – | ændringsønske | 34 dage siden |
-| – | [#135 – DTR-ID oprettes i SOFD og synkroniseres med FK-Org](https://github.com/OS2sofd/issues/issues/135) | 34 dage / 1.1 mdr. | – | ændringsønske | 34 dage siden |
-| – | [#136 – OS2sofd ILM - Implementering af flere systemroller](https://github.com/OS2sofd/issues/issues/136) | 30 dage / 1 mdr. | – | ændringsønske | 29 dage siden |
-| – | [#137 – OS2sofd ILM - Stamdata på konsulenter i OS2sofd / AD](https://github.com/OS2sofd/issues/issues/137) | 28 dage / 0.9 mdr. | – | ændringsønske | 28 dage siden |
-| – | [#138 – Automatisk sætte "nedarv ikke rettigheder" på ansættelser af typen 99](https://github.com/OS2sofd/issues/issues/138) | 27 dage / 0.9 mdr. | – | ændringsønske | 27 dage siden |
-| – | [#139 – SofdCoreADReplicator - Group Scope](https://github.com/OS2sofd/issues/issues/139) | 23 dage / 0.8 mdr. | – | ændringsønske | 5 dage siden |
-| – | [#140 – Udvidelse af integrationen mellem OS2sofd og OS2faktor](https://github.com/OS2sofd/issues/issues/140) | 23 dage / 0.8 mdr. | – | ændringsønske | 23 dage siden |
-| – | [#141 – OS2sofd ILM - Begrænsning af tilmelding til virksomhed på mail-domæne, samt løbende bekræftelse af adgang til mail](https://github.com/OS2sofd/issues/issues/141) | 22 dage / 0.7 mdr. | – | ændringsønske | 22 dage siden |
-| – | [#142 – OS2Sofd ændringsønske til SD integration / enheds-visning](https://github.com/OS2sofd/issues/issues/142) | 21 dage / 0.7 mdr. | – | ændringsønske | 21 dage siden |
-| – | [#143 – Ændringsønske advis og rapport når OS2sofd synk til FK Org fejler](https://github.com/OS2sofd/issues/issues/143) | 20 dage / 0.7 mdr. | – | ændringsønske | 20 dage siden |
-| – | [#145 – Tidsbegrænsning på stedfortrædere + mailskabelon](https://github.com/OS2sofd/issues/issues/145) | 13 dage / 0.4 mdr. | – | ændringsønske | 13 dage siden |
-| – | [#147 – OS2Sofd API til PauseMarkering](https://github.com/OS2sofd/issues/issues/147) | 9 dage / 0.3 mdr. | – | ændringsønske | 9 dage siden |
-| – | [#148 – Automatisk fjern tilknytning mellem konto og tilhørsforhold når tilhørsforhold stopper](https://github.com/OS2sofd/issues/issues/148) | 7 dage / 0.2 mdr. | – | ændringsønske | 7 dage siden |
-| – | [#149 – SofdCoreADReplicator - Gruppe til nye brugere uden aktivt tilhørsforhold](https://github.com/OS2sofd/issues/issues/149) | 5 dage / 0.2 mdr. | – | ændringsønske | 5 dage siden |
-| – | [#150 – Tildele NemLog-IN roller til flere konti](https://github.com/OS2sofd/issues/issues/150) | 2 dage / 0.1 mdr. | – | ændringsønske | 2 dage siden |
-| – | [#151 – Pause-markeirng - Gør redigering muligt + Tilføj detaljer til rapport](https://github.com/OS2sofd/issues/issues/151) | 0 dage / 0 mdr. | – | ændringsønske | 0 dage siden |
+| – | [#133 – OS2sofd ILM - Understøttelse af OU som basis for indlæsning af AD-grupper](https://github.com/OS2sofd/issues/issues/133) | 36 dage / 1.2 mdr. | – | ændringsønske | 30 dage siden |
+| – | [#134 – Person fra WS17 skal have auto-oprettet et tilhørsforhold i SOFD](https://github.com/OS2sofd/issues/issues/134) | 35 dage / 1.1 mdr. | – | ændringsønske | 35 dage siden |
+| – | [#135 – DTR-ID oprettes i SOFD og synkroniseres med FK-Org](https://github.com/OS2sofd/issues/issues/135) | 35 dage / 1.1 mdr. | – | ændringsønske | 35 dage siden |
+| – | [#136 – OS2sofd ILM - Implementering af flere systemroller](https://github.com/OS2sofd/issues/issues/136) | 31 dage / 1 mdr. | – | ændringsønske | 30 dage siden |
+| – | [#137 – OS2sofd ILM - Stamdata på konsulenter i OS2sofd / AD](https://github.com/OS2sofd/issues/issues/137) | 29 dage / 1 mdr. | – | ændringsønske | 29 dage siden |
+| – | [#138 – Automatisk sætte "nedarv ikke rettigheder" på ansættelser af typen 99](https://github.com/OS2sofd/issues/issues/138) | 28 dage / 0.9 mdr. | – | ændringsønske | 28 dage siden |
+| – | [#139 – SofdCoreADReplicator - Group Scope](https://github.com/OS2sofd/issues/issues/139) | 24 dage / 0.8 mdr. | – | ændringsønske | 6 dage siden |
+| – | [#140 – Udvidelse af integrationen mellem OS2sofd og OS2faktor](https://github.com/OS2sofd/issues/issues/140) | 24 dage / 0.8 mdr. | – | ændringsønske | 24 dage siden |
+| – | [#141 – OS2sofd ILM - Begrænsning af tilmelding til virksomhed på mail-domæne, samt løbende bekræftelse af adgang til mail](https://github.com/OS2sofd/issues/issues/141) | 23 dage / 0.8 mdr. | – | ændringsønske | 23 dage siden |
+| – | [#142 – OS2Sofd ændringsønske til SD integration / enheds-visning](https://github.com/OS2sofd/issues/issues/142) | 22 dage / 0.7 mdr. | – | ændringsønske | 22 dage siden |
+| – | [#143 – Ændringsønske advis og rapport når OS2sofd synk til FK Org fejler](https://github.com/OS2sofd/issues/issues/143) | 21 dage / 0.7 mdr. | – | ændringsønske | 21 dage siden |
+| – | [#145 – Tidsbegrænsning på stedfortrædere + mailskabelon](https://github.com/OS2sofd/issues/issues/145) | 14 dage / 0.5 mdr. | – | ændringsønske | 14 dage siden |
+| – | [#147 – OS2Sofd API til PauseMarkering](https://github.com/OS2sofd/issues/issues/147) | 10 dage / 0.3 mdr. | – | ændringsønske | 10 dage siden |
+| – | [#148 – Automatisk fjern tilknytning mellem konto og tilhørsforhold når tilhørsforhold stopper](https://github.com/OS2sofd/issues/issues/148) | 8 dage / 0.3 mdr. | – | ændringsønske | 8 dage siden |
+| – | [#149 – SofdCoreADReplicator - Gruppe til nye brugere uden aktivt tilhørsforhold](https://github.com/OS2sofd/issues/issues/149) | 6 dage / 0.2 mdr. | – | ændringsønske | 6 dage siden |
+| – | [#150 – Tildele NemLog-IN roller til flere konti](https://github.com/OS2sofd/issues/issues/150) | 3 dage / 0.1 mdr. | – | ændringsønske | 3 dage siden |
+| – | [#151 – Pause-markeirng - Gør redigering muligt + Tilføj detaljer til rapport](https://github.com/OS2sofd/issues/issues/151) | 1 dage / 0 mdr. | – | ændringsønske | 1 dage siden |
+| – | [#152 – Begrænsning af CPR-opslag pr. bruger i OS2sofd og OS2vikar](https://github.com/OS2sofd/issues/issues/152) | 0 dage / 0 mdr. | – | ændringsønske | 0 dage siden |
 
 </details>
 
@@ -536,20 +505,20 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Prioritet | Issue | Alder | Kommune | Labels | Senest opdateret |
 | --- | --- | ---: | --- | --- | ---: |
-| Mellem | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | 243 dage / 8 mdr. | Favrskov | middleware, brugere og konti | 76 dage siden |
-| Mellem | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 243 dage / 8 mdr. | Favrskov | ui, brugere og konti | 58 dage siden |
-| Mellem | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 243 dage / 8 mdr. | Favrskov | rapporter, ui, brugere og konti | 54 dage siden |
-| Mellem | [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | 189 dage / 6.2 mdr. | Hjørring | idm, datamodel og tilhørsforhold | 65 dage siden |
-| Mellem | [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | 132 dage / 4.3 mdr. | Tønder | idm, brugere og konti | 47 dage siden |
-| Mellem | [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | 98 dage / 3.2 mdr. | Norddjurs | idm, ilm | 54 dage siden |
-| Mellem | [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | 98 dage / 3.2 mdr. | Norddjurs | log-data, ilm | 57 dage siden |
-| Lav | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | 242 dage / 8 mdr. | Bornholm | idm, ilm | 30 dage siden |
-| Lav | [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | 236 dage / 7.8 mdr. | Tårnby | vikar, ui | 43 dage siden |
-| Lav | [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 161 dage / 5.3 mdr. | Kalundborg | stamdata, middleware | 60 dage siden |
-| Lav | [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | 98 dage / 3.2 mdr. | Norddjurs | ui, ilm | 57 dage siden |
-| – | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 243 dage / 8 mdr. | Odsherred | stamdata, ui | 42 dage siden |
-| – | [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 161 dage / 5.3 mdr. | Kalundborg | idm, api | 57 dage siden |
-| – | [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 153 dage / 5 mdr. | Tønder | idm, middleware | 76 dage siden |
+| Mellem | [#10 – Udvid SOFDCoreADWritebackAgent til at understøtte forsk. OU'er](https://github.com/OS2sofd/issues/issues/10) | 244 dage / 8 mdr. | Favrskov | middleware, brugere og konti | 77 dage siden |
+| Mellem | [#22 – Brug af AD konto ved opsætning af 'manuelt valgt' leder på enhed](https://github.com/OS2sofd/issues/issues/22) | 244 dage / 8 mdr. | Favrskov | ui, brugere og konti | 59 dage siden |
+| Mellem | [#23 – Samlet overblik over diverse opmærkninger/fravalg af enheder](https://github.com/OS2sofd/issues/issues/23) | 244 dage / 8 mdr. | Favrskov | rapporter, ui, brugere og konti | 55 dage siden |
+| Mellem | [#54 – Udvidet stillingskatalog og kodebaseret regelgrundlag i SOFD (og OS2Rollekatalog)](https://github.com/OS2sofd/issues/issues/54) | 190 dage / 6.2 mdr. | Hjørring | idm, datamodel og tilhørsforhold | 66 dage siden |
+| Mellem | [#95 – Mulighed for at deaktivere en konto med udskudt dato](https://github.com/OS2sofd/issues/issues/95) | 133 dage / 4.4 mdr. | Tønder | idm, brugere og konti | 48 dage siden |
+| Mellem | [#104 – OS2ILM: Placering af medarbejdere i OU](https://github.com/OS2sofd/issues/issues/104) | 99 dage / 3.3 mdr. | Norddjurs | idm, ilm | 55 dage siden |
+| Mellem | [#102 – OS2ILM: Mere specifik log](https://github.com/OS2sofd/issues/issues/102) | 99 dage / 3.3 mdr. | Norddjurs | log-data, ilm | 58 dage siden |
+| Lav | [#30 – OS2sofd - ILM: Vedligeholdelse af Fortrolighedsaftale](https://github.com/OS2sofd/issues/issues/30) | 243 dage / 8 mdr. | Bornholm | idm, ilm | 31 dage siden |
+| Lav | [#37 – Tilknytning af stillinger til enheder i Vikar modulet](https://github.com/OS2sofd/issues/issues/37) | 237 dage / 7.8 mdr. | Tårnby | vikar, ui | 44 dage siden |
+| Lav | [#72 – Ekstra data på skoleelever](https://github.com/OS2sofd/issues/issues/72) | 162 dage / 5.3 mdr. | Kalundborg | stamdata, middleware | 61 dage siden |
+| Lav | [#103 – OS2ILM: Visning af firma og navn](https://github.com/OS2sofd/issues/issues/103) | 99 dage / 3.3 mdr. | Norddjurs | ui, ilm | 58 dage siden |
+| – | [#16 – Navne- og adressebeskyttelse:](https://github.com/OS2sofd/issues/issues/16) | 244 dage / 8 mdr. | Odsherred | stamdata, ui | 43 dage siden |
+| – | [#68 – API-udvidelse til undtagelse/pausemarkering](https://github.com/OS2sofd/issues/issues/68) | 162 dage / 5.3 mdr. | Kalundborg | idm, api | 58 dage siden |
+| – | [#74 – funktionelle forbedringer](https://github.com/OS2sofd/issues/issues/74) | 154 dage / 5.1 mdr. | Tønder | idm, middleware | 77 dage siden |
 
 </details>
 
@@ -560,31 +529,31 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Prioritet | Issue | Alder | Labels | Kommune | Assignee | Senest opdateret |
 | --- | --- | ---: | --- | --- | --- | ---: |
-| Mellem | [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | 237 dage / 7.8 mdr. | idm, lederside | Sønderborg | – | 76 dage siden |
-| Mellem | [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | 189 dage / 6.2 mdr. | ui, lederside | Favrskov | – | 76 dage siden |
-| Mellem | [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | 120 dage / 3.9 mdr. | ui, funktionelle forbedringer | Favrskov | – | 76 dage siden |
-| Mellem | [#130 – Krav til kode for lokale SOFD brugerkonti](https://github.com/OS2sofd/issues/issues/130) | 48 dage / 1.6 mdr. | brugere og konti | Favrskov | – | 40 dage siden |
-| Lav | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 243 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 76 dage siden |
-| Lav | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | 242 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 76 dage siden |
-| Lav | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | 242 dage / 8 mdr. | idm, brugertjek | Bornholm | – | 76 dage siden |
-| Lav | [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | 242 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 76 dage siden |
-| Lav | [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | 237 dage / 7.8 mdr. | vikar, mailskabelon/advis | Køge | – | 76 dage siden |
-| Lav | [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | 219 dage / 7.2 mdr. | lederside, brugere og konti | Odsherred | – | 76 dage siden |
-| Lav | [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | 197 dage / 6.5 mdr. | dokumentation, log-data | Ikke kommune | – | 76 dage siden |
-| Lav | [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 176 dage / 5.8 mdr. | mailskabelon/advis, middleware | Bornholm | – | 76 dage siden |
-| Lav | [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 161 dage / 5.3 mdr. | mailskabelon/advis, middleware | Kalundborg | – | 76 dage siden |
-| Lav | [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 161 dage / 5.3 mdr. | ui | Kalundborg | – | 76 dage siden |
-| Lav | [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 161 dage / 5.3 mdr. | ui, funktionelle forbedringer | Kalundborg | – | 76 dage siden |
-| Lav | [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 161 dage / 5.3 mdr. | api, brugertjek | Kalundborg | – | 76 dage siden |
-| Lav | [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 161 dage / 5.3 mdr. | idm, mailskabelon/advis | Kalundborg | – | 76 dage siden |
-| Lav | [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 161 dage / 5.3 mdr. | log-data, mailskabelon/advis | Kalundborg | – | 76 dage siden |
-| Lav | [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 153 dage / 5 mdr. | stamdata, mailskabelon/advis | Tønder | – | 76 dage siden |
-| Lav | [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | 112 dage / 3.7 mdr. | stamdata, middleware | Ikke kommune | – | 76 dage siden |
-| Lav | [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | 93 dage / 3.1 mdr. | ui, funktionelle forbedringer | Allerød | – | 76 dage siden |
-| Lav | [#125 – Brugertjek: Fastfrys søg knappen](https://github.com/OS2sofd/issues/issues/125) | 55 dage / 1.8 mdr. | ui, brugertjek | Syddjurs | – | 54 dage siden |
-| Lav | [#127 – Overførsel af autorisationskode til FK Organisation](https://github.com/OS2sofd/issues/issues/127) | 51 dage / 1.7 mdr. | stamdata, middleware | Vallensbæk | – | 40 dage siden |
-| Lav | [#128 – Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD](https://github.com/OS2sofd/issues/issues/128) | 49 dage / 1.6 mdr. | ui | Sønderborg | – | 40 dage siden |
-| Lav | [#129 – Muligt at ændre arbejdssted](https://github.com/OS2sofd/issues/issues/129) | 48 dage / 1.6 mdr. | ui, datamodel og tilhørsforhold | Odsherred | – | 40 dage siden |
+| Mellem | [#35 – Forslag til rettelser i OS2SOFD Ledermodul](https://github.com/OS2sofd/issues/issues/35) | 238 dage / 7.8 mdr. | idm, lederside | Sønderborg | – | 77 dage siden |
+| Mellem | [#55 – Lederside - Forbedring af GUI for Pausemarkering ift. endusers](https://github.com/OS2sofd/issues/issues/55) | 190 dage / 6.2 mdr. | ui, lederside | Favrskov | – | 77 dage siden |
+| Mellem | [#98 – OS2sofd Telefoni-modul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/98) | 121 dage / 4 mdr. | ui, funktionelle forbedringer | Favrskov | – | 77 dage siden |
+| Mellem | [#130 – Krav til kode for lokale SOFD brugerkonti](https://github.com/OS2sofd/issues/issues/130) | 49 dage / 1.6 mdr. | brugere og konti | Favrskov | – | 41 dage siden |
+| Lav | [#18 – Brugertjek: Uddybelse af Entra licenser](https://github.com/OS2sofd/issues/issues/18) | 244 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 77 dage siden |
+| Lav | [#29 – Brugertjek: Mulighed for genveje og dybe links](https://github.com/OS2sofd/issues/issues/29) | 243 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 77 dage siden |
+| Lav | [#28 – Brugertjek: Kontrol af lønsystem konto](https://github.com/OS2sofd/issues/issues/28) | 243 dage / 8 mdr. | idm, brugertjek | Bornholm | – | 77 dage siden |
+| Lav | [#26 – Brugertjek: Robot-flag for robotter](https://github.com/OS2sofd/issues/issues/26) | 243 dage / 8 mdr. | ui, brugertjek | Bornholm | – | 77 dage siden |
+| Lav | [#34 – ÆndringsønskeMulighed for at sende sms fra Vikarmodulet](https://github.com/OS2sofd/issues/issues/34) | 238 dage / 7.8 mdr. | vikar, mailskabelon/advis | Køge | – | 77 dage siden |
+| Lav | [#48 – Stoppet medarbejder slettes i Lederportalen/Tillidserhverv](https://github.com/OS2sofd/issues/issues/48) | 220 dage / 7.2 mdr. | lederside, brugere og konti | Odsherred | – | 77 dage siden |
+| Lav | [#52 – Automatisk dannede flow-diagrammer til OS2sofd](https://github.com/OS2sofd/issues/issues/52) | 198 dage / 6.5 mdr. | dokumentation, log-data | Ikke kommune | – | 77 dage siden |
+| Lav | [#60 – SMS/Kodeordspåmindelse: understøttelse af flere kodeordspolitikker](https://github.com/OS2sofd/issues/issues/60) | 177 dage / 5.8 mdr. | mailskabelon/advis, middleware | Bornholm | – | 77 dage siden |
+| Lav | [#71 – Videreudvikling af SMS modul](https://github.com/OS2sofd/issues/issues/71) | 162 dage / 5.3 mdr. | mailskabelon/advis, middleware | Kalundborg | – | 77 dage siden |
+| Lav | [#70 – Mulighed for at redigere og flytte kolonner i oversigtsbillederne](https://github.com/OS2sofd/issues/issues/70) | 162 dage / 5.3 mdr. | ui | Kalundborg | – | 77 dage siden |
+| Lav | [#66 – Mulighed for at redigere allerede oprettet arbejdssted](https://github.com/OS2sofd/issues/issues/66) | 162 dage / 5.3 mdr. | ui, funktionelle forbedringer | Kalundborg | – | 77 dage siden |
+| Lav | [#64 – Brugertjek : oplysninger om sidste kodeordsskifte og kodeordsløb i OS2faktor fanen](https://github.com/OS2sofd/issues/issues/64) | 162 dage / 5.3 mdr. | api, brugertjek | Kalundborg | – | 77 dage siden |
+| Lav | [#69 – Mulighed for at fravælge advis ved kontooprettelse](https://github.com/OS2sofd/issues/issues/69) | 162 dage / 5.3 mdr. | idm, mailskabelon/advis | Kalundborg | – | 77 dage siden |
+| Lav | [#67 – Kommunikationsmodul - Udviklingsønsker til email og log](https://github.com/OS2sofd/issues/issues/67) | 162 dage / 5.3 mdr. | log-data, mailskabelon/advis | Kalundborg | – | 77 dage siden |
+| Lav | [#75 – Kommunikationsmodul i OS2sofd SMS/Email](https://github.com/OS2sofd/issues/issues/75) | 154 dage / 5.1 mdr. | stamdata, mailskabelon/advis | Tønder | – | 77 dage siden |
+| Lav | [#99 – Understøtte ny Skole/SFO opmærkning til KOMBIT](https://github.com/OS2sofd/issues/issues/99) | 113 dage / 3.7 mdr. | stamdata, middleware | Ikke kommune | – | 77 dage siden |
+| Lav | [#111 – UI forbedringer til stillingskatalog](https://github.com/OS2sofd/issues/issues/111) | 94 dage / 3.1 mdr. | ui, funktionelle forbedringer | Allerød | – | 77 dage siden |
+| Lav | [#125 – Brugertjek: Fastfrys søg knappen](https://github.com/OS2sofd/issues/issues/125) | 56 dage / 1.8 mdr. | ui, brugertjek | Syddjurs | – | 55 dage siden |
+| Lav | [#127 – Overførsel af autorisationskode til FK Organisation](https://github.com/OS2sofd/issues/issues/127) | 52 dage / 1.7 mdr. | stamdata, middleware | Vallensbæk | – | 41 dage siden |
+| Lav | [#128 – Mulighed for at komponere egen tekst som kan vises ved henholdsvis oprettelse af ny bruger og ny enhed i SOFD](https://github.com/OS2sofd/issues/issues/128) | 50 dage / 1.6 mdr. | ui | Sønderborg | – | 41 dage siden |
+| Lav | [#129 – Muligt at ændre arbejdssted](https://github.com/OS2sofd/issues/issues/129) | 49 dage / 1.6 mdr. | ui, datamodel og tilhørsforhold | Odsherred | – | 41 dage siden |
 
 </details>
 
@@ -592,64 +561,57 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Prioritet | Issue | Alder | Estimat | Størrelse | Release | Kommune |
 | --- | --- | ---: | ---: | --- | --- | --- |
-| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 90 dage / 3 mdr. | 55.000kr | – | – | Ikke kommune |
-| Mellem | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 243 dage / 8 mdr. | 65.000kr | – | – | Favrskov |
-| Mellem | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 243 dage / 8 mdr. | – | – | – | Favrskov |
-| Mellem | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 243 dage / 8 mdr. | 12.500kr | – | – | Favrskov |
-| Mellem | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 243 dage / 8 mdr. | – | – | – | Favrskov |
-| Mellem | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 243 dage / 8 mdr. | – | – | – | Favrskov |
-| Mellem | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 242 dage / 8 mdr. | 2.500kr | – | – | Bornholm |
-| Mellem | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 242 dage / 8 mdr. | 8.500kr | – | – | Bornholm |
-| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 237 dage / 7.8 mdr. | 4.500kr | – | – | Sønderborg |
-| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 153 dage / 5 mdr. | 27.500kr | – | – | Favrskov |
-| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 149 dage / 4.9 mdr. | – | – | – | Vallensbæk |
-| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 121 dage / 4 mdr. | 6.500kr | – | – | Bornholm |
-| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 62 dage / 2 mdr. | 12.500kr | – | – | Esbjerg |
-| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 58 dage / 1.9 mdr. | – | – | – | Hjørring |
-| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 243 dage / 8 mdr. | 4.500kr | – | – | Bornholm |
-| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 243 dage / 8 mdr. | 17.500kr | – | – | Sønderborg |
-| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 237 dage / 7.8 mdr. | – | – | – | Hjørring |
-| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 145 dage / 4.8 mdr. | 6.500kr | – | – | Tønder |
-| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 139 dage / 4.6 mdr. | 8.500kr | – | – | Lyngby-Taarbæk |
-| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 139 dage / 4.6 mdr. | – | – | – | Lyngby-Taarbæk |
-| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 125 dage / 4.1 mdr. | 5.500kr | – | – | Allerød |
-| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 76 dage / 2.5 mdr. | 9.500kr | – | – | Kalundborg |
-| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 64 dage / 2.1 mdr. | 6.500kr | – | – | Bornholm |
-| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 64 dage / 2.1 mdr. | 6.500kr | – | – | Bornholm |
-| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 98 dage / 3.2 mdr. | 2.250kr | – | – | Norddjurs |
-| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 16 dage / 0.5 mdr. | – | – | – | – |
+| Høj | [#112 – Migrering til Datafordeleren til CPR opslag](https://github.com/OS2sofd/issues/issues/112) | 91 dage / 3 mdr. | 55.000kr | – | – | Ikke kommune |
+| Mellem | [#36 – Auto-opdatere enheder i FK Organisation ved nye KLE emner](https://github.com/OS2sofd/issues/issues/36) | 238 dage / 7.8 mdr. | 4.500kr | – | – | Sønderborg |
+| Mellem | [#73 – OS2sofd Kommunikationsmodul - Ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/73) | 154 dage / 5.1 mdr. | 27.500kr | – | – | Favrskov |
+| Mellem | [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | 150 dage / 4.9 mdr. | – | – | – | Vallensbæk |
+| Mellem | [#97 – Vedligehold/rettidige opdateringer af Autorisationskoder](https://github.com/OS2sofd/issues/issues/97) | 122 dage / 4 mdr. | 6.500kr | – | – | Bornholm |
+| Mellem | [#121 – Ændringsønske - Udfordring ved flere mobilnumre til samme person](https://github.com/OS2sofd/issues/issues/121) | 63 dage / 2.1 mdr. | 12.500kr | – | – | Esbjerg |
+| Mellem | [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | 59 dage / 1.9 mdr. | – | – | – | Hjørring |
+| Lav | [#24 – Prefix i AD Event Dispatcher](https://github.com/OS2sofd/issues/issues/24) | 244 dage / 8 mdr. | 4.500kr | – | – | Bornholm |
+| Lav | [#15 – Behov for at kunne vise forskelligt displaynavn på ansatte med flere tilhørsforhold/AD-konti](https://github.com/OS2sofd/issues/issues/15) | 244 dage / 8 mdr. | 17.500kr | – | – | Sønderborg |
+| Lav | [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | 238 dage / 7.8 mdr. | – | – | – | Hjørring |
+| Lav | [#78 – Bjælke for oven og i venstre side, skal fryses fast](https://github.com/OS2sofd/issues/issues/78) | 146 dage / 4.8 mdr. | 6.500kr | – | – | Tønder |
+| Lav | [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | 140 dage / 4.6 mdr. | – | – | – | Lyngby-Taarbæk |
+| Lav | [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | 140 dage / 4.6 mdr. | 8.500kr | – | – | Lyngby-Taarbæk |
+| Lav | [#96 – Vis detaljer om hvem der har bestilt/oprettet en konto undrer ordre-detaljer](https://github.com/OS2sofd/issues/issues/96) | 126 dage / 4.1 mdr. | 5.500kr | – | – | Allerød |
+| Lav | [#113 – Indlæsning af Mit Erhverv status til OS2Sofd](https://github.com/OS2sofd/issues/issues/113) | 77 dage / 2.5 mdr. | 9.500kr | – | – | Kalundborg |
+| Lav | [#119 – Forbedret logning/dokumentation af ordredannelser.](https://github.com/OS2sofd/issues/issues/119) | 65 dage / 2.1 mdr. | 6.500kr | – | – | Bornholm |
+| Lav | [#120 – Advarsel omkring bestilling af Brugerkonti når man anvender bindingsmodellen](https://github.com/OS2sofd/issues/issues/120) | 65 dage / 2.1 mdr. | 6.500kr | – | – | Bornholm |
+| – | [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | 99 dage / 3.3 mdr. | 2.250kr | – | – | Norddjurs |
+| – | [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | 17 dage / 0.6 mdr. | – | – | – | – |
 
 ### Bestilt hos leverandør
 
 <details>
-<summary>Vis 8 issue(s)</summary>
+<summary>Vis 12 issue(s)</summary>
 
 | Prioritet | Issue | Alder | Assignee | Estimat | Release | Senest opdateret |
 | --- | --- | ---: | --- | ---: | --- | ---: |
-| Høj | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 161 dage / 5.3 mdr. | – | 6.000kr | 4. kvartal 2026 | 42 dage siden |
-| Høj | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | 97 dage / 3.2 mdr. | pso-digital-identity | 50.000kr | – | 16 dage siden |
-| Høj | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | 97 dage / 3.2 mdr. | pso-digital-identity | 85.000kr | – | 22 dage siden |
-| Høj | [#123 – OS2sofd ILM - Tilknytning af allerede oprettede brugere](https://github.com/OS2sofd/issues/issues/123) | 58 dage / 1.9 mdr. | – | 21.500kr | 4. kvartal 2026 | 29 dage siden |
-| Høj | [#126 – OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger](https://github.com/OS2sofd/issues/issues/126) | 51 dage / 1.7 mdr. | – | 4.250kr | 4. kvartal 2026 | 29 dage siden |
-| Mellem | [#124 – OS2sofd ILM - Ændring til CMS, mailskabeloner](https://github.com/OS2sofd/issues/issues/124) | 56 dage / 1.8 mdr. | – | 10.750kr | 4. kvartal 2026 | 29 dage siden |
-| – | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | 43 dage / 1.4 mdr. | – | 40.000kr | 4. kvartal 2026 | 40 dage siden |
-| – | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | 9 dage / 0.3 mdr. | – | – | 4. kvartal 2026 | 9 dage siden |
+| Høj | [#65 – NexusSync - automatisk luk af konti udenfor "nexus organisationen"](https://github.com/OS2sofd/issues/issues/65) | 162 dage / 5.3 mdr. | – | 6.000kr | 4. kvartal 2026 | 43 dage siden |
+| Høj | [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | 98 dage / 3.2 mdr. | pso-digital-identity | 50.000kr | 4. kvartal 2026 | 17 dage siden |
+| Høj | [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | 98 dage / 3.2 mdr. | pso-digital-identity | 85.000kr | 4. kvartal 2026 | 23 dage siden |
+| Mellem | [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | 244 dage / 8 mdr. | – | 12.000kr | 4. kvartal 2026 | 52 dage siden |
+| Mellem | [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | 244 dage / 8 mdr. | – | 7.500kr | 4. kvartal 2026 | 55 dage siden |
+| Mellem | [#17 – SOFD GUI: Udvidet overblik over tilhørsforhold og typer](https://github.com/OS2sofd/issues/issues/17) | 244 dage / 8 mdr. | – | 12.500kr | 4. kvartal 2026 | 0 dage siden |
+| Mellem | [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | 244 dage / 8 mdr. | – | 19.500kr | 4. kvartal 2026 | 55 dage siden |
+| Mellem | [#11 – Tilføj information om en AD konto er i brug + understøtte LocalExtensions i Mail skabeloner](https://github.com/OS2sofd/issues/issues/11) | 244 dage / 8 mdr. | – | 65.000kr | 4. kvartal 2026 | 55 dage siden |
+| Mellem | [#27 – Oprettelse af KSP/CICS konti på baggrund af rolletildelinger](https://github.com/OS2sofd/issues/issues/27) | 243 dage / 8 mdr. | – | 8.500kr | 4. kvartal 2026 | 0 dage siden |
+| Mellem | [#25 – Brugertjek: Udvidelse af informationer i tilhørforholdstabellen](https://github.com/OS2sofd/issues/issues/25) | 243 dage / 8 mdr. | – | 2.500kr | 4. kvartal 2026 | 58 dage siden |
+| – | [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | 44 dage / 1.4 mdr. | – | 40.000kr | 4. kvartal 2026 | 41 dage siden |
+| – | [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | 10 dage / 0.3 mdr. | – | – | 4. kvartal 2026 | 10 dage siden |
 
 </details>
 
 ### Igangværende opgaver
 
 <details>
-<summary>Vis 6 issue(s)</summary>
+<summary>Vis 2 issue(s)</summary>
 
 | Prioritet | Issue | Alder | Assignee | Estimat | Release | Senest opdateret |
 | --- | --- | ---: | --- | ---: | --- | ---: |
-| Kritisk | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 202 dage / 6.6 mdr. | pso-digital-identity | 25.000kr | 4. kvartal 2026 | 69 dage siden |
-| Mellem | [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | 140 dage / 4.6 mdr. | – | 9.500kr | – | 14 dage siden |
-| Mellem | [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | 140 dage / 4.6 mdr. | – | 3.500kr | – | 14 dage siden |
-| Mellem | [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | 139 dage / 4.6 mdr. | – | 65.000kr | – | 14 dage siden |
-| Mellem | [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | 139 dage / 4.6 mdr. | – | 17.500kr | – | 14 dage siden |
-| – | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 98 dage / 3.2 mdr. | – | 3.250kr | 4. kvartal 2026 | 29 dage siden |
+| Kritisk | [#51 – Migrér CVR-integration fra Datafordeler REST til GraphQL](https://github.com/OS2sofd/issues/issues/51) | 203 dage / 6.7 mdr. | pso-digital-identity | 25.000kr | 4. kvartal 2026 | 70 dage siden |
+| – | [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | 99 dage / 3.3 mdr. | – | 3.250kr | 4. kvartal 2026 | 30 dage siden |
 
 </details>
 
@@ -660,8 +622,8 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Issue | Alder | Release | Assignee | Senest opdateret |
 | --- | ---: | --- | --- | ---: |
-| [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 169 dage / 5.6 mdr. | 4. kvartal 2026 | – | 27 dage siden |
-| [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 243 dage / 8 mdr. | 4. kvartal 2026 | – | 27 dage siden |
+| [#62 – Udvidelse af Opus-integrationen med mulighed for at overføre flere brugerkontotyper](https://github.com/OS2sofd/issues/issues/62) | 170 dage / 5.6 mdr. | 4. kvartal 2026 | – | 28 dage siden |
+| [#9 – Person tilhørsforhold - Tilføj markering af primært tilhørsforhold](https://github.com/OS2sofd/issues/issues/9) | 244 dage / 8 mdr. | 4. kvartal 2026 | – | 28 dage siden |
 
 </details>
 
@@ -670,7 +632,7 @@ Ingen aktive issues har en udløbet planlagt release.
 > Gennemløbstid vises kun, når der findes en registreret afslutningsdato. Fremadrettet kan automatiseringen opbygge status-historik og dermed måle gennemløbstid mere præcist.
 
 <details>
-<summary>Vis 27 issue(s)</summary>
+<summary>Vis 34 issue(s)</summary>
 
 | Issue | Gennemløbstid | Prioritet | Release | Afsluttet |
 | --- | ---: | --- | --- | --- |
@@ -678,20 +640,27 @@ Ingen aktive issues har en udløbet planlagt release.
 | [#50 – Mulighed for at opsætte grænser for varigheden af OS2sofd tilhørsforhold](https://github.com/OS2sofd/issues/issues/50) | 153 dage / 5 mdr. | Høj | 3. kvartal 2026 | 30-09-2026 |
 | [#53 – OS2sofd Lederside - Auditlogning af ændringer skal følge SOFD Core praksis](https://github.com/OS2sofd/issues/issues/53) | 140 dage / 4.6 mdr. | Høj | 3. kvartal 2026 | 30-09-2026 |
 | [#100 – Brugerkontotyper - tilføjelse til skabelonbaseret navnekonvention](https://github.com/OS2sofd/issues/issues/100) | 62 dage / 2 mdr. | Høj | 3. kvartal 2026 | 30-09-2026 |
+| [#123 – OS2sofd ILM - Tilknytning af allerede oprettede brugere](https://github.com/OS2sofd/issues/issues/123) | – | Høj | 4. kvartal 2026 | – |
+| [#126 – OS2sofd ILM: mulighed for at oprette tilhørsforhold via ILM på eksisterende bruger](https://github.com/OS2sofd/issues/issues/126) | – | Høj | 4. kvartal 2026 | – |
 | [#7 – Mulighed for at overskrive medarbejders stillingsbetegnelse fra lønsystemet](https://github.com/OS2sofd/issues/issues/7) | 172 dage / 5.7 mdr. | Mellem | – | 08-09-2026 |
+| [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | – | Mellem | – | – |
+| [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | – | Mellem | – | – |
+| [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | – | Mellem | – | – |
+| [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | – | Mellem | – | – |
+| [#124 – OS2sofd ILM - Ændring til CMS, mailskabeloner](https://github.com/OS2sofd/issues/issues/124) | – | Mellem | 4. kvartal 2026 | – |
 | [#77 – Ændring af dannede kodeord i forbindelse med kontooprettelser i Sofd Account Agent](https://github.com/OS2sofd/issues/issues/77) | 73 dage / 2.4 mdr. | Lav | – | 04-09-2026 |
 | [#20 – SOFD Replikator: Undtage eksterne fra gruppe sync](https://github.com/OS2sofd/issues/issues/20) | 101 dage / 3.3 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#8 – OS2sofd Lederside - fixes + ønsker til forbedringer](https://github.com/OS2sofd/issues/issues/8) | 168 dage / 5.5 mdr. | – | 2. kvartal 2026 | 04-09-2026 |
+| [#44 – IDM: Per-afdeling konfiguration af dage for kontooprettelse](https://github.com/OS2sofd/issues/issues/44) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#47 – IDM: Dokumentation af alle IDM-flows](https://github.com/OS2sofd/issues/issues/47) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#40 – IDM: Undgå utilsigtet genbrug af gamle konti](https://github.com/OS2sofd/issues/issues/40) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#41 – IDM: Nyt Cleanup-trin i IDM-livscyklus](https://github.com/OS2sofd/issues/issues/41) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
-| [#44 – IDM: Per-afdeling konfiguration af dage for kontooprettelse](https://github.com/OS2sofd/issues/issues/44) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#45 – IDM: OPUS-konto brugernavn præfiks-validering](https://github.com/OS2sofd/issues/issues/45) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#42 – IDM: Opret konto-ordre straks ved kendskab til ansættelse](https://github.com/OS2sofd/issues/issues/42) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
-| [#46 – IDM: Bedre håndtering af personinaktivering](https://github.com/OS2sofd/issues/issues/46) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
+| [#38 – IDM: Ny ordretype REACTIVATE i IDM-flow](https://github.com/OS2sofd/issues/issues/38) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#43 – IDM: Understøt AD-kontooprettelse fra flere tilhørsforholdskilder end for andre kontotyper](https://github.com/OS2sofd/issues/issues/43) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#39 – IDM: Opret nye AD-konti i disabled tilstand indtil ansættelsesstart](https://github.com/OS2sofd/issues/issues/39) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
-| [#38 – IDM: Ny ordretype REACTIVATE i IDM-flow](https://github.com/OS2sofd/issues/issues/38) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
+| [#46 – IDM: Bedre håndtering af personinaktivering](https://github.com/OS2sofd/issues/issues/46) | 82 dage / 2.7 mdr. | – | 2. kvartal 2026 | 30-06-2026 |
 | [#56 – Bestilling af mail-adresser via ILM modulet](https://github.com/OS2sofd/issues/issues/56) | 107 dage / 3.5 mdr. | – | – | 04-09-2026 |
 | [#57 – Tilføjelse i OS2sofd - ILM af e-mailinvitation til konsulent så chancen for selv-registrering øges](https://github.com/OS2sofd/issues/issues/57) | 107 dage / 3.5 mdr. | – | – | 04-09-2026 |
 | [#58 – OS2sofd - ilm - udfyld UPN ved oprettelse af konsulentkonto](https://github.com/OS2sofd/issues/issues/58) | – | – | – | – |
@@ -711,21 +680,21 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Issue | Alder | Kommune | Senest opdateret |
 | --- | ---: | --- | --- |
-| [#12 – Forstå forskel på Ansatte, Eksterne, Byrødder, Konsulenter, Vikarer, m.m. typer af AD konti](https://github.com/OS2sofd/issues/issues/12) | 243 dage / 8 mdr. | Sønderborg | 29-09-2026 |
-| [#49 – Ændring af synkronisering af data ind i Nexus](https://github.com/OS2sofd/issues/issues/49) | 215 dage / 7.1 mdr. | Tønder | 15-09-2026 |
-| [#79 – Flere steps i godkendelsesflow i OS2Rollekatalog Anmod/Godkend](https://github.com/OS2sofd/issues/issues/79) | 141 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#110 – Frigørelse af kobling mellem it-brugerkonto og tilhørsforhold fra løndata. Tilhørsforhold skal afspejle den administrative organisation i OS2sofd.Ændringsønske](https://github.com/OS2sofd/issues/issues/110) | 97 dage / 3.2 mdr. | Horsens | 25-09-2026 |
-| [#80 – ÆndringsønskeUdvidet information ved anmodning om rolle i OS2Rolekatalog Anmod/Godkend](https://github.com/OS2sofd/issues/issues/80) | 141 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#81 – At kunne ændre afsendernavn på mails fra Rollekatalog](https://github.com/OS2sofd/issues/issues/81) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#88 – Ny kolonne i rapporten 'Historiske rolleanmodninger', så man kan se hvilket IT-System de forskellige roller er tilknyttet](https://github.com/OS2sofd/issues/issues/88) | 139 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#89 – Udvide 'Status' typer for tildeling af rettigheder med 'Tildelt ved godkendt anmodning'.](https://github.com/OS2sofd/issues/issues/89) | 139 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#92 – Konfigurationsindstilling: Jobfunktionsroller og Rollebuketter listes samlet](https://github.com/OS2sofd/issues/issues/92) | 139 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
-| [#93 – Berigelse af titelfelt for skoleelever med klassetrin](https://github.com/OS2sofd/issues/issues/93) | 139 dage / 4.6 mdr. | Kalundborg | 07-10-2026 |
-| [#6 – Visning af mailadresse i listevisning/SOFD](https://github.com/OS2sofd/issues/issues/6) | 461 dage / 15.1 mdr. | – | 18-08-2025 |
-| [#14 – Nye hændelse til IDM proces: Reaktivering - Oprydning](https://github.com/OS2sofd/issues/issues/14) | 243 dage / 8 mdr. | Sønderborg | 19-05-2026 |
-| [#33 – Foretræk kendte spærrede konti fremfor at danne et nyt brugernavn](https://github.com/OS2sofd/issues/issues/33) | 237 dage / 7.8 mdr. | Sønderborg | 19-05-2026 |
-| [#84 – At kunne skrive data attribut værdier fra OS2Vikar oprettelse til Data attribut i Active Directory](https://github.com/OS2sofd/issues/issues/84) | 139 dage / 4.6 mdr. | Lyngby-Taarbæk | 17-09-2026 |
-| [#87 – Begrænse en systemansvarlig's view af it-systemer i OS2Rollekatalog](https://github.com/OS2sofd/issues/issues/87) | 139 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#12 – Forstå forskel på Ansatte, Eksterne, Byrødder, Konsulenter, Vikarer, m.m. typer af AD konti](https://github.com/OS2sofd/issues/issues/12) | 244 dage / 8 mdr. | Sønderborg | 29-09-2026 |
+| [#49 – Ændring af synkronisering af data ind i Nexus](https://github.com/OS2sofd/issues/issues/49) | 216 dage / 7.1 mdr. | Tønder | 15-09-2026 |
+| [#79 – Flere steps i godkendelsesflow i OS2Rollekatalog Anmod/Godkend](https://github.com/OS2sofd/issues/issues/79) | 142 dage / 4.7 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#110 – Frigørelse af kobling mellem it-brugerkonto og tilhørsforhold fra løndata. Tilhørsforhold skal afspejle den administrative organisation i OS2sofd.Ændringsønske](https://github.com/OS2sofd/issues/issues/110) | 98 dage / 3.2 mdr. | Horsens | 25-09-2026 |
+| [#80 – ÆndringsønskeUdvidet information ved anmodning om rolle i OS2Rolekatalog Anmod/Godkend](https://github.com/OS2sofd/issues/issues/80) | 142 dage / 4.7 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#81 – At kunne ændre afsendernavn på mails fra Rollekatalog](https://github.com/OS2sofd/issues/issues/81) | 141 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#88 – Ny kolonne i rapporten 'Historiske rolleanmodninger', så man kan se hvilket IT-System de forskellige roller er tilknyttet](https://github.com/OS2sofd/issues/issues/88) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#89 – Udvide 'Status' typer for tildeling af rettigheder med 'Tildelt ved godkendt anmodning'.](https://github.com/OS2sofd/issues/issues/89) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#92 – Konfigurationsindstilling: Jobfunktionsroller og Rollebuketter listes samlet](https://github.com/OS2sofd/issues/issues/92) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
+| [#93 – Berigelse af titelfelt for skoleelever med klassetrin](https://github.com/OS2sofd/issues/issues/93) | 140 dage / 4.6 mdr. | Kalundborg | 07-10-2026 |
+| [#6 – Visning af mailadresse i listevisning/SOFD](https://github.com/OS2sofd/issues/issues/6) | 462 dage / 15.2 mdr. | – | 18-08-2025 |
+| [#14 – Nye hændelse til IDM proces: Reaktivering - Oprydning](https://github.com/OS2sofd/issues/issues/14) | 244 dage / 8 mdr. | Sønderborg | 19-05-2026 |
+| [#33 – Foretræk kendte spærrede konti fremfor at danne et nyt brugernavn](https://github.com/OS2sofd/issues/issues/33) | 238 dage / 7.8 mdr. | Sønderborg | 19-05-2026 |
+| [#84 – At kunne skrive data attribut værdier fra OS2Vikar oprettelse til Data attribut i Active Directory](https://github.com/OS2sofd/issues/issues/84) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 17-09-2026 |
+| [#87 – Begrænse en systemansvarlig's view af it-systemer i OS2Rollekatalog](https://github.com/OS2sofd/issues/issues/87) | 140 dage / 4.6 mdr. | Lyngby-Taarbæk | 22-09-2026 |
 
 </details>
 
@@ -738,25 +707,16 @@ Ingen aktive issues har en udløbet planlagt release.
 
 | Issue | Status | Alder | Problem |
 | --- | --- | ---: | --- |
-| [#19 – SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen "Medarbejder" når man kører med sync fra et lønsystem](https://github.com/OS2sofd/issues/issues/19) | Klar til prioritering | 243 dage / 8 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#21 – SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre](https://github.com/OS2sofd/issues/issues/21) | Klar til prioritering | 243 dage / 8 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#13 – SofdCoreADReplicator - Handlinger ved grupper](https://github.com/OS2sofd/issues/issues/13) | Klar til prioritering | 243 dage / 8 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Klar til prioritering | 237 dage / 7.8 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | Klar til prioritering | 149 dage / 4.9 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#82 – ÆndringsønskeObligatorisk drop down menuer samt mulighed for a pre-definere værdier ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/82) | Igangværende opgaver | 140 dage / 4.6 mdr. | Mangler planlagt release |
-| [#83 – At kunne gøre data felter obligatoriske ved oprettelse i OS2Vikar](https://github.com/OS2sofd/issues/issues/83) | Igangværende opgaver | 140 dage / 4.6 mdr. | Mangler planlagt release |
-| [#86 – OS2Vikar mulighed for at angive tid ved oprettelse af vikar](https://github.com/OS2sofd/issues/issues/86) | Igangværende opgaver | 139 dage / 4.6 mdr. | Mangler planlagt release |
-| [#85 – Brugernavn generator ved oprettelse af vikar (OS2Vikar)](https://github.com/OS2sofd/issues/issues/85) | Igangværende opgaver | 139 dage / 4.6 mdr. | Mangler planlagt release |
-| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | Klar til prioritering | 139 dage / 4.6 mdr. | Nye kommentarer siden seneste PO-review bør vurderes |
-| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | Klar til prioritering | 139 dage / 4.6 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | Igangværende opgaver | 98 dage / 3.2 mdr. | Mangler prioritet |
-| [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | Klar til prioritering | 98 dage / 3.2 mdr. | Mangler prioritet |
-| [#109 – Dobbelt hierarki: Lønhierarki og den administrative organisation. Oprettelse af det administrative hierarki foretages pba. LOS-koblinger og strukturerede valideringer.Ændringsønske](https://github.com/OS2sofd/issues/issues/109) | Bestilt hos leverandør | 97 dage / 3.2 mdr. | Mangler planlagt release |
-| [#108 – Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.](https://github.com/OS2sofd/issues/issues/108) | Bestilt hos leverandør | 97 dage / 3.2 mdr. | Mangler planlagt release |
-| [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | Klar til prioritering | 58 dage / 1.9 mdr. | Mangler faglig label; Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | Bestilt hos leverandør | 43 dage / 1.4 mdr. | Mangler prioritet; Mangler faglig label |
-| [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | Klar til prioritering | 16 dage / 0.5 mdr. | Mangler prioritet; Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
-| [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | Bestilt hos leverandør | 9 dage / 0.3 mdr. | Mangler prioritet |
+| [#32 – Import af SOFD enheder til OS2Vikar modulet](https://github.com/OS2sofd/issues/issues/32) | Klar til prioritering | 238 dage / 7.8 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
+| [#76 – Ny pladsholder og pladsholder funktion til mailskabelonen ”Digital post til medarbejder ved oprettelse af AD konto”](https://github.com/OS2sofd/issues/issues/76) | Klar til prioritering | 150 dage / 4.9 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
+| [#91 – Opslag i MitID Erhverv ved for at se om bruger har et aktivt tildelt MitID Erhverv](https://github.com/OS2sofd/issues/issues/91) | Klar til prioritering | 140 dage / 4.6 mdr. | Nye kommentarer siden seneste PO-review bør vurderes |
+| [#90 – At kunde (kommune) selv kan konfigurere i UI, i Brugertjek, hvilke data attributter der skal være synlige ved opslag i brugertjek](https://github.com/OS2sofd/issues/issues/90) | Klar til prioritering | 140 dage / 4.6 mdr. | Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
+| [#101 – OS2sofd ILM: Tildeling af leder via Virksomhed](https://github.com/OS2sofd/issues/issues/101) | Igangværende opgaver | 99 dage / 3.3 mdr. | Mangler prioritet |
+| [#105 – OS2sofd ILM: Flytning af ILM-oprettede konsulenter](https://github.com/OS2sofd/issues/issues/105) | Klar til prioritering | 99 dage / 3.3 mdr. | Mangler prioritet |
+| [#122 – Mulighed for at angive leder på institutioner](https://github.com/OS2sofd/issues/issues/122) | Klar til prioritering | 59 dage / 1.9 mdr. | Mangler faglig label; Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
+| [#131 – Omlægge til nye webservices på OPUS Medarbejderservice](https://github.com/OS2sofd/issues/issues/131) | Bestilt hos leverandør | 44 dage / 1.4 mdr. | Mangler prioritet; Mangler faglig label |
+| [#144 – OS2vikar: direkte KMD Nexus integration](https://github.com/OS2sofd/issues/issues/144) | Klar til prioritering | 17 dage / 0.6 mdr. | Mangler prioritet; Mangler estimat; Mangler PO-review af løsningsbeskrivelsen |
+| [#146 – ILM - Opsætte stop dato som ikke obligatorisk](https://github.com/OS2sofd/issues/issues/146) | Bestilt hos leverandør | 10 dage / 0.3 mdr. | Mangler prioritet |
 
 </details>
 
