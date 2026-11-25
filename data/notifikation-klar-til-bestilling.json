@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-19T23:13:53.3995736+00:00",
+  "updatedAt": "2026-11-25T17:57:03.6877173+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -57,10 +57,10 @@
       "number": 108,
       "title": "Ændringsønske: Fremtidige ændringer: Organisationsændringer og- håndtering fødes i OS2sofd og matches efterfølgende med LOSid i KMD LOS integration mod sofd.",
       "url": "https://github.com/OS2sofd/issues/issues/108",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i test",
       "notificationSent": true,
       "notificationSentAt": "2026-09-25T07:59:00.3007559+00:00",
-      "lastObserved": "2026-11-09T17:27:05.4976341+00:00"
+      "lastObserved": "2026-11-25T17:57:01.8606836+00:00"
     },
     "issue-94": {
       "number": 94,
@@ -294,19 +294,19 @@
       "number": 19,
       "title": "SOFD GUI: Bloker oprettelse af manuelle tilhørsforhold af typen \"Medarbejder\" når man kører med sync fra et lønsystem",
       "url": "https://github.com/OS2sofd/issues/issues/19",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i test",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-25T17:57:01.8606836+00:00"
     },
     "issue-21": {
       "number": 21,
       "title": "SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre",
       "url": "https://github.com/OS2sofd/issues/issues/21",
-      "status": "Bestilt hos leverandør",
+      "status": "Igangværende opgaver",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-25T17:57:01.8606836+00:00"
     },
     "issue-22": {
       "number": 22,
