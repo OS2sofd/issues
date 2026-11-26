@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "initialized": true,
-  "updatedAt": "2026-11-25T17:57:03.6877173+00:00",
+  "updatedAt": "2026-11-26T17:41:53.3463519+00:00",
   "issues": {
     "issue-53": {
       "number": 53,
@@ -278,10 +278,10 @@
       "number": 17,
       "title": "SOFD GUI: Udvidet overblik over tilhørsforhold og typer",
       "url": "https://github.com/OS2sofd/issues/issues/17",
-      "status": "Bestilt hos leverandør",
+      "status": "Igangværende opgaver",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-26T17:41:51.0436536+00:00"
     },
     "issue-18": {
       "number": 18,
@@ -303,10 +303,10 @@
       "number": 21,
       "title": "SOFD indlæsning fra lønsystem: Mulighed for selv at administrere indlæsningsfiltre",
       "url": "https://github.com/OS2sofd/issues/issues/21",
-      "status": "Igangværende opgaver",
+      "status": "Løsninger i test",
       "notificationSent": false,
       "notificationSentAt": null,
-      "lastObserved": "2026-11-25T17:57:01.8606836+00:00"
+      "lastObserved": "2026-11-26T17:41:51.0436536+00:00"
     },
     "issue-22": {
       "number": 22,
@@ -337,10 +337,10 @@
       "number": 25,
       "title": "Brugertjek: Udvidelse af informationer i tilhørforholdstabellen",
       "url": "https://github.com/OS2sofd/issues/issues/25",
-      "status": "Bestilt hos leverandør",
+      "status": "Løsninger i test",
       "notificationSent": true,
       "notificationSentAt": "existing-comment",
-      "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+      "lastObserved": "2026-11-26T17:41:51.0436536+00:00"
     },
     "issue-26": {
       "number": 26,
@@ -1169,6 +1169,15 @@
       "notificationSent": false,
       "notificationSentAt": null,
       "lastObserved": "2026-11-19T16:31:51.8049528+00:00"
+    },
+    "issue-153": {
+      "number": 153,
+      "title": "Ændringsønske OS2sofd, at kunne have en bruger deaktiveret mellem ansættelser der ikke er sammenhængende",
+      "url": "https://github.com/OS2sofd/issues/issues/153",
+      "status": "Nye ændringsønsker",
+      "notificationSent": false,
+      "notificationSentAt": null,
+      "lastObserved": "2026-11-26T17:41:51.0436536+00:00"
     }
   }
 }
